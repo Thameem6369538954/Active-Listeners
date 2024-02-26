@@ -1,0 +1,143 @@
+.Subscribe-box {
+  position: relative;
+  background-color: #bae8ac;
+  border-radius: 20px;
+  height: 550px;
+  width: 40%;
+}
+.Subscribe-box-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin: auto;
+  padding: 10px;
+}
+.Subscribe-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Subscribe-heading h2 {
+  font-family: myFont;
+  color: #256c55;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  margin-top: -2%;
+}
+.Subscribe-heading h1 {
+  font-family: Relo;
+  font-weight: 900;
+  font-size: 50px;
+}
+.Subscribe-heading p {
+  font-family: "Satisfy", cursive;
+  margin-bottom: -1%;
+  font-size: 30px;
+  text-decoration: underline;
+}
+.Subscribe-box-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.Support-group {
+  margin: 5% 5%;
+}
+.Support-group li {
+  padding: 5px;
+}
+.hdrsubs-butns {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -17%;
+  gap: 6rem;
+}
+.hdrsubs-butns img {
+  width: 40%;
+}
+.hdrsubs-butns button {
+  border: none;
+  border-radius: 10px;
+  background-color: #ffdd7e;
+  padding: 10px 20px;
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: black;
+}
+
+.hdrsubs-butns-a {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8%;
+  gap: 6rem;
+}
+.hdrsubs-butns-a img {
+  width: 45%;
+}
+.hdrsubs-butns-a button {
+  border: none;
+  border-radius: 10px;
+  background-color: #ffdd7e;
+  padding: 10px 20px;
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: black;
+}
+.Subscribe-box-2 h1 {
+  margin: 30px;
+  font-size: 40px;
+}
+.caro-heading-tag {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+.caro-heading-tag p {
+  font-family: Relo;
+  font-weight: 900;
+  font-size: 60px;
+}
+.bg {
+}
+.caro-heading-tag span {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  text-decoration: underline;
+}
+.caro-heading-tag h1 {
+  font-family: myFont;
+  color: #256c55;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  margin-top: -8%;
+}
+.caro-for-hdr img {
+  aspect-ratio: 3/2;
+  object-fit: contain;
+
+  width: 90%;
+}
+.caro-for-hdr h3 {
+  text-align: center;
+  margin-left: -15%;
+  padding: 10px;
+  font-size: 20px;
+}
+.subscribe-caro-container {
+  width: 98%;
+}
