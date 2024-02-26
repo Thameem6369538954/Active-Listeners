@@ -36,3 +36,20 @@
   font-size: 30px;
   text-decoration: underline;
 }
+@media screen and (max-width: 600px) {
+  .theropy-box-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    padding: 10px;
+  }
+  .therapy-box {
+    background-color: #ffdd7e;
+    border-radius: 20px;
+    height: 350px;
+    width: 250px;
+    margin-bottom: 30px;
+  }
+}

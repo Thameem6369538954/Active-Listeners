@@ -141,3 +141,78 @@
 .subscribe-caro-container {
   width: 98%;
 }
+.slider-container {
+  margin: auto;
+}
+.slider-container button {
+  margin: auto;
+}
+@media screen and (max-width: 600px) {
+  .news-letter input {
+    width: 72%;
+    margin-left: -15%;
+    padding: 28px;
+    border-radius: 20px;
+  }
+  .news-letter-main button {
+    background-color: #bae8ac;
+    padding: 16px 142px;
+    border-radius: 20px;
+    margin: 4%;
+    font-size: 16px;
+  }
+  .news-letter-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider-container {
+    margin: auto;
+  }
+  .slider-container button:nth-child(2) {
+    background-color: #ffdd7e;
+    padding: 10px 20px;
+    margin: auto 40%;
+    border: none;
+    border-radius: 20px;
+  }
+  .subscribe-caro-container {
+    width: 88%;
+  }
+  .Subscribe-box {
+    position: relative;
+    background-color: #bae8ac;
+    border-radius: 20px;
+    height: 550px;
+    width: 100%;
+    margin: auto;
+  }
+  .Subscribe-box-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: auto;
+    padding: 10px;
+  }
+  .caro-heading-tag span {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 27px;
+    text-decoration: underline;
+  }
+  .caro-heading-tag {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    /* position: relative; */
+  }
+  .caro-heading-tag img {
+    position: absolute;
+    width: 210px;
+    margin-left: 35%;
+  }
+}

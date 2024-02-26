@@ -151,7 +151,8 @@
   .puzzle-boy p {
     font-family: Relo;
     font-weight: 900;
-    font-size: 16px;
+    font-size: 35px;
+    margin-top: -17%;
   }
   .bg {
   }
@@ -159,8 +160,9 @@
     font-family: "Satisfy", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 40px;
+    font-size: 30px;
     text-decoration: underline;
+    margin-top: -20%;
   }
   .puzzle-boy h1 {
     font-family: myFont;
@@ -168,7 +170,21 @@
     font-weight: 400;
     font-style: normal;
     font-size: 60px;
-    margin-top: -1%;
+    margin-top: -21%;
+  }
+  .element {
+    /* border: 1px solid red; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: -28%;
+    width: 73%;
+    margin-left: 10%;
+  }
+  .puzzle-boy img {
+    /* width: 150%; */
+    margin-left: 3%;
+    z-index: 1;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {

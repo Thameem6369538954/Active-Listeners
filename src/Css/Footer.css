@@ -78,4 +78,15 @@
     align-items: center;
     justify-content: space-around;
   }
+  .footer-main {
+    background-color: black;
+    padding: 30px;
+    z-index: -1;
+    width: 100%;
+  }
+  .news-letter p {
+    font-size: 15px;
+    /* margin-left: 20px; */
+    font-family: "Courier New", Courier, monospace;
+  }
 }

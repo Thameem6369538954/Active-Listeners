@@ -4,6 +4,7 @@ import ALlogo from "../Images/ALlogo.png";
 import { GiBottomRight3DArrow } from "react-icons/gi";
 import { RiMenu5Fill } from "react-icons/ri";
 import { IoCloseOutline } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -24,15 +25,33 @@ const Navbar = () => {
         </div>
         <nav>
           <ul className={isOpen ? "nav-links active" : "nav-links"}>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Blog</li>
-            <li>Footer</li>
+            <NavLink>
+              <li>Home</li>
+            </NavLink>
+            <NavLink to="/Teletherapy">
+              <li>Speak-Easy</li>
+            </NavLink>
+            <NavLink to="/Senses">
+              <li>Senses</li>
+            </NavLink>
+            <NavLink to="/OneOnOne">
+              <li>One-on-one</li>
+            </NavLink>
+            <NavLink to="/GriefSupport">
+              <li>Grief Support</li>
+            </NavLink>
+            <NavLink to="/Podcast">
+              <li>Podcast</li>
+            </NavLink>
+            <NavLink to="/GoalVision">
+              <li>About us</li>
+            </NavLink>
           </ul>
 
           <div className="nav-icons"></div>
-          <img src={ALlogo} alt="" />
+          <NavLink to="/">
+            <img src={ALlogo} alt="" />
+          </NavLink>
           <div className="Login-btns">
             <button class="full-rounded">
               <span>Login</span>
