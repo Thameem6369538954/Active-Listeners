@@ -109,7 +109,8 @@ nav {
     list-style: none;
     font-size: 35px;
     color: black;
-    font-family: myFont;
+    /* font-family: myFont; */
+    text-decoration: none;
   }
   .nav-links li:hover {
     text-align: center;

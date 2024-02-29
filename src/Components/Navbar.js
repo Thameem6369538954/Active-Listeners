@@ -44,6 +44,9 @@ const Navbar = () => {
               <li>Podcast</li>
             </NavLink>
             <NavLink to="/GoalVision">
+              <li>GoalVision</li>
+            </NavLink>
+            <NavLink to="/GoalVision">
               <li>About us</li>
             </NavLink>
           </ul>

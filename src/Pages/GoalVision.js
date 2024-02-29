@@ -6,12 +6,12 @@ import Yellowline from "../Images/Yellowline.png";
 import Element from "../Images/Elements.png";
 import Rounda from "../Images/Rounda.png";
 import Roundb from "../Images/Roundb.png";
-import note from "../Images/note.png";
-import Doc from "../Images/Doc.png";
+import Flag from "../Images/Flag.png";
 import emoji from "../Images/emoji.png";
 import chat from "../Images/chat.png";
 import weekly from "../Images/weekly.png";
 import community from "../Images/community.png";
+import About from "../Images/About.png";
 const GoalVision = () => {
   return (
     <div>
@@ -34,22 +34,22 @@ const GoalVision = () => {
           <img src={Roundb} alt="" />
           <div className="goal-box">
             <div className="inside-box">
-              <h1>Our Vision</h1>
-              <img src={Yellowline} alt="" />
-              <p>
+              <h1>About us</h1>
+              {/* <img src={Yellowline} alt="" /> */}
+              {/* <p>
                 Lorem ipsum dolor sit amet doloroli sitiol conse ctetur
                 adipiscing elit.{" "}
-              </p>
+              </p> */}
             </div>
             <div>
               <img
-                src={Doc}
+                src={About}
                 style={{
                   // backgroundColor: "red",
                   zIndex: 1,
-                  marginTop: 114,
-                  marginLeft: -150,
-                  width: 230,
+                  marginTop: 100,
+                  marginLeft: -250,
+                  width: 330,
                 }}
                 alt=""
               />
@@ -57,22 +57,22 @@ const GoalVision = () => {
           </div>
           <div className="goal-box">
             <div className="inside-box">
-              <h1>Our Mission</h1>
-              <img src={Yellowline} alt="" />
-              <p>
+              <h1>Our Goals</h1>
+              {/* <img src={Yellowline} alt="" /> */}
+              {/* <p>
                 Lorem ipsum dolor sit amet doloroli sitiol conse ctetur
                 adipiscing elit.{" "}
-              </p>
+              </p> */}
             </div>
             <div>
               <img
-                src={note}
+                src={Flag}
                 style={{
                   // backgroundColor: "red",
                   zIndex: 1,
-                  marginTop: 130,
-                  width: 230,
-                  marginLeft: -120,
+                  marginTop: 100,
+                  width: 330,
+                  marginLeft: -240,
                 }}
                 alt=""
               />
@@ -81,9 +81,9 @@ const GoalVision = () => {
           <img src={Rounda} alt="" />
         </div>
         <div className="therapy-heading">
-          <p>Packages for you!</p>
-          <h1>EGet best</h1>
-          <h2>Services & Offerings!</h2>
+          <p>Our team</p>
+          <h1>Our best team</h1>
+          <h2>team</h2>
           <img src={Yellowline} className="Yellowline" alt="" />
         </div>
         <div className="goal-box-container-hole">

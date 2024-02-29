@@ -440,7 +440,7 @@ const GriefSupport = () => {
           {/* <form></form> */}
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

@@ -64,12 +64,25 @@
   border-radius: 20px;
 }
 @media screen and (max-width: 600px) {
+  .top-baner h1 {
+    font-family: Relo;
+    font-weight: 900;
+    font-size: 27px;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+    margin-top: -3%;
+  }
   .two-flower {
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
     background-color: red;
-    width: 10%;
+    /* width: 10%; */
     display: none;
   }
   .footer-list {
