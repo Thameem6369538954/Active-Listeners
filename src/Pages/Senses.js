@@ -34,8 +34,8 @@ const Senses = () => {
 
             <div class="card-inner">
               <div>
-                <h1>Listening: the ultimate healer </h1>
-                <p>With in</p>
+                <h1>Senses</h1>
+                <p>Resurrection</p>
               </div>
 
               <img src={Kadhoolu} alt="" />
@@ -53,12 +53,29 @@ const Senses = () => {
           </span>
         </div>
         <div className="senses-category-cards">
-          <div className="senses-card"></div>
-          <div className="senses-card"></div>
-          <div className="senses-card"></div>
-          <div className="senses-card"></div>
-          <div className="senses-card"></div>
-          <div className="senses-card"></div>
+          <div className="senses-card">
+            <h1>Body Essential Salts & Oils</h1>
+          </div>
+
+          <div className="senses-card">
+            <h1>Music & Art</h1>
+          </div>
+
+          <div className="senses-card">
+            <h1>Mandala Art Books</h1>
+          </div>
+
+          <div className="senses-card">
+            <h1>brain-boosting diets</h1>
+          </div>
+
+          <div className="senses-card">
+            <h1>Flavour Exploration</h1>
+          </div>
+
+          <div className="senses-card">
+            <h1>DIY activities</h1>
+          </div>
         </div>
       </div>
       <button className="get-support">Get Support</button>

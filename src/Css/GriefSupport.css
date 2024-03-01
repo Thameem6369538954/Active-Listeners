@@ -420,3 +420,26 @@ form .buttons button,
     font-size: 25px;
   }
 }
+@media (min-width: 600px) and (max-width: 1024px) {
+  .card-inner {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    width: inherit;
+    height: inherit;
+    /* background-image: url(../Images/Arrow.png); */
+    background: #bae8ac;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    width: 90%;
+  }
+  .card-inner h1 {
+    font-family: Relo;
+    font-weight: 900;
+    font-size: 30px;
+    margin: 15px;
+  }
+}

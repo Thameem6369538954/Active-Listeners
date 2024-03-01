@@ -64,7 +64,6 @@
   border-radius: 20px;
 }
 @media screen and (max-width: 600px) {
- 
   .card-container {
     display: flex;
     flex-direction: column;
@@ -97,5 +96,15 @@
     font-size: 15px;
     /* margin-left: 20px; */
     font-family: "Courier New", Courier, monospace;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .two-flower {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background-color: red;
+    /* width: 10%; */
+    display: none;
   }
 }

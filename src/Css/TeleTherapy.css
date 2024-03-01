@@ -190,6 +190,9 @@ li {
     border-radius: 30px;
     padding: 20px;
   }
+  .tele-bottom-box h1 {
+    font-size: 23px;
+  }
 
   .tele-buttons button {
     background-color: #ffdd7e;
@@ -202,8 +205,8 @@ li {
     position: relative;
     text-align: center;
     color: white;
-    padding: 30px;
-    margin-top: 11%;
+    /* padding: 30px; */
+    /* margin-top: 11%; */
   }
   .tele-bottom-box-main {
     display: flex;
@@ -225,4 +228,26 @@ li {
     height: 38px;
     border-radius: 50px;
   }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+    margin-top: -3%;
+  }
+  .tele-bottom-box-main {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    justify-content: space-between;
+    margin: 50px 20%;
+  }
+  .weeekly-meetup-box img, p {
+    padding: 16px;
+    font-family: "Questrial", sans-serif;
+}
 }

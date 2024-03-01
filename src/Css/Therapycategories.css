@@ -1,3 +1,8 @@
+.therapy-box h1 {
+  text-align: center;
+  margin: 10px;
+  font-family: Relo;
+}
 .therapy-box {
   background-color: #ffdd7e;
   border-radius: 20px;
@@ -7,7 +12,8 @@
 .theropy-box-main {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 4rem;
   margin: auto;
   padding: 10px;
 }
@@ -63,5 +69,13 @@
     height: 350px;
     width: 250px;
     margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .therapy-heading h1 {
+    font-family: Relo;
+    font-weight: 900;
+    font-size: 33px;
   }
 }

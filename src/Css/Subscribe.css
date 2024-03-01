@@ -216,3 +216,37 @@
     margin-left: 35%;
   }
 }
+@media (min-width: 600px) and (max-width: 1024px) {
+  .Subscribe-box {
+    position: relative;
+    background-color: #bae8ac;
+    border-radius: 20px;
+    height: 550px;
+    width: 49%;
+  }
+  .hdrsubs-butns-a {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+    gap: 1rem;
+  }
+  .hdrsubs-butns {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+    gap: 1rem;
+  }
+  .cate-yellow-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffdd7e;
+    width: 107%;
+    height: 435px;
+    border-radius: 0px 50px 50px 5px;
+  }
+}

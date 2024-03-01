@@ -31,13 +31,13 @@ const Navbar = () => {
             <NavLink to="/Teletherapy">
               <li>Speak-Easy</li>
             </NavLink>
-            {/* <NavLink to="/Senses">
+            <NavLink to="/Senses">
               <li>Senses</li>
             </NavLink>
             <NavLink to="/OneOnOne">
               <li>One-on-one</li>
             </NavLink>
-            <NavLink to="/GriefSupport">
+            {/* <NavLink to="/GriefSupport">
               <li>Grief Support</li>
             </NavLink>
             <NavLink to="/Podcast">

@@ -4,12 +4,17 @@ import emoji from "../Images/emoji.png";
 import chat from "../Images/chat.png";
 import weekly from "../Images/weekly.png";
 import community from "../Images/community.png";
+import Hoodi from "../Images/Hoodi.png"
 const Categories = () => {
   return (
     <div>
       <div className="categories-main">
         <div className="cate-yellow-box">
+          <div className="Hoodi">
+
           <h1>Statisctics and data video</h1>
+          <img src={Hoodi} alt="" />
+          </div>
         </div>
         <div className="cate-left-box">
           <div className="box1">
