@@ -17,11 +17,6 @@ const Teletherapy = () => {
     <div>
       <Navbar />
       <div className="teletheropy">
-        <div className="tele-buttons">
-          <button>Get Appointment</button>
-          <p>Book Your Complimentary 15-min Call</p>
-          <TiArrowRightThick className="arrow-for-tele" />
-        </div>
         <Speekeasy />
       </div>
 
@@ -49,28 +44,24 @@ const Teletherapy = () => {
             </p>
 
             <h1>
-              ₹ 199 <span>// 7 days</span>
+              ₹ 999 <span>// 7 days</span>
             </h1>
             <p>What’s included</p>
             <ul className="plan-list">
               <li>
-                <TiTick className="tick" />
-                Lorem ipsum dolor conse ctetur
+                <TiTick className="tick" />4 sessions with kids
               </li>
               <li>
-                <TiTick className="tick" />
-                Lorem ipsum dolor conse ctetur
+                <TiTick className="tick" />2 sessions with parents
               </li>
               <li>
-                <TiTick className="tick" />
-                Lorem ipsum dolor conse ctetur
+                <TiTick className="tick" />1 intro session
               </li>
               <li>
-                <TiTick className="tick" />
-                Lorem ipsum dolor conse ctetur
+                <TiTick className="tick" />1 review session
               </li>
             </ul>
-            <button>Get Started</button>
+            <button>Buy Now</button>
           </div>
 
           <div class="card">
@@ -90,7 +81,7 @@ const Teletherapy = () => {
             </p>
 
             <h1 style={{ color: "#ffdd7e" }}>
-              ₹ 299<span style={{ color: "white" }}>// 15 days</span>
+              ₹ 1999<span style={{ color: "white" }}>// 15 days</span>
             </h1>
             <p>What’s included</p>
             <ul className="plan-list" style={{ color: "white" }}>
@@ -106,7 +97,7 @@ const Teletherapy = () => {
                   className="tick"
                   style={{ backgroundColor: "#ffdd7e", color: "black" }}
                 />
-                Lorem ipsum dolor conse ctetur
+                8 sessions with kids
               </li>
               <li>
                 <TiTick
@@ -120,10 +111,10 @@ const Teletherapy = () => {
                   className="tick"
                   style={{ backgroundColor: "#ffdd7e", color: "black" }}
                 />
-                Lorem ipsum dolor conse ctetur
+                4 review sessions with parents
               </li>
             </ul>
-            <button>Get Started</button>
+            <button>Buy Now</button>
           </div>
 
           <div class="card">
@@ -143,28 +134,19 @@ const Teletherapy = () => {
             </p>
 
             <h1>
-              ₹ 399<span>// 7 days</span>
+              ₹ 2999<span>// Monthly</span>
             </h1>
             <p>What’s included</p>
             <ul className="plan-list">
               <li>
                 <TiTick className="tick" />
-                Lorem ipsum dolor conse ctetur
+                16 sessions with kids
               </li>
               <li>
-                <TiTick className="tick" />
-                Lorem ipsum dolor conse ctetur
-              </li>
-              <li>
-                <TiTick className="tick" />
-                Lorem ipsum dolor conse ctetur
-              </li>
-              <li>
-                <TiTick className="tick" />
-                Lorem ipsum dolor conse ctetur
+                <TiTick className="tick" />8 review sessions with parents
               </li>
             </ul>
-            <button>Get Started</button>
+            <button>Buy Now</button>
           </div>
         </div>
       </div>

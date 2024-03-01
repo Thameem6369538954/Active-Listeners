@@ -34,7 +34,7 @@ const Podcast = () => {
               <div class="card-inner">
                 <img
                   src={cover}
-                  style={{ width: 300, margin: 40, borderRadius: 20 }}
+                  style={{ width: "30%", margin: 40, borderRadius: 20 }}
                   alt=""
                 />
                 <div className="podcast-text">

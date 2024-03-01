@@ -31,7 +31,7 @@ const Navbar = () => {
             <NavLink to="/Teletherapy">
               <li>Speak-Easy</li>
             </NavLink>
-            <NavLink to="/Senses">
+            {/* <NavLink to="/Senses">
               <li>Senses</li>
             </NavLink>
             <NavLink to="/OneOnOne">
@@ -45,7 +45,7 @@ const Navbar = () => {
             </NavLink>
             <NavLink to="/GoalVision">
               <li>GoalVision</li>
-            </NavLink>
+            </NavLink> */}
             <NavLink to="/GoalVision">
               <li>About us</li>
             </NavLink>

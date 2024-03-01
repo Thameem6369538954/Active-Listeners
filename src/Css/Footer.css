@@ -6,7 +6,7 @@
 .two-flower {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .footer-list {
   display: flex;
@@ -64,11 +64,7 @@
   border-radius: 20px;
 }
 @media screen and (max-width: 600px) {
-  .top-baner h1 {
-    font-family: Relo;
-    font-weight: 900;
-    font-size: 27px;
-  }
+ 
   .card-container {
     display: flex;
     flex-direction: column;
