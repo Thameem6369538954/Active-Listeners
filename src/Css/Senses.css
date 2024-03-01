@@ -36,3 +36,12 @@
 
   margin: 20px auto;
 }
+.senses-card img {
+  width: 70%;
+}
+.senses-card h1 {
+  text-align: center;
+  margin: 20px;
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+}

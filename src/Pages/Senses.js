@@ -7,6 +7,13 @@ import { TiArrowRightThick } from "react-icons/ti";
 import Rounda from "../Images/Rounda.png";
 import Roundb from "../Images/Roundb.png";
 import Kadhoolu from "../Images/Kadhoolu.png";
+import Nool from "../Images/Nool.png";
+import Coc from "../Images/Coc.png";
+import Gitarakka from "../Images/Gitarakka.png";
+import spa from "../Images/spa.png";
+import Children from "../Images/Childern.png";
+import Menbulb from "../Images/Menbulb.png";
+
 const Senses = () => {
   return (
     <div>
@@ -55,26 +62,32 @@ const Senses = () => {
         <div className="senses-category-cards">
           <div className="senses-card">
             <h1>Body Essential Salts & Oils</h1>
+            <img src={Nool} alt="" />
           </div>
 
           <div className="senses-card">
             <h1>Music & Art</h1>
+            <img src={Gitarakka} alt="" />
           </div>
 
           <div className="senses-card">
             <h1>Mandala Art Books</h1>
+            <img src={Children} alt="" />
           </div>
 
           <div className="senses-card">
             <h1>brain-boosting diets</h1>
+            <img src={Menbulb} alt="" />
           </div>
 
           <div className="senses-card">
             <h1>Flavour Exploration</h1>
+            <img src={Coc} alt="" />
           </div>
 
           <div className="senses-card">
             <h1>DIY activities</h1>
+            <img src={spa} alt="" />
           </div>
         </div>
       </div>
