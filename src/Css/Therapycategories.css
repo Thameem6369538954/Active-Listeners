@@ -82,5 +82,9 @@
     font-family: Relo;
     font-weight: 900;
     font-size: 33px;
+    margin: 30px;
+  }
+  .therapy-heading span {
+    margin: 30px;
   }
 }
