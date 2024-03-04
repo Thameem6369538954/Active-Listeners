@@ -79,7 +79,7 @@ const GoalVision = () => {
     },
     {
       id: 3,
-      name: "Joice Lincey",
+      name: "Joice Lincy",
       position: "Digital Marketing specialist",
       image: joice,
     },
@@ -97,7 +97,7 @@ const GoalVision = () => {
     },
     {
       id: 6,
-      name: "Dhanashekar",
+      name: "Dhanasekar",
       position: "Sketch Artist",
       image: dhanashekar,
     },
@@ -115,7 +115,7 @@ const GoalVision = () => {
     },
     {
       id: 9,
-      name: "Shankar",
+      name: "Sankar",
       position: "Illustrator",
       image: shankar,
     },
