@@ -1,6 +1,6 @@
 import React from "react";
 import "../Css/Footer.css";
-import ALlogo from "../Images/ALlogo.png";
+import ALWhitelogo from "../Images/ALWhitelogo.png";
 import { FaFacebookF } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io5";
 import { BsTwitterX } from "react-icons/bs";
@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="footer-list">
           <ul className="logo">
             <li>
-              <img src={ALlogo} alt="" />
+              <img src={ALWhitelogo} alt="" />
             </li>
             <li>
               <p>

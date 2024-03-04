@@ -6,6 +6,7 @@ import Yellowline from "../Images/Yellowline.png";
 import Rounda from "../Images/Rounda.png";
 import Roundb from "../Images/Roundb.png";
 import Kadhoolu from "../Images/Kadhoolu.png";
+import Greenbg from "../Images/Greenbg.png";
 import emoji from "../Images/emoji.png";
 const OneOnOne = () => {
   return (
@@ -28,13 +29,17 @@ const OneOnOne = () => {
               <img src={Rounda} alt="" />
             </div>
 
-            <div class="card-inner">
-              <div>
-                <h1>Listening: the ultimate healer </h1>
-                <p>With in</p>
-              </div>
+            <div class="container-speek">
+              <img src={Greenbg} />
 
-              {/* <img src={Kadhoolu} alt="" /> */}
+              <div class="centered">
+                <div className="para">
+                  <p>
+                    Transformative support for those seeking clarity and
+                    understanding through active listening.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
