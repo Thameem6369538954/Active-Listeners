@@ -179,8 +179,8 @@ const Subscribe = () => {
                 );
               })}
             </Slider>
-            <button>Discover</button>
           </div>
+            <button>Discover</button>
         </div>
       </div>
     </div>
