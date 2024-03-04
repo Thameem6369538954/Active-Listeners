@@ -70,7 +70,8 @@
 }
 .hdr-text h3 {
   font-family: myFont;
-  color: #256c55;
+  /* color: #256c55; */
+  color: pink;
   font-weight: 400;
   font-style: normal;
   font-size: 80px;
@@ -251,6 +252,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    margin: 30px;
   }
   .element h4 {
     margin-top: 25%;

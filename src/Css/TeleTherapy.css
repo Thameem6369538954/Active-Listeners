@@ -230,6 +230,8 @@ li {
     flex-direction: column;
     justify-content: space-between;
     margin-left: 10%;
+    gap: 2rem;
+    margin-bottom: 20px;
   }
 
   .tele-buttons p {

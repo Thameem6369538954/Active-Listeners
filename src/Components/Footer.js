@@ -30,7 +30,7 @@ const Footer = () => {
             </li>
             <li>Copyright © 2024 • Active Listeners.</li>
           </ul>
-          <ul className="navigation">
+          {/* <ul className="navigation">
             <li>
               <label>Navigation</label>
             </li>
@@ -39,7 +39,7 @@ const Footer = () => {
             <li>Engage</li>
             <li>podcast</li>
             <li>Login/Signup</li>
-          </ul>
+          </ul> */}
           {/* <ul className="legal">
             <li>
               <label>legal</label>

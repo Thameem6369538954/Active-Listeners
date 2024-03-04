@@ -265,13 +265,4 @@
     margin-top: -18%;
     gap: 10rem;
   }
-  .cate-yellow-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffdd7e;
-    width: 107%;
-    height: 435px;
-    border-radius: 0px 50px 50px 5px;
-  }
 }
