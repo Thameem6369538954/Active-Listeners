@@ -1,5 +1,5 @@
 @media screen and (max-width: 600px) {
   .home-main {
-    overflow-x: hidden;
+    overflow: hidden;
   }
 }
