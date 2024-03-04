@@ -9,7 +9,7 @@ import Therapycategories from "../Components/Therapycategories";
 import Subscribe from "../Components/Subscribe";
 const Home = () => {
   return (
-    <div>
+    <div className="home-main">
       <Navbar />
       <Header />
       <Categories />
