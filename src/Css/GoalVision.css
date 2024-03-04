@@ -241,9 +241,10 @@
     margin: auto;
   }
   .goal-box-container img {
-    margin: 30px;
-
-    width: 89px;
+   margin: 30px;
+    width: 90px;
+    height: 106px;
+    border-radius: 10px;
   }
   .goal-box-container {
     display: flex;

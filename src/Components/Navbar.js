@@ -25,7 +25,7 @@ const Navbar = () => {
         </div>
         <nav>
           <ul className={isOpen ? "nav-links active" : "nav-links"}>
-            <NavLink>
+            <NavLink to="/">
               <li>Home</li>
             </NavLink>
             <NavLink to="/Teletherapy">
@@ -37,9 +37,9 @@ const Navbar = () => {
             <NavLink to="/OneOnOne">
               <li>One-on-one</li>
             </NavLink>
-            <NavLink to="/GriefSupport">
+            {/* <NavLink to="/GriefSupport">
               <li>Grief Support</li>
-            </NavLink>
+            </NavLink> */}
             {/* <NavLink to="/Podcast">
               <li>Podcast</li>
             </NavLink>

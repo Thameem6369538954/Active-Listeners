@@ -123,7 +123,7 @@ const Teletherapy = () => {
                 <img src={Plan} alt="" />
               </div>
               <div>
-                <p>7 Days</p>
+                <p>Monthly</p>
                 <h1>Pro</h1>
               </div>
             </div>
