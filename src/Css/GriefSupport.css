@@ -421,6 +421,28 @@ form .buttons button,
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
+  .card-grif {
+    width: 575px;
+    height: 306px;
+    transition: all 0.2s;
+    position: relative;
+    cursor: pointer;
+    margin: 50px auto;
+  }
+  .card-inner h1 {
+    font-family: Relo;
+    font-weight: 900;
+    font-size: 22px;
+    margin: auto 5%;
+  }
+  .card-inner p {
+    font-family: myFont;
+    color: #256c55;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    margin-top: -3%;
+  }
   .card-inner {
     display: flex;
     align-items: center;
@@ -435,11 +457,5 @@ form .buttons button,
     backdrop-filter: blur(10px);
     border-radius: 8px;
     width: 90%;
-  }
-  .card-inner h1 {
-    font-family: Relo;
-    font-weight: 900;
-    font-size: 30px;
-    margin: 15px;
   }
 }

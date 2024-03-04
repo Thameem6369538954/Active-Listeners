@@ -44,4 +44,13 @@
   margin: 20px;
 }
 @media (min-width: 600px) and (max-width: 1024px) {
+  .senses-category-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
 }
