@@ -233,6 +233,9 @@
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
+  .bg {
+    margin: 30px;
+  }
   .hdr-text h1 {
     font-family: myFont;
     font-weight: 400;
