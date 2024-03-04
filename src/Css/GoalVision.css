@@ -255,4 +255,10 @@
     border: 1px solid black;
     margin: auto;
   }
+  .gaol-vision-last-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+  }
 }
