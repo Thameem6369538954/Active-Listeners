@@ -155,7 +155,7 @@
     justify-content: center;
     gap: 2rem;
     margin-top: 10px;
-    overflow: hidden;
+    overflow-y: hidden;
   }
   .goal-box-container-a {
     display: flex;

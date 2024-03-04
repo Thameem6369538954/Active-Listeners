@@ -66,12 +66,11 @@
   font-weight: 400;
   font-style: normal;
   font-size: 80px;
-  /* color: lightpink; */
+  color: lightpink;
 }
 .hdr-text h3 {
   font-family: myFont;
-  /* color: #256c55; */
-  color: pink;
+  color: #256c55;
   font-weight: 400;
   font-style: normal;
   font-size: 80px;
