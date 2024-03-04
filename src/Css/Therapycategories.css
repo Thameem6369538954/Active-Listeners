@@ -43,6 +43,11 @@
   text-decoration: underline;
 }
 @media screen and (max-width: 600px) {
+  .therapy-heading span {
+    /* background-color: red; */
+    margin: auto;
+    font-family: "Satisfy", cursive;
+  }
   .therapy-heading h1 {
     font-family: Relo;
     font-weight: 900;
@@ -53,7 +58,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* margin-left: 21%; */
+    margin-left: 7%;
   }
   .theropy-box-main {
     display: flex;

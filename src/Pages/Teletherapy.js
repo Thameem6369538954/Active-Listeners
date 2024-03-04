@@ -124,7 +124,7 @@ const Teletherapy = () => {
               </div>
               <div>
                 <p>7 Days</p>
-                <h1>Basic</h1>
+                <h1>Pro</h1>
               </div>
             </div>
 

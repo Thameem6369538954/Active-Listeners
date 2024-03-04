@@ -147,7 +147,7 @@ li {
 .tele-bottom-box-main {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 12rem;
   justify-content: space-between;
   margin-left: 10%;
 }
@@ -173,6 +173,22 @@ li {
   border-radius: 20px;
 }
 @media screen and (max-width: 600px) {
+  .card {
+    position: relative;
+    width: 310px;
+    height: 600px;
+    background: white;
+    border: 2px solid #ffdd7e;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(141, 177, 205, 0.618) 0px 40px 30px -25px;
+    transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    box-shadow: 17px 18px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  .card:nth-child(2) {
+    background-color: black;
+    height: 660px;
+  }
   .top-baner p {
     font-size: 22px;
   }

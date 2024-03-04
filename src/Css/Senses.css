@@ -54,3 +54,14 @@
     margin: auto;
   }
 }
+@media screen and (max-width: 600px) {
+  .get-support {
+    background-color: #ffdd7e;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 12px 148px;
+    cursor: pointer;
+  }
+}
