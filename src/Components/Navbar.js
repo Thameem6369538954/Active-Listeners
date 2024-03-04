@@ -25,17 +25,17 @@ const Navbar = () => {
         </div>
         <nav>
           <ul className={isOpen ? "nav-links active" : "nav-links"}>
-            <NavLink to="/">
+            <NavLink to="/" className="Links">
               <li>Home</li>
             </NavLink>
-            <NavLink to="/Teletherapy">
+            <NavLink to="/Teletherapy" className="Links">
               <li>Speak-Easy</li>
             </NavLink>
-            <NavLink to="/Senses">
-              <li>Senses</li>
+            <NavLink to="/Senses" className="Links">
+              <li>Senses Resurrection</li>
             </NavLink>
-            <NavLink to="/OneOnOne">
-              <li>One-on-one</li>
+            <NavLink to="/OneOnOne" className="Links">
+              <li>One to One Session</li>
             </NavLink>
             {/* <NavLink to="/GriefSupport">
               <li>Grief Support</li>
@@ -46,7 +46,7 @@ const Navbar = () => {
             <NavLink to="/GoalVision">
               <li>GoalVision</li>
             </NavLink> */}
-            <NavLink to="/GoalVision">
+            <NavLink to="/GoalVision" className="Links">
               <li>About us</li>
             </NavLink>
           </ul>

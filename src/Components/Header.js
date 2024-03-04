@@ -34,7 +34,7 @@ const Header = () => {
               Find
             </h2>
             <h3 data-aos="fade-up" data-aos-duration="3000">
-              Balance
+              Balance & Focus
             </h3>
           </div>
           <img

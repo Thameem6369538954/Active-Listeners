@@ -20,15 +20,15 @@ const Footer = () => {
               <img src={ALWhitelogo} alt="" />
             </li>
             <li>
-              <p>
+              {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 <br></br>
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 <br></br>
                 enim ad minimuat.{" "}
-              </p>
+              </p> */}
             </li>
-            <li>Copyright © 2024 • Active Listeners.</li>
+            <li>Copyright © 2024 • Propelling Storys.</li>
           </ul>
           {/* <ul className="navigation">
             <li>
@@ -57,8 +57,7 @@ const Footer = () => {
             </li>
             <li>+91 7892858593</li>
             <li>
-              399, 2nd Cross Rd, opposite the Paul hotel, HBCS Colony, <br></br>
-              Amarjyoti Layout, Domlur, Bengaluru,<br></br> Karnataka 560071
+              Domlur, Bengaluru,<br></br> Karnataka 560071
             </li>
             <div className="footer-icons">
               <li>
