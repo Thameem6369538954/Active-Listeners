@@ -227,12 +227,26 @@
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
+  .Subscribe-box-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: auto;
+    padding: 10px;
+  }
   .Subscribe-box {
     position: relative;
     background-color: #bae8ac;
     border-radius: 20px;
     height: 550px;
-    width: 49%;
+    width: 79%;
+  }
+  .green-bourd-grief {
+    margin: 20px 28%;
+    align-items: center;
+    justify-content: center;
   }
   .hdrsubs-butns-a {
     /* position: relative; */
@@ -247,8 +261,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 8%;
-    gap: 1rem;
+    margin-top: -18%;
+    gap: 10rem;
   }
   .cate-yellow-box {
     display: flex;
