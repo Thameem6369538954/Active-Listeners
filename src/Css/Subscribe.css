@@ -139,7 +139,8 @@
   font-size: 20px;
 }
 .subscribe-caro-container {
-  width: 98%;
+  width: 89%;
+  margin: auto;
 }
 .slider-container {
   margin: auto;
@@ -188,7 +189,7 @@
     border-radius: 20px;
   }
   .subscribe-caro-container {
-    width: 88%;
+    width: 78%;
   }
   .Subscribe-box {
     position: relative;
@@ -222,8 +223,8 @@
   }
   .caro-heading-tag img {
     position: absolute;
-    width: 210px;
-    margin-left: 35%;
+    width: 130px;
+    margin-left: 65%;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {

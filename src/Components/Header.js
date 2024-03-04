@@ -8,7 +8,7 @@ import Arrow from "../Images/Arrow.png";
 const Header = () => {
   return (
     <div className="header-main">
-      <div className="yellow-box" data-aos="fade-down" data-aos-duration="1500">
+      {/* <div className="yellow-box" data-aos="fade-down" data-aos-duration="1500">
         <ul className="yellow-box-ul">
           <li>
             Developed by <span>Psychologists</span> |
@@ -17,7 +17,7 @@ const Header = () => {
           <li>Music, Aroma & Mandala Art Therapy |</li>
           <li>100% Safe for Kids |</li>
         </ul>
-      </div>
+      </div> */}
       <div className="header">
         <div className="header-container">
           <img
@@ -44,7 +44,7 @@ const Header = () => {
             alt=""
           />
         </div>
-        <div className="categoreis haeder">
+        {/* <div className="categoreis haeder">
           <div className="categoreis-grid-boxs">
             <div className="categoreis-grid-box">
               <span>Ages: 6-12</span>
@@ -76,7 +76,7 @@ const Header = () => {
             </div>
           </div>
           <div></div>
-        </div>
+        </div> */}
         <div className="hdr-btm-text">
           <p data-aos="zoom-in" data-aos-duration="1000">
             We believe that early age gadget exposure, adaptaion to mobile among
