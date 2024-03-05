@@ -28,8 +28,10 @@ import dhinesh from "../Images/dhinesh.jpeg";
 import harris from "../Images/harris.jpeg";
 import shankar from "../Images/shankar.jpeg";
 import yashavantha from "../Images/yashavantha.jpeg";
-
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
 const GoalVision = () => {
+  const [counter, setCounter] = useState(false);
   var settings = {
     dots: false,
     infinite: false,
@@ -232,43 +234,47 @@ const GoalVision = () => {
               <div>
                 <img src={Think} alt="" />
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                  excepturi quas, doloribus quod eaque quisquam et, officia
-                  doloremque iure animi ad nisi sunt eligendi magni vitae
-                  eveniet aspernatur explicabo asperiores.
+                  Feeling trapped in a cycle of struggle? Whether it's fighting
+                  against addiction or confronting any obstacle, know that
+                  you're not alone in your journey
                 </p>
               </div>
               <img src={Element} alt="" />
               <div>
                 <img src={Bulb} alt="" />
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                  excepturi quas, doloribus quod eaque quisquam et, officia
-                  doloremque iure animi ad nisi sunt eligendi magni vitae
-                  eveniet aspernatur explicabo asperiores.
+                  Our dedicated team is here to offer guidance, support, and
+                  understanding every step of the way. Together, we'll work
+                  towards breaking free from the chains of adversity and finding
+                  a path towards healing and growth.
                 </p>
               </div>
             </div>
-            <div className="goal-box-container-a">
-              <div className="goalvision-box">
-                <img src={emoji} alt="" />
-                <br></br> <br></br>
-                <span>76K</span>
-                <p>Community Members</p>
+            <ScrollTrigger
+              onEnter={() => setCounter(true)}
+              onExit={() => setCounter(false)}
+            >
+              <div className="goal-box-container-a">
+                <div className="goalvision-box">
+                  <img src={emoji} alt="" />
+                  <br></br> <br></br>
+                  {counter && <CountUp start={0} end={76} />}k
+                  <p>Community Members</p>
+                </div>
+                <div className="goalvision-box">
+                  <img src={emoji} alt="" />
+                  <br></br> <br></br>
+                  {counter && <CountUp start={0} end={128} />}k
+                  <p>Podcast Subscribers</p>
+                </div>
+                <div className="goalvision-box">
+                  <img src={emoji} alt="" />
+                  <br></br> <br></br>
+                  {counter && <CountUp start={0} end={59} />}k
+                  <p>Daily Listeners</p>
+                </div>
               </div>
-              <div className="goalvision-box">
-                <img src={emoji} alt="" />
-                <br></br> <br></br>
-                <span>128K</span>
-                <p>Podcast Subscribers</p>
-              </div>
-              <div className="goalvision-box">
-                <img src={emoji} alt="" />
-                <br></br> <br></br>
-                <span>59K</span>
-                <p>Daily Listeners</p>
-              </div>
-            </div>
+            </ScrollTrigger>
           </div>
         </div>
         {/* form */}

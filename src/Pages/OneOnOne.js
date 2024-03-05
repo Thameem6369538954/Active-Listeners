@@ -56,32 +56,44 @@ const OneOnOne = () => {
           <img src={emoji} alt="" />
           <h2>Body essential salts & oils</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod{" "}
+            Experience our unique approach to therapy through the incorporation
+            of essential oils and salts into your diet. Discover the
+            transformative power of these enriching ingredients, carefully
+            selected to nourish your body and elevate your well-being from
+            within
           </p>
         </div>
         <div className="weeekly-meetup-box">
           <img src={emoji} alt="" />
           <h2>Music</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod{" "}
+            Immerse yourself in the healing power of music. Our therapy sessions
+            offer carefully curated playlists designed to soothe the soul and
+            promote relaxation. Let the melodies guide you on a journey of
+            self-discovery and emotional healing
           </p>
         </div>
         <div className="weeekly-meetup-box">
           <img src={emoji} alt="" />
-          <h2>recommended diets</h2>
+          <h2>recommended Diets</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod{" "}
+            Discover personalised dietary plans tailored to your unique needs
+            and goals. Our expert nutritionists will guide you towards a
+            healthier lifestyle through balanced and nourishing meal
+            recommendations. Say goodbye to guesswork and hello to optimal
+            health with our customised diet plans.
           </p>
         </div>
         <div className="weeekly-meetup-box">
           <img src={emoji} alt="" />
           <h2>mandala art books</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod{" "}
+            Explore the world of mandala art with our collection of inspiring
+            books. Discover a treasure trove of intricate designs, step-by-step
+            tutorials, and creative insights to help you unleash your inner
+            artist and create stunning mandalas. Whether you're a beginner or an
+            experienced artist, our mandala art books are the perfect companion
+            on your creative journey
           </p>
         </div>
         {/* <div className="weeekly-meetup-box">
@@ -96,8 +108,11 @@ const OneOnOne = () => {
           <img src={emoji} alt="" />
           <h2>DIYs</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod{" "}
+            Experience the joy of creating and crafting with our DIY projects.
+            From handmade gifts to home decor and beyond, discover endless
+            possibilities for expressing your creativity and making something
+            uniquely yours. Dive into the world of DIY and unleash your
+            imagination today!
           </p>
         </div>
         <div className="weeekly-meetup-box">
@@ -105,8 +120,9 @@ const OneOnOne = () => {
 
           <h2>Aroma Therapy</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod{" "}
+            Relax with our aromatherapy sessions. Enjoy the pleasant scents of
+            natural oils to help you feel calm and balanced. Stress will melt
+            away, and you'll feel refreshed and rejuvenated.
           </p>
         </div>
       </div>

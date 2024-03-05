@@ -295,6 +295,15 @@
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
+  .yellow-box-ul {
+    background-color: #ffdd7e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 94%;
+    margin: auto;
+    border-radius: 5px;
+  }
   .bg {
     margin: 30px;
     /* color: red; */

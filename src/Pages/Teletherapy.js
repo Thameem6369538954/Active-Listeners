@@ -39,8 +39,8 @@ const Teletherapy = () => {
             </div>
 
             <p>
-              Lorem ipsum dolor sit amet doloroli sitiol conse ctetur adipiscing
-              elit.{" "}
+              Are you ready to embark on a journey of discovery with your child?
+              Join us for an immersive experience where learning meets fun!
             </p>
 
             <h1>
@@ -76,8 +76,8 @@ const Teletherapy = () => {
             </div>
 
             <p style={{ color: "white" }}>
-              Lorem ipsum dolor sit amet doloroli sitiol conse ctetur adipiscing
-              elit.{" "}
+              Unlock a world of curiosity and growth with our premium plan
+              designed just for them
             </p>
 
             <h1 style={{ color: "#ffdd7e" }}>
@@ -85,13 +85,13 @@ const Teletherapy = () => {
             </h1>
             <p>What’s included</p>
             <ul className="plan-list" style={{ color: "white" }}>
-              <li>
+              {/* <li>
                 <TiTick
                   className="tick"
                   style={{ backgroundColor: "#ffdd7e", color: "black" }}
                 />
                 Lorem ipsum dolor conse ctetur
-              </li>
+              </li> */}
               <li>
                 <TiTick
                   className="tick"
@@ -99,13 +99,13 @@ const Teletherapy = () => {
                 />
                 8 sessions with kids
               </li>
-              <li>
+              {/* <li>
                 <TiTick
                   className="tick"
                   style={{ backgroundColor: "#ffdd7e", color: "black" }}
                 />
                 Lorem ipsum dolor conse ctetur
-              </li>
+              </li> */}
               <li>
                 <TiTick
                   className="tick"
@@ -129,8 +129,7 @@ const Teletherapy = () => {
             </div>
 
             <p>
-              Lorem ipsum dolor sit amet doloroli sitiol conse ctetur adipiscing
-              elit.{" "}
+              - Experience education in a whole new light with our Pro Plan!
             </p>
 
             <h1>
@@ -170,8 +169,9 @@ const Teletherapy = () => {
             <h1>Introducing  Personality Assessment Test </h1>
             <ul className="tele-bottom-txt">
               <p>
-                Lorem ipsum dolor sit amet doloroli sitiol conse ctetur
-                adipiscing elit.{" "}
+                Discover your unique traits and valuable insights with our
+                Personality Assessment Test. Uncover hidden strengths and areas
+                for growth with this comprehensive too
               </p>
 
               {/* <img src={Arrow} width={1} alt="" /> */}

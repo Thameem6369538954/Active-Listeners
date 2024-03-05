@@ -20,32 +20,34 @@ const Categories = () => {
             <img src={community} alt="" />
             <h2>Mobile Addiction</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod{" "}
+              Get professional help from a mobile addiction and mental health
+              counselor from BetterHelp.Start receiving support via phone,
+              video, or live-chat.
             </p>
           </div>
           <div className="box2">
             <img src={chat} alt="" />
             <h2>Social Media Addiction</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod{" "}
+              Struggling With Social Media Addiction? Online therapy can help
+              you make lasting change. Start getting support from a licensed
+              therapist from BetterHelp.
             </p>
           </div>
           <div className="box3">
             <img src={weekly} alt="" />
             <h2>Gaming Addiction</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod{" "}
+              If you are looking for a video game addiction treatment facility,
+              we can help. Call to discuss treatment options
             </p>
           </div>
           <div className="box4">
             <img src={emoji} alt="" />
             <h2>Entertainment & Performance Addiction</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod{" "}
+               You may break away
+              from entertainment addiction with some simple tactics.
             </p>
           </div>
           <button>Discover How?</button>

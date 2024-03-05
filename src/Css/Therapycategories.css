@@ -99,4 +99,18 @@
     justify-content: center;
     margin-top: 20px;
   }
+  .therapy-box {
+    background-color: #ffdd7e;
+    border-radius: 20px;
+    height: 317px;
+    width: 200px;
+  }
+  .theropy-box-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: auto;
+    padding: 10px;
+  }
 }
