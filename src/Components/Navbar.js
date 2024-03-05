@@ -57,12 +57,16 @@ const Navbar = () => {
           </NavLink>
           <div className="Login-btns">
             <button class="full-rounded">
-              <span>Login</span>
+              <NavLink to="/Login">
+                <span>Login</span>
+              </NavLink>
               <div class="border full-rounded"></div>
             </button>
 
             <button class="full-rounded">
-              <span>Sign up</span>
+              <NavLink to="/Signup">
+                <span>Sign up</span>
+              </NavLink>
               <div class="border full-rounded"></div>
             </button>
             <GiBottomRight3DArrow />
