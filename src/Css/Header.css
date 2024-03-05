@@ -19,6 +19,7 @@
   justify-content: center;
   width: 80%;
   margin: auto;
+  border-radius: 5px;
 }
 .arrow-for-header {
   display: none;
@@ -30,6 +31,7 @@
 .yellow-box-ul li {
   list-style: none;
   font-family: "Questrial", sans-serif;
+  margin: 4px 4px;
 }
 .yellow-box-ul li span {
   font-weight: bolder;
@@ -183,7 +185,15 @@
 @media screen and (max-width: 600px) {
   .categoreis-grid-box p {
     margin-top: -10%;
-    font-size: 16px;
+    font-size: 14px;
+  }
+  .categoreis-grid-box:hover .arrow-for-header {
+    display: block;
+    margin-top: -20px;
+    width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .categoreis-grid-box {

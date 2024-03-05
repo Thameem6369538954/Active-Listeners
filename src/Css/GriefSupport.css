@@ -337,6 +337,12 @@ form .buttons button,
 .backBtn {
   margin-right: 14px;
 }
+.card-grif img {
+  width: 90%;
+}
+.card-grif {
+  height: 40vh;
+}
 
 @media (max-width: 750px) {
   .container form {
@@ -431,11 +437,11 @@ form .buttons button,
 @media (min-width: 600px) and (max-width: 1024px) {
   .card-grif {
     width: 575px;
-    height: 306px;
+    height: 126px;
     transition: all 0.2s;
     position: relative;
     cursor: pointer;
-    margin: 50px auto;
+    margin: 0px auto;
   }
   .card-inner h1 {
     font-family: Relo;

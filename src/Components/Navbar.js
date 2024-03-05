@@ -57,14 +57,14 @@ const Navbar = () => {
           </NavLink>
           <div className="Login-btns">
             <button class="full-rounded">
-              <NavLink to="/Login">
+              <NavLink to="/Login" className="Links">
                 <span>Login</span>
               </NavLink>
               <div class="border full-rounded"></div>
             </button>
 
             <button class="full-rounded">
-              <NavLink to="/Signup">
+              <NavLink to="/Signup" className="Links">
                 <span>Sign up</span>
               </NavLink>
               <div class="border full-rounded"></div>

@@ -7,6 +7,10 @@
 .signup-top img {
   width: 15%;
 }
+.signup-top:nth-child() {
+  width: 55%;
+  background-color: #256c55;
+}
 .signup-form {
   margin-top: 80px;
 }

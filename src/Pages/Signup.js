@@ -8,14 +8,17 @@ import GreenRound from "../Images/GreenRound.png";
 import { LiaFacebookF } from "react-icons/lia";
 import { FcGoogle } from "react-icons/fc";
 import CoffieCup from "../Images/CoffieCup.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 const Signup = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="signup-main">
         <div className="signup-top">
           <img src={EmojiA} alt="" />
-          <img src={ALlogo} alt="" />
+  
+            <img src={ALlogo} onClick={()=>{navigate("/")}} style={{cursor:"pointer"}} alt="" />
+          
         </div>
         <div className="sigin-heading">
           <div>
