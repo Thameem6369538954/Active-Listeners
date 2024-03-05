@@ -12,7 +12,7 @@ const Categories = () => {
         <div className="cate-yellow-box">
           <div className="Hoodi">
 
-          <h1>Statisctics and data video</h1>
+          <h1>Statistics and data video</h1>
           <img src={Hoodi} alt="" />
           </div>
         </div>

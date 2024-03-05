@@ -122,6 +122,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0rem;
+    margin: 30px;
   }
   .cate-yellow-box {
     display: flex;

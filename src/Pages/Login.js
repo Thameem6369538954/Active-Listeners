@@ -57,7 +57,7 @@ const Login = () => {
             </div>
           </form>
           <div className="other-signup">
-            <p>or Sign up using </p>
+            <p>or Login using </p>
             <div className="ggl-fc-athentication">
               <div className="fb">
                 <LiaFacebookF />
