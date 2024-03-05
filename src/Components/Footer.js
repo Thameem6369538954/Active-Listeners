@@ -28,7 +28,7 @@ const Footer = () => {
                 enim ad minimuat.{" "}
               </p> */}
             </li>
-            <li>Copyright © 2024 • Propelling Storys.</li>
+            <li>Copyright © 2024 • Propelling Stories.</li>
           </ul>
           {/* <ul className="navigation">
             <li>

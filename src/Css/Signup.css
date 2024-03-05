@@ -1,0 +1,9 @@
+.signup-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 17rem;
+}
+.signup-top img {
+  width: 15%;
+}

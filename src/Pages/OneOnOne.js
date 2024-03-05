@@ -22,12 +22,12 @@ const OneOnOne = () => {
         </div>
         <div className="green-bourd-grief">
           <div class="card-grif">
-            <div class="circle">
+            {/* <div class="circle">
               <img src={Roundb} alt="" />
             </div>
             <div class="circle-b">
               <img src={Rounda} alt="" />
-            </div>
+            </div> */}
 
             <div class="container-speek">
               <img src={Greenbg} />

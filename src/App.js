@@ -10,12 +10,14 @@ import GoalVision from "./Pages/GoalVision";
 import Senses from "./Pages/Senses";
 import OneOnOne from "./Pages/OneOnOne";
 import Navbar from "./Components/Navbar";
+import Signup from "./Pages/Signup"
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/Signup" element={<Signup />} />
           <Route path="/Navbar" element={<Navbar />} />
           <Route path="/OneOnOne" element={<OneOnOne />} />
           <Route path="/Senses" element={<Senses />} />
