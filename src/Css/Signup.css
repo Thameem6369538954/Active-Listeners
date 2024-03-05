@@ -121,6 +121,14 @@
   margin-right: 12%;
 }
 @media screen and (max-width: 600px) {
+  .signup-form img {
+    margin-top: -48%;
+    margin-left: 68%;
+    width: 20%;
+  }
+  .signup-aggry-form {
+    margin-left: 25px;
+  }
   .GreenRound {
     margin-left: 10%;
   }
