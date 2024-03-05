@@ -92,4 +92,11 @@
   .therapy-heading span {
     margin: 30px;
   }
+  .therapy-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
 }

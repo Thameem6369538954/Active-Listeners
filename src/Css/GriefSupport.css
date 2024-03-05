@@ -435,6 +435,13 @@ form .buttons button,
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
+  .card-grif img {
+    width: 20%;
+  }
+  .circle img:nth-child(1) {
+    top: -38px;
+    left: -16px;
+  }
   .card-grif {
     width: 575px;
     height: 126px;
@@ -471,5 +478,12 @@ form .buttons button,
     backdrop-filter: blur(10px);
     border-radius: 8px;
     width: 90%;
+    height: 210px;
+  }
+  .circle-b img {
+    bottom: -122px;
+    right: -44px;
+    animation-name: move-down1;
+    width: 30%;
   }
 }
