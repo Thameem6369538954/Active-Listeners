@@ -12,6 +12,7 @@ import OneOnOne from "./Pages/OneOnOne";
 import Navbar from "./Components/Navbar";
 import Signup from "./Pages/Signup";
 import Login from "./Pages/Login";
+import EarlyAgeGadgetExposure from "./Pages/EarlyAgeGadgetExposure";
 function App() {
   return (
     <div className="App">
@@ -28,6 +29,7 @@ function App() {
           <Route path="/Corediscover" element={<Corediscover />} />
           <Route path="/GriefSupport" element={<GriefSupport />} />
           <Route path="/Teletherapy" element={<Teletherapy />} />
+          <Route path="/EarlyagegadgetExposure" element={<EarlyAgeGadgetExposure/>}  />
         </Routes>
       </BrowserRouter>
     </div>

@@ -5,7 +5,9 @@ import Hdrright from "../Images/Hdrright.png";
 import Maskgroup from "../Images/Maskgroup.png";
 import Elements from "../Images/Elements.png";
 import Arrow from "../Images/Arrow.png";
+import { useNavigate } from "react-router-dom";
 const Header = () => {
+  const  navigate = useNavigate()
   return (
     <div className="header-main">
       <div className="yellow-box" data-aos="fade-down" data-aos-duration="1500">
@@ -52,7 +54,7 @@ const Header = () => {
           >
             <div>
               <div className="categoreis-grid-box">
-                <span>Ages: 6-12</span>
+                <button navigate='../Pages/EarlyAgeGadgetExposure.js'><span>Ages: 6-12</span></button>
                 <p>
                   Early age gadget exposure{" "}
                   <img src={Arrow} className="arrow-for-header"  alt="" />

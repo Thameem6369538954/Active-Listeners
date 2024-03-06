@@ -1,0 +1,49 @@
+.card-inneR {
+    position: relative;
+    height: 7cm;
+    margin-top: -33px;
+  }
+  
+  .card-inneR img {
+    position: absolute;
+    top: -112px;
+    left: 413px;
+    height: 10cm;
+    width: 10cm;
+
+    z-index: 2; /* Ensure the image is above the background image */
+  }
+
+  .card-inneR play-button{
+    height: 2cm;
+  }
+  
+  .card-inneR p,
+  .card-inneR h1 {
+    position: relative;
+    z-index: 3; /* Ensure the text is above the image */
+  }
+  
+  .card-inneR p {
+    font-family: myFont;
+    color: #256c55;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    margin-top: -3%;
+  }
+  
+  .card-inneR h1 {
+    font-family: Relo;
+    font-weight: 900;
+    font-size: 30px;
+  }
+  
+  /* Remaining styles for background image */
+  .card-inneR {
+    background-image: url('../Images/banner_Sensesvideo.png');
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+  }
+  
