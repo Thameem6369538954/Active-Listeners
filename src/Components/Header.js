@@ -53,8 +53,8 @@ const Header = () => {
             data-aos-duration="2000"
           >
             <div>
-              <div className="categoreis-grid-box">
-                <button navigate='../Pages/EarlyAgeGadgetExposure.js'><span>Ages: 6-12</span></button>
+              <div onClick={()=>navigate('/EarlyagegadgetExposure')} className="categoreis-grid-box">
+               <span>Ages: 6-12</span>
                 <p>
                   Early age gadget exposure{" "}
                   <img src={Arrow} className="arrow-for-header"  alt="" />
