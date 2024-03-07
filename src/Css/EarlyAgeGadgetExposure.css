@@ -1,62 +1,182 @@
 .card-inneR {
-    position: relative;
-    height: 9cm;
-    margin-top: -33px;
-    border-radius: 20px;
+  position: relative;
+  height: 9cm;
+  margin-top: -33px;
+  border-radius: 20px;
+}
+.Eealyage-headrer-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin: 5% auto;
+}
+.card-inneR play-button {
+  height: 2cm;
+}
 
-  }
-  
-  .card-inneR img {
-    position: absolute;
-    top: -38px;
-    left: 413px;
-    height: 10cm;
-    width: 10cm;
-    z-index: 2; /* Ensure the image is above the background image */
-  }
+.card-inneR p,
+.card-inneR h1 {
+  position: relative;
+  z-index: 3; /* Ensure the text is above the image */
+}
 
-  .card-inneR play-button{
-    height: 2cm;
-  }
-  
-  .card-inneR p,
-  .card-inneR h1 {
-    position: relative;
-    z-index: 3; /* Ensure the text is above the image */
-  }
-  
-  .card-inneR p {
-    font-family: myFont;
-    color: #256c55;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 60px;
-    margin-top: -3%;
-  }
-  
-  .card-inneR h1 {
-    font-family: Relo;
-    font-weight: 900;
-    font-size: 30px;
-  }
-  .buttonss button {
-    background-color: #ffdd7e;
-    padding: 15px;
-    margin: 2% auto;
-    border-radius: 50px;
-    border: none;
-    font-size: 16px;
-    font-family: "Questrial", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-top: 2cm;
-  }
-  /* Remaining styles for background image */
+.card-inneR p {
+  font-family: myFont;
+  color: #256c55;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  margin-top: -3%;
+}
+
+.card-inneR h1 {
+  font-family: Relo;
+  font-weight: 900;
+  font-size: 30px;
+}
+.buttonss button {
+  background-color: #ffdd7e;
+  padding: 15px;
+  margin: 2% auto;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 2cm;
+}
+.getyoukow-container {
+  background-color: #ffdd7e;
+  width: 45%;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.getyoukow-main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 30px;
+}
+/* Remaining styles for background image */
+.card-inneR {
+  /* position: absolute; */
+  background-color: #bae8ac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.card-inneR img {
+  width: 60%;
+  margin-left: 5%;
+  margin-top: -17%;
+  /* Ensure the image is above the background image */
+}
+
+/* goaal vision .............................................. */
+.card-inneR-text {
+  margin: 30px;
+}
+.green-bourd-Earlyage {
+  margin: 50px;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.getyouknow-image img {
+  width: 400px;
+}
+.getyoukow-image-red {
+  margin-top: -30%;
+  margin-left: -4%;
+  /* position: absolute; */
+  width: 10%;
+}
+.getyouknow-txt {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5rem;
+  /* position: relative; */
+}
+.getyouknow-txt button {
+  background-color: black;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+.getyouknow-txt h1 {
+  /* position: absolute; */
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+}
+@media (min-width: 600px) and (max-width: 1024px) {
   .card-inneR {
-    background-image: url('../Images/banner_Sensesvideo.png');
-    background-size: cover; /* Adjust as needed */
-    background-repeat: no-repeat; /* Adjust as needed */
-    background-position: center; /* Adjust as needed */
+    /* position: absolute; */
+    background-color: #bae8ac;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+  .getyoukow-image-red {
+    margin-top: -74%;
+    margin-left: 78%;
+    position: absolute;
+    width: 16%;
+    /* mix-blend-mode: multiply; */
+  }
+  .card-inneR img {
+    width: 56%;
+    margin-left: -4%;
+    margin-top: 3%;
+  }
+  .getyouknow-image img {
+    width: 218px;
+  }
+  .getyouknow-txt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
+    /* position: relative; */
+  }
+  .getyoukow-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 35%;
+  }
+  .goalvision-headrer-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 38%;
+  }
+  .card-inneR {
+    background-color: #bae8ac;
+  }
+  .Eealyage-headrer-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 30%;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
   
-  /* goaal vision .............................................. */
+}

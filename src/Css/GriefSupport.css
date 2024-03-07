@@ -436,11 +436,13 @@ form .buttons button,
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .card-grif img {
-    width: 70%;
+    width: 44%;
+    margin-left: 17%;
   }
   .circle img:nth-child(1) {
     top: -38px;
     left: -16px;
+    display: none;
   }
   .card-grif {
     width: 575px;
