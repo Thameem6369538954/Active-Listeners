@@ -13,12 +13,21 @@ import Navbar from "./Components/Navbar";
 import Signup from "./Pages/Signup";
 import Login from "./Pages/Login";
 import EarlyAgeGadgetExposure from "./Pages/EarlyAgeGadgetExposure";
+import AdaptationtoMobilePhones from "./Pages/AdaptationtoMobilePhones";
+import CurrentTimes from "./Pages/CurrentTimes";
+import LearningandFocus from "./Pages/LearningandFocus";
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/LearningandFocus" element={<LearningandFocus />} />
+          <Route path="/CurrentTimes" element={<CurrentTimes />} />
+          <Route
+            path="/AdaptationtoMobilePhones"
+            element={<AdaptationtoMobilePhones />}
+          />
           <Route path="/Login" element={<Login />} />
           <Route path="/Signup" element={<Signup />} />
           <Route path="/Navbar" element={<Navbar />} />

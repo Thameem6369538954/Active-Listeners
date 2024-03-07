@@ -97,7 +97,7 @@ const EarlyAgeGadgetExposure = () => {
             />
           </div>
           <div className="getyouknow-txt">
-            <h1>Get to know How much you are Attracted to Gadgets</h1>
+            <h1>Are you a Perplexed Mind Person?</h1>
             <button>Take Rest </button>
           </div>
           <img src={PodcastRed} className="getyoukow-image-red" alt="" />

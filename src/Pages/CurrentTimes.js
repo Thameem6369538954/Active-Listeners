@@ -14,7 +14,8 @@ import Group119 from "../Images/Group 119.png";
 import Maskgroup from "../Images/Mask group.png";
 import cover from "../Images/cover.png";
 import PodcastRed from "../Images/PodcastRed.png";
-const AdaptationtoMobilePhones = () => {
+
+const CurrentTimes = () => {
   return (
     <div>
       <div className="home-main">
@@ -29,13 +30,13 @@ const AdaptationtoMobilePhones = () => {
             />
             <div className="hdr-text">
               <h1 data-aos="fade-up" data-aos-duration="1000">
-                Adaptation to
+                Post Covid
               </h1>
               <h2 data-aos="fade-up" data-aos-duration="2000">
-                Mobile
+                Current
               </h2>
               <h3 data-aos="fade-up" data-aos-duration="3000">
-                Phones
+                Times
               </h3>
             </div>
             <img
@@ -73,8 +74,8 @@ const AdaptationtoMobilePhones = () => {
             <div class="card-inneR">
               <div className="card-inneR-text">
                 <h1>Impact of</h1>
-                <h1>Adaption of</h1>
-                <p>Mobile Phones</p>
+                <h1>Covid on </h1>
+                <p>Today’s Life</p>
               </div>
               <img src={earlyAgeBoxImg} alt="" />
             </div>
@@ -83,7 +84,7 @@ const AdaptationtoMobilePhones = () => {
         <div className="getyoukow-main-container">
           <div className="getyoukow-container">
             <div className="getyouknow-txt">
-              <h1>Get to know How much you have adopted Mobile phones?</h1>
+              <h1>How the Covid pandemic has effected your life?</h1>
               <button>Take Rest </button>
             </div>
             <div className="getyouknow-image">
@@ -104,7 +105,7 @@ const AdaptationtoMobilePhones = () => {
             </div>
             <div className="getyouknow-txt">
               <h1>Are you a Perplexed Mind Person?</h1>
-              <button>Watch Now</button>
+              <button>Take Rest </button>
             </div>
             <img src={PodcastRed} className="getyoukow-image-red" alt="" />
           </div>
@@ -117,4 +118,4 @@ const AdaptationtoMobilePhones = () => {
   );
 };
 
-export default AdaptationtoMobilePhones;
+export default CurrentTimes;
