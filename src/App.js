@@ -29,7 +29,10 @@ function App() {
           <Route path="/Corediscover" element={<Corediscover />} />
           <Route path="/GriefSupport" element={<GriefSupport />} />
           <Route path="/Teletherapy" element={<Teletherapy />} />
-          <Route path="/EarlyagegadgetExposure" element={<EarlyAgeGadgetExposure/>}  />
+          <Route
+            path="/EarlyagegadgetExposure"
+            element={<EarlyAgeGadgetExposure />}
+          />
         </Routes>
       </BrowserRouter>
     </div>

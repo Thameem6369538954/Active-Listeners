@@ -178,5 +178,64 @@
   }
 }
 @media screen and (max-width: 600px) {
-  
+  .getyoukow-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    /* margin: 5px; */
+  }
+  .getyouknow-image img {
+    width: 250px;
+  }
+  .getyouknow-txt {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    /* position: relative; */
+  }
+  .getyoukow-container {
+    background-color: #ffdd7e;
+    width: 112%;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+  }
+  .card-inneR {
+    /* position: absolute; */
+    background-color: #bae8ac;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem;
+    width: 322px;
+    height: 208px;
+    margin-left: -2%;
+  }
+  .card-inneR h1 {
+    font-family: Relo;
+    font-weight: 900;
+    font-size: 21px;
+    margin-left: 1%;
+  }
+  .card-inneR p {
+    font-family: myFont;
+    color: #256c55;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 44px;
+    margin-top: -21%;
+    margin-left: 2px;
+  }
+  .card-inneR img {
+    width: 57%;
+    margin-left: -30%;
+    margin-top: 7%;
+  }
 }
