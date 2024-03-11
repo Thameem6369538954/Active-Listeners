@@ -67,6 +67,14 @@
   border-radius: 20px;
 }
 @media screen and (max-width: 600px) {
+  .Navbar-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #bae8ac;
+    height: 120px;
+    /* border: 1px solid black; */
+  }
   .logo img {
     width: 40%;
   }
@@ -113,7 +121,7 @@
     /* width: 10%; */
     display: none;
   }
-    .logo img {
+  .logo img {
     width: 40%;
   }
 }

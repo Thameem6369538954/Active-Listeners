@@ -65,7 +65,7 @@
   display: flex;
   align-items: left;
   justify-content: space-evenly;
-  text-align: left;
+  /* text-align: left; */
   width: 90%;
   padding: 20px;
 }

@@ -29,7 +29,7 @@ const OneOnOne = () => {
               <img src={Rounda} alt="" />
             </div> */}
 
-            <div class="container-speek">
+            <div class="container-speek-a">
               <img src={Greenbg} />
 
               <div class="centered">

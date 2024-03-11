@@ -6,6 +6,7 @@ import { IoLogoYoutube } from "react-icons/io5";
 import { BsTwitterX } from "react-icons/bs";
 import FlowerL from "../Images/FlowerL.png";
 import FlowerR from "../Images/FlowerR.png";
+import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
@@ -17,7 +18,9 @@ const Footer = () => {
         <div className="footer-list">
           <ul className="logo">
             <li>
-              <img src={ALWhitelogo} alt="" />
+              <NavLink to='/'>
+                <img src={ALWhitelogo} alt="" />
+              </NavLink>
             </li>
             <li>
               {/* <p>

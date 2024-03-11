@@ -294,9 +294,8 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    margin-top: -28%;
-    width: 73%;
-    margin-left: 10%;
+    margin-top: 53%;
+    margin-left: 23px;
   }
   .puzzle-boy img {
     /* width: 150%; */
