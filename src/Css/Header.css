@@ -195,7 +195,6 @@
     gap: 3rem;
   }
   .categoreis-grid-box p {
-    margin-top: -10%;
     font-size: 14px;
   }
   .categoreis-grid-box:hover .arrow-for-header {
@@ -210,7 +209,7 @@
   .categoreis-grid-box {
     border: 2px solid black;
     border-radius: 20px;
-    width: 170px;
+    width: 302px;
     height: 40px;
     margin-bottom: 30px;
     margin-top: 20px;

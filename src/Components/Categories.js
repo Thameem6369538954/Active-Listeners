@@ -6,6 +6,7 @@ import weekly from "../Images/weekly.png";
 import community from "../Images/community.png";
 import Hoodi from "../Images/Hoodi.png";
 import Elements from "../Images/Elements.png";
+import { NavLink } from "react-router-dom";
 const Categories = () => {
   return (
     <div className="categories-main-holecontainer">
@@ -58,6 +59,11 @@ const Categories = () => {
               counselor from BetterHelp.Start receiving support via phone,
               video, or live-chat.
             </p>
+            <NavLink to="/MobileAddiction">
+              <button style={{ width: "150px", marginLeft: "0%" }}>
+                Discover
+              </button>
+            </NavLink>
           </div>
           <div className="box2">
             <img src={chat} alt="" />
@@ -67,6 +73,11 @@ const Categories = () => {
               you make lasting change. Start getting support from a licensed
               therapist from BetterHelp.
             </p>
+            <NavLink to="/SocialMediaAddiction">
+              <button style={{ width: "150px", marginLeft: "0%" }}>
+                Discover
+              </button>
+            </NavLink>
           </div>
           <div className="box3">
             <img src={weekly} alt="" />
@@ -75,6 +86,11 @@ const Categories = () => {
               If you are looking for a video game addiction treatment facility,
               we can help. Call to discuss treatment options
             </p>
+            <NavLink to="/GamingAddiction">
+              <button style={{ width: "150px", marginLeft: "0%" }}>
+                Discover
+              </button>
+            </NavLink>
           </div>
           <div className="box4">
             <img src={emoji} alt="" />
@@ -83,6 +99,11 @@ const Categories = () => {
               You may break away from entertainment addiction with some simple
               tactics.
             </p>
+            <NavLink to="/ntertainmentandperformanceAddiction">
+              <button style={{ width: "150px", marginLeft: "0%" }}>
+                Discover
+              </button>
+            </NavLink>
           </div>
           <button>Discover How?</button>
         </div>

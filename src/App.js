@@ -16,12 +16,27 @@ import EarlyAgeGadgetExposure from "./Pages/EarlyAgeGadgetExposure";
 import AdaptationtoMobilePhones from "./Pages/AdaptationtoMobilePhones";
 import CurrentTimes from "./Pages/CurrentTimes";
 import LearningandFocus from "./Pages/LearningandFocus";
+import MobileAddiction from "./Pages/MobileAddiction.js";
+import GamingAddiction from "./Pages/GamingAddiction.js";
+import SocialMediaAddiction from "./Pages/SocialMediaAddiction.js";
+import EntertainmentandperformanceAddiction from "./Pages/EntertainmentandperformanceAddiction.js";
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route
+            path="/EntertainmentandperformanceAddiction"
+            element={<EntertainmentandperformanceAddiction />}
+          />
+          <Route
+            path="/SocialMediaAddiction"
+            element={<SocialMediaAddiction />}
+          />
+          <Route path="/GamingAddiction" element={<GamingAddiction />} />
+
+          <Route path="/MobileAddiction" element={<MobileAddiction />} />
           <Route path="/LearningandFocus" element={<LearningandFocus />} />
           <Route path="/CurrentTimes" element={<CurrentTimes />} />
           <Route
