@@ -5,9 +5,43 @@ import chat from "../Images/chat.png";
 import weekly from "../Images/weekly.png";
 import community from "../Images/community.png";
 import Hoodi from "../Images/Hoodi.png";
+import Elements from "../Images/Elements.png";
 const Categories = () => {
   return (
-    <div>
+    <div className="categories-main-holecontainer">
+      <div className="puzzle-boy">
+        <div className="bg" data-aos="zoom-in" data-aos-duration="1000">
+          <span>Services we Offer</span>
+          <p>Our Core</p>
+          <h1>Discoveries</h1>
+        </div>
+        <div className="element">
+          <img
+            src={Elements}
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="3000"
+            alt=""
+          />
+          <h4
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
+            Transformative support for those seeking clarity and understanding
+            through active listening.
+          </h4>
+        </div>
+        {/* <img
+          src={Maskgroup}
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+          alt=""
+        /> */}
+      </div>
       <div className="categories-main">
         <div className="cate-yellow-box">
           <div className="Hoodi">
@@ -46,8 +80,8 @@ const Categories = () => {
             <img src={emoji} alt="" />
             <h2>Entertainment & Performance Addiction</h2>
             <p>
-               You may break away
-              from entertainment addiction with some simple tactics.
+              You may break away from entertainment addiction with some simple
+              tactics.
             </p>
           </div>
           <button>Discover How?</button>

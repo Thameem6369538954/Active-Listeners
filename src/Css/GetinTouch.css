@@ -51,6 +51,12 @@
   padding: 10px 50px;
   border-radius: 20px;
 }
+.get-form img {
+  position: absolute;
+  width: 17%;
+  margin-left: -85%;
+}
+
 @media screen and (max-width: 600px) {
   .get-form {
     /* background-color: red; */

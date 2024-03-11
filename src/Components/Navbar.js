@@ -5,6 +5,8 @@ import { GiBottomRight3DArrow } from "react-icons/gi";
 import { RiMenu5Fill } from "react-icons/ri";
 import { IoCloseOutline } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
+import AlCloud from "../Images/AlCloud.png";
+import Navarrow from "../Images/Navarrow.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -69,10 +71,11 @@ const Navbar = () => {
               </NavLink>
               <div class="border full-rounded"></div>
             </button>
-            <GiBottomRight3DArrow />
+            <img src={Navarrow} className="navarrow" alt="" />
           </div>
         </nav>
       </div>
+      <img src={AlCloud} className="Cloude" />
     </div>
   );
 };

@@ -7,7 +7,7 @@ import Elements from "../Images/Elements.png";
 import Arrow from "../Images/Arrow.png";
 import { useNavigate } from "react-router-dom";
 const Header = () => {
-  const  navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <div className="header-main">
       <div className="yellow-box" data-aos="fade-down" data-aos-duration="1500">
@@ -108,39 +108,6 @@ const Header = () => {
           </p>
           <button>Why Active Listeners?</button>
         </div>
-      </div>
-      <div className="puzzle-boy">
-        <div className="bg" data-aos="zoom-in" data-aos-duration="1000">
-          <span>Services we Offer</span>
-          <p>Our Core</p>
-          <h1>Discoveries</h1>
-        </div>
-        <div className="element">
-          <img
-            src={Elements}
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="3000"
-            alt=""
-          />
-          <h4
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-          >
-            Transformative support for those seeking clarity and understanding
-            through active listening.
-          </h4>
-        </div>
-        <img
-          src={Maskgroup}
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
-          alt=""
-        />
       </div>
     </div>
   );

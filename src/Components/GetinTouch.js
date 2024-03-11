@@ -1,12 +1,11 @@
 import React from "react";
 import "../Css/GetinTouch.css";
-import FlowerL from "../Images/FlowerL.png";
+import CC from "../Images/CC.png";
 import FlowerR from "../Images/FlowerR.png";
 const GetinTouch = () => {
   return (
     <div>
       <div className="getintouch-container">
-        {/* <img src={FlowerL} alt="" /> */}
         <div className="get-form">
           <form>
             <h1>Get in Touch</h1>
@@ -25,6 +24,7 @@ const GetinTouch = () => {
               <button>Submit</button>
             </div>
           </form>
+          <img src={CC} alt="" />
         </div>
         {/* <img src={FlowerR} alt="" /> */}
       </div>

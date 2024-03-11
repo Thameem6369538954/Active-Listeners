@@ -98,13 +98,13 @@
   font-weight: 400;
   font-style: normal;
   font-size: 80px;
-  margin-top: -20%;
+  margin-top: -10%;
 }
 .hdr-text h2 {
   font-family: Relo;
   font-weight: 900;
   font-size: 62px;
-  margin-top: -19%;
+  margin-top: -6%;
 }
 .hdr-btm-text {
   display: flex;
@@ -141,6 +141,7 @@
   font-family: Relo;
   font-weight: 900;
   font-size: 60px;
+  margin-top: -15%;
 }
 .bg {
 }
@@ -157,7 +158,8 @@
   font-weight: 400;
   font-style: normal;
   font-size: 60px;
-  margin-top: -13%;
+  margin-top: -23%;
+  margin-left: 15%;
 }
 .bg {
   /* border: 1px solid black; */
@@ -181,10 +183,17 @@
   margin: auto;
 }
 .puzzle-boy img {
-  margin-left: 20%;
+  margin-left: 73%;
   z-index: 1;
 }
 @media screen and (max-width: 600px) {
+  .categoreis-grid-boxs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
   .categoreis-grid-box p {
     margin-top: -10%;
     font-size: 14px;
@@ -221,7 +230,7 @@
     align-items: center;
     justify-content: center;
     width: 95%;
-    margin: auto;
+    margin: 20px auto;
   }
   .header-container {
     display: flex;

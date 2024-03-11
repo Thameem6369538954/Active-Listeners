@@ -7,6 +7,7 @@ import Doc from "../Images/Doc.png";
 import Think from "../Images/Think.svg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import MentoonBenar from "../Images/MentoonBenar.png";
 const Subscribe = () => {
   const [caro, setCaro] = useState([
     {
@@ -132,21 +133,22 @@ const Subscribe = () => {
       </div>
 
       <div className="hdr-caro">
-        <div className="caro-heading-tag">
-          <div className="bg" data-aos="zoom-in" data-aos-duration="1000">
-            <span>One Platform, Multiple touchpoints</span>
-            <p>Podcast</p>
-            <h1>Everyone</h1>
-          </div>
-          <div className="element">
-            {/* <img
+        <div className="hdr-caro-a">
+          <div className="caro-heading-tag">
+            <div className="bg" data-aos="zoom-in" data-aos-duration="1000">
+              <span>One Platform, Multiple touchpoints</span>
+              <p>Podcast</p>
+              <h1>Everyone</h1>
+            </div>
+            <div className="element">
+              {/* <img
               src={Elements}
               data-aos="flip-left"
               data-aos-easing="ease-out-cubic"
               data-aos-duration="3000"
               alt=""
             /> */}
-            {/* <p
+              {/* <p
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
               data-aos-easing="ease-out-cubic"
@@ -155,33 +157,37 @@ const Subscribe = () => {
               Transformative support for those seeking clarity and understanding
               through active listening.
             </p> */}
+            </div>
+            <img
+              src={Think}
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+              alt=""
+            />
           </div>
-          <img
-            src={Think}
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-            alt=""
-          />
-        </div>
-        <div className="subscribe-caro-container">
-          <div className="slider-container">
-            <Slider {...settings}>
-              {caro.map((item) => {
-                return (
-                  <div>
-                    <div className="caro-for-hdr">
-                      <img src={item.img} alt="" />
-                      <h3>{item.name}</h3>
+          <div className="subscribe-caro-container">
+            <div className="slider-container">
+              <Slider {...settings}>
+                {caro.map((item) => {
+                  return (
+                    <div>
+                      <div className="caro-for-hdr">
+                        <img src={item.img} alt="" />
+                        <h3>{item.name}</h3>
+                      </div>
                     </div>
-                  </div>
-                );
-              })}
-            </Slider>
-          </div>
+                  );
+                })}
+              </Slider>
+            </div>
             <button>Discover</button>
+          </div>
         </div>
+      </div>
+      <div className="mentoonsbaner">
+        <img src={MentoonBenar} alt="" />
       </div>
     </div>
   );

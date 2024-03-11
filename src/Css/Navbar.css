@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-color: #bae8ac;
+  height: 150px;
   /* border: 1px solid black; */
 }
 nav {
@@ -10,6 +12,10 @@ nav {
   align-items: center;
   justify-content: space-around;
   /* border: 1px solid black; */
+  width: 100%;
+}
+.Cloude {
+  margin-top: -40%;
   width: 100%;
 }
 .Login-btns {
@@ -35,8 +41,13 @@ nav {
 }
 .Login-btns button:hover {
   transition: 0.1s;
-  /* background-color: white; */
+  background-color: white;
   padding: 10px 25px;
+}
+.navarrow:hover {
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
 }
 .nav-icon {
   background: #ffdd7e;
@@ -55,6 +66,13 @@ nav {
   display: none;
 }
 @media screen and (max-width: 600px) {
+  .Cloude {
+    margin-top: -6%;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    /* background-color: red; */
+  }
   .Login-btns button:hover {
     transition: 0.1s;
     /* background-color: white; */
