@@ -8,6 +8,9 @@ import FlowerL from "../Images/FlowerL.png";
 import FlowerR from "../Images/FlowerR.png";
 import { NavLink } from "react-router-dom";
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div>
       <div className="two-flower">
@@ -18,7 +21,7 @@ const Footer = () => {
         <div className="footer-list">
           <ul className="logo">
             <li>
-              <NavLink to='/'>
+              <NavLink onClick={scrollToTop} to="/">
                 <img src={ALWhitelogo} alt="" />
               </NavLink>
             </li>

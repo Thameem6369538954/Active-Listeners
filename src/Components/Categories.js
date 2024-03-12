@@ -8,6 +8,9 @@ import Hoodi from "../Images/Hoodi.png";
 import Elements from "../Images/Elements.png";
 import { NavLink } from "react-router-dom";
 const Categories = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div className="categories-main-holecontainer">
       <div className="puzzle-boy">
@@ -59,7 +62,7 @@ const Categories = () => {
               counselor from BetterHelp.Start receiving support via phone,
               video, or live-chat.
             </p>
-            <NavLink to="/MobileAddiction">
+            <NavLink onClick={scrollToTop} to="/MobileAddiction">
               <button style={{ width: "150px", marginLeft: "0%" }}>
                 Discover
               </button>
@@ -73,7 +76,7 @@ const Categories = () => {
               you make lasting change. Start getting support from a licensed
               therapist from BetterHelp.
             </p>
-            <NavLink to="/SocialMediaAddiction">
+            <NavLink onClick={scrollToTop} to="/SocialMediaAddiction">
               <button style={{ width: "150px", marginLeft: "0%" }}>
                 Discover
               </button>
@@ -86,7 +89,7 @@ const Categories = () => {
               If you are looking for a video game addiction treatment facility,
               we can help. Call to discuss treatment options
             </p>
-            <NavLink to="/GamingAddiction">
+            <NavLink onClick={scrollToTop} to="/GamingAddiction">
               <button style={{ width: "150px", marginLeft: "0%" }}>
                 Discover
               </button>
@@ -99,7 +102,10 @@ const Categories = () => {
               You may break away from entertainment addiction with some simple
               tactics.
             </p>
-            <NavLink to="/ntertainmentandperformanceAddiction">
+            <NavLink
+              onClick={scrollToTop}
+              to="/EntertainmentandperformanceAddiction"
+            >
               <button style={{ width: "150px", marginLeft: "0%" }}>
                 Discover
               </button>

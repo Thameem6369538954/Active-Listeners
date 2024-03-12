@@ -98,7 +98,7 @@ const EarlyAgeGadgetExposure = () => {
           </div>
           <div className="getyouknow-txt">
             <h1>Are you a Perplexed Mind Person?</h1>
-            <button>Take Rest </button>
+            <button>Take Test </button>
           </div>
           <img src={PodcastRed} className="getyoukow-image-red" alt="" />
         </div>

@@ -177,6 +177,12 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .getyoukow-image-red {
+    margin-top: -60%;
+    margin-left: -13%;
+    /* position: absolute; */
+    width: 22%;
+  }
   .getyoukow-main-container {
     display: flex;
     flex-direction: column;

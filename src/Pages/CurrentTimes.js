@@ -85,7 +85,7 @@ const CurrentTimes = () => {
           <div className="getyoukow-container">
             <div className="getyouknow-txt">
               <h1>How the Covid pandemic has effected your life?</h1>
-              <button>Take Rest </button>
+              <button>Take Test </button>
             </div>
             <div className="getyouknow-image">
               <img src={Maskgroup} alt="" />
@@ -105,7 +105,7 @@ const CurrentTimes = () => {
             </div>
             <div className="getyouknow-txt">
               <h1>Are you a Perplexed Mind Person?</h1>
-              <button>Take Rest </button>
+              <button>Take Test </button>
             </div>
             <img src={PodcastRed} className="getyoukow-image-red" alt="" />
           </div>

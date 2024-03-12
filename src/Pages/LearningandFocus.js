@@ -14,7 +14,7 @@ import Maskgroup from "../Images/Mask group.png";
 import cover from "../Images/cover.png";
 import PodcastRed from "../Images/PodcastRed.png";
 import Yellowline from "../Images/Yellowline.png";
-import "../Css/Learning.css"
+import "../Css/Learning.css";
 const LearningandFocus = () => {
   return (
     <div>
@@ -90,7 +90,7 @@ const LearningandFocus = () => {
             <div className="getyoukow-container">
               <div className="getyouknow-txt">
                 <h1>Get to know your Progress of Learning and Focus!</h1>
-                <button>Take Rest </button>
+                <button>Take Test </button>
               </div>
               <div className="getyouknow-image">
                 <img src={Maskgroup} alt="" />

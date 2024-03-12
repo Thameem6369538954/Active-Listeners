@@ -5,8 +5,11 @@ import Hdrright from "../Images/Hdrright.png";
 import Maskgroup from "../Images/Maskgroup.png";
 import Elements from "../Images/Elements.png";
 import Arrow from "../Images/Arrow.png";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 const Header = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   const navigate = useNavigate();
   return (
     <div className="header-main">
@@ -53,50 +56,46 @@ const Header = () => {
             data-aos-duration="2000"
           >
             <div>
-              <div
-                onClick={() => navigate("/EarlyagegadgetExposure")}
-                className="categoreis-grid-box"
-              >
-                <span>Ages: 6-12</span>
-                <p>
-                  Early age gadget exposure{" "}
-                  <img src={Arrow} className="arrow-for-header" alt="" />
-                </p>
-              </div>
-
-              <div
-                className="categoreis-grid-box"
-                onClick={() => navigate("/AdaptationtoMobilePhones")}
-              >
-                <span>Ages: 13-19</span>
-                <p>
-                  Adaptation to mobile{" "}
-                  <img src={Arrow} className="arrow-for-header" alt="" />
-                </p>
-              </div>
+              <NavLink to="/EarlyagegadgetExposure">
+                {" "}
+                <div onClick={scrollToTop} className="categoreis-grid-box">
+                  <span>Ages: 6-12</span>
+                  <p>
+                    Early age gadget exposure{" "}
+                    <img src={Arrow} className="arrow-for-header" alt="" />
+                  </p>
+                </div>
+              </NavLink>
+              <NavLink to="/AdaptationtoMobilePhones">
+                <div className="categoreis-grid-box" onClick={scrollToTop}>
+                  <span>Ages: 13-19</span>
+                  <p>
+                    Adaptation to mobile{" "}
+                    <img src={Arrow} className="arrow-for-header" alt="" />
+                  </p>
+                </div>
+              </NavLink>
             </div>
 
             <div>
-              <div
-                className="categoreis-grid-box"
-                onClick={() => navigate("/LearningandFocus")}
-              >
-                <span>Our Solutions</span>
-                <p>
-                  Learning and Focus{" "}
-                  <img src={Arrow} className="arrow-for-header" alt="" />
-                </p>
-              </div>
-              <div
-                className="categoreis-grid-box"
-                onClick={() => navigate("/CurrentTimes")}
-              >
-                <span>Post Covid</span>
-                <p>
-                  Current Times{" "}
-                  <img src={Arrow} className="arrow-for-header" alt="" />
-                </p>
-              </div>
+              <NavLink to="/LearningandFocus">
+                <div className="categoreis-grid-box" onClick={scrollToTop}>
+                  <span>Our Solutions</span>
+                  <p>
+                    Learning and Focus{" "}
+                    <img src={Arrow} className="arrow-for-header" alt="" />
+                  </p>
+                </div>
+              </NavLink>
+              <NavLink to="/CurrentTimes">
+                <div className="categoreis-grid-box" onClick={scrollToTop}>
+                  <span>Post Covid</span>
+                  <p>
+                    Current Times{" "}
+                    <img src={Arrow} className="arrow-for-header" alt="" />
+                  </p>
+                </div>
+              </NavLink>
             </div>
           </div>
           <div></div>

@@ -7,6 +7,9 @@ import Yellowline from "../Images/Yellowline.png";
 import Gitar from "../Anime/Gitar.json";
 import { NavLink } from "react-router-dom";
 const Therapycategories = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div>
       <div className="therapy-cate">
@@ -18,20 +21,20 @@ const Therapycategories = () => {
         </div>
 
         <div className="theropy-box-main">
-          <NavLink to="/Teletherapy" className="Links">
+          <NavLink onClick={scrollToTop} to="/Teletherapy" className="Links">
             <div className="therapy-box">
               <h1>Speak Easy</h1>
               <Lottie animationData={Talking} loop={true} />
             </div>
           </NavLink>
-          <NavLink to="/Senses" className="Links">
+          <NavLink onClick={scrollToTop} to="/Senses" className="Links">
             <div className="therapy-box">
               <h1>Senses Resurrection</h1>
               <Lottie animationData={Gitar} loop={true} />
             </div>
           </NavLink>
 
-          <NavLink to="/OneOnOne" className="Links">
+          <NavLink onClick={scrollToTop} to="/OneOnOne" className="Links">
             <div className="therapy-box">
               <h1>One to One Session</h1>
               <Lottie animationData={OneT} loop={true} />

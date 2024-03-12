@@ -8,6 +8,9 @@ import { NavLink } from "react-router-dom";
 import AlCloud from "../Images/AlCloud.png";
 import Navarrow from "../Images/Navarrow.png";
 const Navbar = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => setIsOpen(!isOpen);
