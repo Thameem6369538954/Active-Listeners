@@ -51,20 +51,18 @@
   margin-top: 37px;
   border-radius: 0px 0px 10px 10px;
   font-family: "Questrial", sans-serif;
+  background-color: red;
 }
 .categoreis-grid-box {
   border: 2px solid black;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 350px;
   height: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   margin-top: 20px;
 }
 .categoreis-grid-box:hover {
   background-color: #ffdd7e;
-}
-.categoreis-grid-box p {
-  margin-top: -2%;
 }
 
 .arrow-for-header {
@@ -192,7 +190,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 0rem;
   }
   .categoreis-grid-box p {
     font-size: 14px;
@@ -336,7 +334,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    margin: 30px;
+    margin: -30px;
   }
   .element h4 {
     margin-top: 25%;

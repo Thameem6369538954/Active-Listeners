@@ -11,6 +11,64 @@
   font-size: 40px;
   text-decoration: underline;
 }
+.radio-buttons-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.radio-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.radio-button__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-button__label {
+  display: inline-block;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.radio-button__custom {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #555;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.radio-button__input:checked + .radio-button__label .radio-button__custom {
+  transform: translateY(-50%) scale(0.9);
+  border: 5px solid black;
+  color: yellow;
+}
+
+.radio-button__input:checked + .radio-button__label {
+  color: black;
+}
+
+.radio-button__label:hover .radio-button__custom {
+  transform: translateY(-50%) scale(1.2);
+  border-color: yellow;
+  box-shadow: 0 0 10px #4c8bf580;
+}
+
 .grief-main-heading h1 {
   font-family: Relo;
   font-weight: 900;
@@ -149,8 +207,8 @@ p {
   padding: 10px;
   margin: 5% 20%;
   width: 60%;
-  height: 600px;
-  margin-bottom: -10%;
+  height: 720px;
+  margin-bottom: 15%;
   border-radius: 20px;
 }
 .grief-suppot-form h1 {
@@ -273,7 +331,7 @@ form .fields .input-field {
   margin: 4px 0;
 }
 .input-field label {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 500;
   color: #2e2e2e;
 }
@@ -435,6 +493,11 @@ form .buttons button,
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
+  .grief-main-heading h2 {
+    font-family: "Questrial", sans-serif;
+    font-size: 20px;
+    margin: 20px;
+  }
   .card-grif img {
     width: 44%;
     margin-left: 17%;

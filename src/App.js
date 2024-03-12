@@ -20,12 +20,16 @@ import MobileAddiction from "./Pages/MobileAddiction.js";
 import GamingAddiction from "./Pages/GamingAddiction.js";
 import SocialMediaAddiction from "./Pages/SocialMediaAddiction.js";
 import EntertainmentandperformanceAddiction from "./Pages/EntertainmentandperformanceAddiction.js";
+import Hiring from "./Pages/Hiring.js";
+import HiringForm from "./Pages/HiringForm.js";
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/HiringForm" element={<HiringForm />} />
+          <Route path="/Hiring" element={<Hiring />} />
           <Route
             path="/EntertainmentandperformanceAddiction"
             element={<EntertainmentandperformanceAddiction />}

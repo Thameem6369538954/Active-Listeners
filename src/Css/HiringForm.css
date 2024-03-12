@@ -1,0 +1,20 @@
+.form-position {
+  background-color: #bae8ac;
+  padding: 15px;
+  color: black;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.hiring-form-holeconatiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .hiring-form-holeconatiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 130px;
+  }
+}

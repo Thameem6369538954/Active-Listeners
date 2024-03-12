@@ -127,6 +127,45 @@ const GriefSupport = () => {
                 <div class="form first">
                   <div class="details personal">
                     <div class="fields">
+                      <div class="radio-buttons-container">
+                        <div class="radio-button">
+                          <label>Enroll as: </label>
+                          <input
+                            name="radio-group"
+                            id="radio2"
+                            class="radio-button__input"
+                            type="radio"
+                          />
+                          <label for="radio2" class="radio-button__label">
+                            <span class="radio-button__custom"></span>
+                            Parent
+                          </label>
+                        </div>
+                        <div class="radio-button">
+                          <input
+                            name="radio-group"
+                            id="radio1"
+                            class="radio-button__input"
+                            type="radio"
+                          />
+                          <label for="radio1" class="radio-button__label">
+                            <span class="radio-button__custom"></span>
+                            Carer
+                          </label>
+                        </div>
+                        <div class="radio-button">
+                          <input
+                            name="radio-group"
+                            id="radio3"
+                            class="radio-button__input"
+                            type="radio"
+                          />
+                          <label for="radio3" class="radio-button__label">
+                            <span class="radio-button__custom"></span>
+                            Mentor/ Educator
+                          </label>
+                        </div>
+                      </div>
                       <div class="input-field">
                         <label>Full Name</label>
                         <input

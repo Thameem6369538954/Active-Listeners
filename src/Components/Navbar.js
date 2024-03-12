@@ -42,15 +42,15 @@ const Navbar = () => {
             <NavLink to="/OneOnOne" className="Links">
               <li>One to One Session</li>
             </NavLink>
-            {/* <NavLink to="/GriefSupport">
+            <NavLink to="/GriefSupport" className="Links">
               <li>Grief Support</li>
-            </NavLink> */}
+            </NavLink>
             {/* <NavLink to="/Podcast">
               <li>Podcast</li>
-            </NavLink>
-            <NavLink to="/GoalVision">
-              <li>GoalVision</li>
             </NavLink> */}
+            <NavLink to="/Hiring" className="Links">
+              <li>Hiring</li>
+            </NavLink>
             <NavLink to="/GoalVision" className="Links">
               <li>About us</li>
             </NavLink>

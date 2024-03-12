@@ -56,7 +56,7 @@ const Header = () => {
             data-aos-duration="2000"
           >
             <div>
-              <NavLink to="/EarlyagegadgetExposure">
+              <NavLink to="/EarlyagegadgetExposure" className="Links">
                 {" "}
                 <div onClick={scrollToTop} className="categoreis-grid-box">
                   <span>Ages: 6-12</span>
@@ -66,7 +66,7 @@ const Header = () => {
                   </p>
                 </div>
               </NavLink>
-              <NavLink to="/AdaptationtoMobilePhones">
+              <NavLink to="/AdaptationtoMobilePhones" className="Links">
                 <div className="categoreis-grid-box" onClick={scrollToTop}>
                   <span>Ages: 13-19</span>
                   <p>
@@ -78,7 +78,7 @@ const Header = () => {
             </div>
 
             <div>
-              <NavLink to="/LearningandFocus">
+              <NavLink to="/LearningandFocus" className="Links">
                 <div className="categoreis-grid-box" onClick={scrollToTop}>
                   <span>Our Solutions</span>
                   <p>
@@ -87,7 +87,7 @@ const Header = () => {
                   </p>
                 </div>
               </NavLink>
-              <NavLink to="/CurrentTimes">
+              <NavLink to="/CurrentTimes" className="Links">
                 <div className="categoreis-grid-box" onClick={scrollToTop}>
                   <span>Post Covid</span>
                   <p>
