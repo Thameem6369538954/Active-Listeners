@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../Css/Hiring.css";
 import Navbar from "../Components/Navbar";
 import Yellowline from "../Images/Yellowline.png";
@@ -10,6 +10,7 @@ import Doc from "../Images/Doc.png";
 import GetinTouch from "../Components/GetinTouch";
 import Footer from "../Components/Footer";
 import { NavLink } from "react-router-dom";
+
 const Hiring = () => {
   const scrollToTop = () => {
     window.scrollTo(0, 0);

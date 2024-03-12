@@ -90,7 +90,7 @@
   width: 150px;
 }
 .green-bourd-grief {
-  margin: 20px auto;
+  margin: 55px auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -420,6 +420,22 @@ form .buttons button,
   }
 }
 @media screen and (max-width: 600px) {
+  .card-inner {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    width: inherit;
+    height: inherit;
+    /* background-image: url(../Images/Arrow.png); */
+    background: #bae8ac;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    width: 60%;
+    height: 249px;
+  }
   .grief-main-heading h1 {
     font-family: Relo;
     font-weight: 900;
@@ -445,12 +461,13 @@ form .buttons button,
     cursor: pointer;
   }
   .card-inner img {
-    width: 200px;
+    width: 39px;
   }
   .card-inner {
-    width: 85%;
+    width: 87%;
     height: auto;
-    margin-left: 6%;
+    margin-left: 7%;
+    margin-top: -14%;
   }
   .card-inner h1 {
     font-family: Relo;
@@ -499,7 +516,7 @@ form .buttons button,
     margin: 20px;
   }
   .card-grif img {
-    width: 44%;
+    width: 21%;
     margin-left: 17%;
   }
   .circle img:nth-child(1) {
@@ -542,8 +559,8 @@ form .buttons button,
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border-radius: 8px;
-    width: 90%;
-    height: 210px;
+    width: 108%;
+    height: 350px;
   }
   .circle-b img {
     bottom: -122px;
@@ -551,4 +568,17 @@ form .buttons button,
     animation-name: move-down1;
     width: 30%;
   }
+  .searchBox {
+    display: flex;
+    max-width: 730px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    /* background: #2f3640; */
+    border: 1px solid #ffdd7e;
+    border-radius: 50px;
+    position: relative;
+    margin: 19% auto;
+  }
 }
+/* navfor */

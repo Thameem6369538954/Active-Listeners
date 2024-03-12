@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../Css/HiringForm.css";
 import Navbar from "../Components/Navbar";
 import GetinTouch from "../Components/GetinTouch";
 import Footer from "../Components/Footer";
 import Yellowline from "../Images/Yellowline.png";
 import Downarrow from "../Images/Downarrow.png";
+
 const HiringForm = () => {
+ 
   return (
     <div>
       <Navbar />
@@ -21,7 +23,7 @@ const HiringForm = () => {
             listening.
           </h4>
           <span className="form-position">
-            Position Applied For : Psychologist
+            Position Applied For :
           </span>
         </div>
         <div className="hiring-form-holeconatiner">

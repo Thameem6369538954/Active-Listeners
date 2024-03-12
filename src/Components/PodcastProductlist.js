@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import emoji from "../Images/emoji.png";
+import GetinTouch from "./GetinTouch";
 const PodcastProductlist = () => {
   const [productlist, setProductlist] = useState([
     {
@@ -95,23 +96,23 @@ const PodcastProductlist = () => {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 4,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 3,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 5,
           slidesToScroll: 2,
           initialSlide: 2,
         },
@@ -127,6 +128,19 @@ const PodcastProductlist = () => {
   };
   return (
     <div>
+      <div className="searchubar-for-podcast">
+        <div class="searchBox">
+          <input
+            class="searchInput"
+            type="text"
+            name=""
+            placeholder="Search something"
+          />
+          <button class="searchButton" href="#">
+            Search
+          </button>
+        </div>
+      </div>
       <div className="product-list-nav">
         <div className="slider-container">
           <Slider {...settings}>
@@ -151,35 +165,23 @@ const PodcastProductlist = () => {
           </Slider>
         </div>
       </div>
-      <div className="searchubar-for-podcast">
-        <div class="searchBox">
-          <input
-            class="searchInput"
-            type="text"
-            name=""
-            placeholder="Search something"
-          />
-          <button class="searchButton" href="#">
-            Search
-          </button>
-        </div>
-      </div>
       <div className="product-list">
         {productlist.map((list) => {
           return (
-            <div>
+            <div className="sum">
               <div className="podcast-box">
                 <div className="boxtop-tems">
-                  <div>
+                  <div className="boxtop-tems-inside">
                     <img src={list.EpiImage} alt="" />
-                  </div>
-                  <div>
-                    <p>
-                      Episode
-                      <span>{list.episode}</span>
-                    </p>
-                    <h1>{list.name}</h1>
-                    <p>{list.discribtions}</p>
+
+                    <div>
+                      <p>
+                        Episode
+                        <span>{list.episode}</span>
+                      </p>
+                      <h1>{list.name}</h1>
+                      <p>{list.discribtions}</p>
+                    </div>
                   </div>
                 </div>
                 <div className="potcast-category">
@@ -205,7 +207,7 @@ const PodcastProductlist = () => {
       <div className="potcaste-bottom-btn">
         <button>Learn More</button>
       </div>
-      <div className="potcaste-form">
+      {/* <div className="potcaste-form">
         <div className="get-form">
           <form>
             <h1>Get in Touch</h1>
@@ -225,7 +227,8 @@ const PodcastProductlist = () => {
             </div>
           </form>
         </div>
-      </div>
+      </div> */}
+      <GetinTouch />
     </div>
   );
 };

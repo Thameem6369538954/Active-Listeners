@@ -1,0 +1,45 @@
+.preppers-header-image img {
+  width: 70%;
+}
+.preppers-header-image {
+  display: grid;
+  place-items: center;
+}
+.Yellowline-pre,
+.Yellowline-pre {
+  width: 10%;
+}
+.preppers-yellow-box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  margin-top: 7%;
+}
+.preppers-box {
+  background-color: #ffdd7e;
+  width: 350px;
+  height: 430px;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 30px;
+}
+.preppers-box h2 {
+  margin: 15px;
+  font-size: 30px;
+}
+.preppers-box-bottom-thinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.preppers-box-bottom-thinks img {
+  width: 30%;
+}
+.preppers-box-bottom-thinks img:nth-child(1) {
+  /* background-color: red; */
+  width: 15%;
+  border: 2px solid black;
+  border-radius: 50%;
+}

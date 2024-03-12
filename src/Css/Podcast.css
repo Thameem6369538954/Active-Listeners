@@ -43,3 +43,18 @@
   font-family: "Questrial", sans-serif;
   letter-spacing: 0.3mm;
 }
+@media screen and (max-width: 600px) {
+  .podcast-text p {
+    margin: 0px;
+    color: black;
+    font-family: "Questrial", sans-serif;
+    font-size: 10px;
+  }
+  .user-name-audio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-left: -92%;
+  }
+}
