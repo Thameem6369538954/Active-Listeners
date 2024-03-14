@@ -311,6 +311,13 @@ article {
 }
 
 @media screen and (max-width: 600px) {
+  .gs-header-inner-text img:nth-child(3) {
+    margin-left: 52%;
+  }
+  .gs-header-inner-text h5 {
+    margin: 10px;
+    font-size: 8px;
+  }
   article {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40px, 3fr));

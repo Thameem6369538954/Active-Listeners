@@ -14,6 +14,7 @@ import Psyco from "../Images/Psyco.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 const GriefsupportGroup = () => {
   const [day, setDay] = useState("00");
   const [hours, setHours] = useState("00");
@@ -143,12 +144,6 @@ const GriefsupportGroup = () => {
     {
       id: 9,
       name: "Sankar",
-      position: "Psychologist",
-      image: Psyco,
-    },
-    {
-      id: 10,
-      name: "Yashavantha",
       position: "Psychologist",
       image: Psyco,
     },
