@@ -500,13 +500,18 @@ form .buttons button,
     /* padding: 10px; */
     margin: auto;
     width: 91%;
-    height: 909px;
+    height: 983px;
   }
   .grief-suppot-form h1 {
     font-size: 20px;
   }
   .grief-suppot-form h2 {
     font-size: 25px;
+  }
+  .gs-header-inner-text img:nth-child(3) {
+    margin-left: 55%;
+    margin-top: -17%;
+    width: 30%;
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {

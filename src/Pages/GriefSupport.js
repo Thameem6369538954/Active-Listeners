@@ -114,7 +114,7 @@ const GriefSupport = () => {
         </div>
         <div className="tele-buttons">
           <button>Get Support</button>
-          <p>or Call us on +91 9036033300</p>
+          <p>or Call us on +91 90360 33300</p>
           <TiArrowRightThick className="arrow-for-tele" />
         </div>
 

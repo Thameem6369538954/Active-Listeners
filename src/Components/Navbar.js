@@ -45,6 +45,9 @@ const Navbar = () => {
             <NavLink to="/GriefSupport" className="Links">
               <li>Grief Support</li>
             </NavLink>
+            <NavLink to="/GriefsupportGroup" className="Links">
+              <li>Grief Support Meetup</li>
+            </NavLink>
             {/* <NavLink to="/Podcast">
               <li>Podcast</li>
             </NavLink> */}

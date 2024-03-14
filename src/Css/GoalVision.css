@@ -85,14 +85,10 @@
   color: #bae8ac;
   opacity: 0.5;
 }
-/* .goal-box-container-hole button {
-  background-color: #ffdd7e;
-  border: none;
-  padding: 10px 20px;
-  margin: 50px 40%;
-  font-size: 16px;
-  border-radius: 20px;
-} */
+.goal-box-container-hole {
+  margin: auto;
+  width: 94%;
+}
 .gaol-vision-last-box {
   display: flex;
   align-items: center;

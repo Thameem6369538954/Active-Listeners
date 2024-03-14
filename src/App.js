@@ -23,12 +23,17 @@ import EntertainmentandperformanceAddiction from "./Pages/Entertainmentandperfor
 import Hiring from "./Pages/Hiring.js";
 import HiringForm from "./Pages/HiringForm.js";
 import Preppers from "./Pages/Preppers.js";
+import SideBar from "./AdminPanel/SideBar.js";
+import Adminpanel from "./AdminPanel/Adminpanel.js";
+import GriefsupportGroup from "./Pages/GriefsupportGroup.js";
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/GriefsupportGroup" element={<GriefsupportGroup />} />
+          <Route path="/Adminpanel" element={<Adminpanel />} />
           <Route path="/Preppers" element={<Preppers />} />
           <Route path="/HiringForm" element={<HiringForm />} />
           <Route path="/Hiring" element={<Hiring />} />
