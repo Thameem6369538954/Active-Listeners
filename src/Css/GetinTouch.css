@@ -12,12 +12,13 @@
   text-align: center;
   justify-content: space-around;
   background-color: #bae8ac;
-  width: 70%;
+  width: 60%;
   height: 400px;
   margin-left: 3%;
   padding: 10px;
-  z-index: 9999;
+  /* z-index: ; */
   border-radius: 20px;
+  margin-bottom: -10%;
 }
 .form-inputs {
   display: grid;
@@ -26,7 +27,7 @@
 }
 .form-inputs input {
   padding: 10px;
-  width: 30%;
+  width: 80%;
   border-radius: 10px;
   margin: 10px auto;
 }
@@ -57,7 +58,12 @@
   width: 17%;
   margin-left: -85%;
 }
-
+.error-getin-touch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 @media screen and (max-width: 600px) {
   .get-form {
     /* background-color: red; */

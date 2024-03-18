@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "../Css/GetinTouch.css";
 import CC from "../Images/CC.png";
 import FlowerR from "../Images/FlowerR.png";
@@ -54,6 +56,7 @@ const GetinTouch = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Validate all fields on submit
+
     const { name, email, message } = formData;
     validateField("name", name);
     validateField("email", email);
@@ -64,6 +67,7 @@ const GetinTouch = () => {
       console.log("Form submitted:", formData);
       // You can make an API call or further processing here
     }
+    toast.success("Successfully submitted!!");
   };
 
   return (
@@ -74,27 +78,32 @@ const GetinTouch = () => {
             <h1>Get in Touch</h1>
             <p>With us</p>
             <div className="form-inputs">
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                placeholder="Name"
-                required
-              />
-              {errors.name && (
-                <span style={{ color: "red" }}>*{errors.name}</span>
-              )}
-              <input
-                type="text"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="Email"
-              />
-              {errors.email && (
-                <span style={{ color: "red" }}>*{errors.email}</span>
-              )}
+              <div className="error-getin-touch">
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="Name"
+                  required
+                />
+                {errors.name && (
+                  <span style={{ color: "red" }}>*{errors.name}</span>
+                )}
+              </div>
+              <div className="error-getin-touch">
+                <input
+                  type="text"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Email"
+                />
+                {errors.email && (
+                  <span style={{ color: "red" }}>*{errors.email}</span>
+                )}
+              </div>
+
               <input
                 type="text"
                 value={formData.message}

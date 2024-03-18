@@ -14,7 +14,8 @@ import Psyco from "../Images/Psyco.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const GriefsupportGroup = () => {
   const [day, setDay] = useState("00");
   const [hours, setHours] = useState("00");
@@ -148,6 +149,136 @@ const GriefsupportGroup = () => {
       image: Psyco,
     },
   ];
+
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phoneNumber: "",
+    country: "",
+    state: "",
+    support: "",
+    message: "",
+    selectedOption: "",
+    support: "",
+  });
+
+  const [errors, setErrors] = useState({
+    fullName: "",
+    email: "",
+    phoneNumber: "",
+    country: "",
+    state: "",
+    support: "",
+    message: "",
+    option: "",
+    support: "",
+  });
+  const handleOptionChange = (e) => {
+    const selectedOption = e.target.value;
+    setFormData({
+      ...formData,
+      selectedOption,
+    });
+    setErrors({
+      ...errors,
+      option: "", // Clear any previous errors when the user selects an option
+    });
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+    validateField(name, value);
+  };
+
+  const validateField = (name, value) => {
+    const errorsCopy = { ...errors };
+
+    switch (name) {
+      case "fullName":
+        errorsCopy.fullName =
+          value.trim() === "" ? "Full name is required" : "";
+        break;
+      case "email":
+        errorsCopy.email =
+          value.trim() === ""
+            ? "Email is required"
+            : !isValidEmail(value)
+            ? "Invalid email address"
+            : "";
+        break;
+      case "phoneNumber":
+        errorsCopy.phoneNumber =
+          value.trim() === ""
+            ? "Phone number is required"
+            : !isValidPhoneNumber(value)
+            ? "Invalid phone number"
+            : "";
+        break;
+      case "country":
+        errorsCopy.country = value === "0" ? "Please select a country" : "";
+        break;
+      case "state":
+        errorsCopy.state = value === "0" ? "Please select a state" : "";
+        break;
+      case "support":
+        errorsCopy.support = value === "0" ? "Please select support" : "";
+        break;
+      case "message":
+        errorsCopy.message = value.trim() === "" ? "Message is required" : "";
+        break;
+      default:
+        break;
+    }
+
+    setErrors(errorsCopy);
+  };
+
+  const isValidEmail = (email) => {
+    const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+    return emailRegex.test(email);
+  };
+
+  const isValidPhoneNumber = (phoneNumber) => {
+    const phoneRegex = /^\d{10}$/; // Assuming 10 digits phone number
+    return phoneRegex.test(phoneNumber);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Validate all fields on submit
+    Object.keys(formData).forEach((name) => {
+      validateField(name, formData[name]);
+    });
+
+    // Check if there are any errors
+    const hasErrors = Object.values(errors).some((error) => error !== "");
+
+    if (!hasErrors) {
+      console.log("Form submitted:", formData);
+      // You can make an API call or further processing here
+    }
+
+    if (!formData.selectedOption) {
+      setErrors({
+        ...errors,
+        option: "Please select an option", // Set error message if no option is selected
+      });
+      return; // Return early if there are validation errors
+    }
+    if (formData.support === "") {
+      setErrors({
+        ...errors,
+        support: "Please select any support option", // Set error message if default option is selected
+      });
+      return; // Return early if there are validation errors
+    }
+    toast.success("Successfully submitted!!");
+  };
 
   return (
     <div>
@@ -492,7 +623,7 @@ const GriefsupportGroup = () => {
         <h2>Grief Support Group</h2>
         <div className="grif-form-inputs">
           <div className="container-form">
-            <form action="submit">
+            <form action="submit" onSubmit={handleSubmit}>
               <div className="form first">
                 <div className="details personal">
                   <div className="fields">
@@ -500,10 +631,12 @@ const GriefsupportGroup = () => {
                       <div className="radio-button">
                         <label>Enroll as: </label>
                         <input
-                          name="radio-group"
+                          name="selectedOption"
                           id="radio2"
                           className="radio-button__input"
                           type="radio"
+                          value="Parent"
+                          onChange={handleOptionChange}
                         />
                         <label for="radio2" className="radio-button__label">
                           <span className="radio-button__custom"></span>
@@ -512,10 +645,12 @@ const GriefsupportGroup = () => {
                       </div>
                       <div className="radio-button">
                         <input
-                          name="radio-group"
+                          name="selectedOption"
                           id="radio1"
                           className="radio-button__input"
                           type="radio"
+                          value="Carer"
+                          onChange={handleOptionChange}
                         />
                         <label for="radio1" className="radio-button__label">
                           <span className="radio-button__custom"></span>
@@ -524,10 +659,12 @@ const GriefsupportGroup = () => {
                       </div>
                       <div className="radio-button">
                         <input
-                          name="radio-group"
+                          name="selectedOption"
                           id="radio3"
                           className="radio-button__input"
                           type="radio"
+                          value="Mentor/ Educator"
+                          onChange={handleOptionChange}
                         />
                         <label for="radio3" className="radio-button__label">
                           <span className="radio-button__custom"></span>
@@ -538,11 +675,19 @@ const GriefsupportGroup = () => {
                     <div className="input-field">
                       <label>Full Name</label>
                       <input
-                        type="email"
+                        type="text"
                         placeholder="Enter your name"
-                        id="email"
+                        id="fullName"
+                        name="fullName"
+                        value={formData.fullName}
+                        onChange={handleChange}
                         required
                       />
+                      {errors.fullName && (
+                        <span className="error" style={{ color: "red" }}>
+                          * {errors.fullName}
+                        </span>
+                      )}
                     </div>
 
                     <div className="input-field">
@@ -551,17 +696,33 @@ const GriefsupportGroup = () => {
                         type="email"
                         placeholder="Enter your email"
                         id="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
                         required
                       />
+                      {errors.email && (
+                        <span className="error" style={{ color: "red" }}>
+                          *{errors.email}
+                        </span>
+                      )}
                     </div>
 
                     <div className="input-field">
                       <label>Mobile Number</label>
                       <input
-                        type="number"
+                        type="text"
                         placeholder="Enter mobile number"
+                        name="phoneNumber"
+                        value={formData.phoneNumber}
+                        onChange={handleChange}
                         required
                       />
+                      {errors.phoneNumber && (
+                        <span className="error" style={{ color: "red" }}>
+                          *{errors.phoneNumber}
+                        </span>
+                      )}
                     </div>
 
                     <div className="input-field">
@@ -569,8 +730,8 @@ const GriefsupportGroup = () => {
                       <div className="custom-select">
                         <select>
                           <option value="0">Select Country :</option>
-                          <option value="1">Audi</option>
-                          <option value="2">BMW</option>
+                          <option value="1">Mobile Addiction</option>
+                          <option value="2">Gaming Addiction</option>
                           <option value="3">Citroen</option>
                           <option value="4">Ford</option>
                           <option value="5">Honda</option>
@@ -607,21 +768,33 @@ const GriefsupportGroup = () => {
                     <div className="input-field">
                       <label>Support in</label>
                       <div className="custom-select">
-                        <select>
+                        <select
+                          id="support"
+                          name="support"
+                          value={formData.support}
+                          onChange={handleChange}
+                          required
+                        >
                           <option value="0">Select Support:</option>
-                          <option value="1">Audi</option>
-                          <option value="2">BMW</option>
-                          <option value="3">Citroen</option>
-                          <option value="4">Ford</option>
-                          <option value="5">Honda</option>
-                          <option value="6">Jaguar</option>
-                          <option value="7">Land Rover</option>
-                          <option value="8">Mercedes</option>
-                          <option value="9">Mini</option>
-                          <option value="10">Nissan</option>
-                          <option value="11">Toyota</option>
-                          <option value="12">Volvo</option>
+                          <option value="Mobile Addiction">
+                            Mobile Addiction
+                          </option>
+                          <option value="Gaming Addiction">
+                            Gaming Addiction
+                          </option>
+                          <option value="Social Media Addiction">
+                            Social Media Addiction
+                          </option>
+                          <option value="Entertainment and performance Addiction">
+                            Entertainment and performance Addiction
+                          </option>
+                          <option value="Others">Others</option>
                         </select>
+                        {errors.support && (
+                          <span className="error" style={{ color: "red" }}>
+                            * {errors.support}
+                          </span>
+                        )}
                       </div>
                     </div>
 
@@ -630,9 +803,17 @@ const GriefsupportGroup = () => {
                       <input
                         type="text"
                         placeholder="Enter mobile Message"
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
                         required
                         style={{ width: 800, height: 90 }}
                       />
+                      {errors.message && (
+                        <span className="error" style={{ color: "red" }}>
+                          * {errors.message}
+                        </span>
+                      )}
                     </div>
                   </div>
                 </div>
