@@ -129,14 +129,14 @@ const PodcastProductlist = () => {
   return (
     <div>
       <div className="searchubar-for-podcast">
-        <div class="searchBox">
+        <div className="searchBox">
           <input
-            class="searchInput"
+            className="searchInput"
             type="text"
             name=""
             placeholder="Search something"
           />
-          <button class="searchButton" href="#">
+          <button className="searchButton" href="#">
             Search
           </button>
         </div>
@@ -170,7 +170,7 @@ const PodcastProductlist = () => {
           return (
             <div className="sum">
               <div className="podcast-box">
-                <div className="boxtop-tems">
+                <div className="boxtop-tems" key={list.id}>
                   <div className="boxtop-tems-inside">
                     <img src={list.EpiImage} alt="" />
 
@@ -191,9 +191,9 @@ const PodcastProductlist = () => {
                     <button>{list.cateC}</button>
                     {/* <button>{list.cateD}</button> */}
                   </div>
-                  <div class="card___wrapper-acounts">
+                  <div className="card___wrapper-acounts">
                     <p>Hosted by: </p>
-                    <div class="card__acounts">
+                    <div className="card__acounts">
                       <img src={list.fravatara} alt="" />
                       <img src={list.fravatarb} alt="" />
                     </div>

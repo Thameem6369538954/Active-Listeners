@@ -12,10 +12,10 @@ const Speekeasy = () => {
         <h2>Session</h2>
         <img src={Yellowline} className="Yellowline" alt="" />
       </div>
-      <div class="container-speek">
+      <div className="container-speek">
         <img src={Greenbg} />
 
-        <div class="centered">
+        <div className="centered">
           <div className="para">
             <p>
               Transformative support for those seeking clarity and understanding

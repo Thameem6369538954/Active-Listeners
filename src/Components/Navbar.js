@@ -30,33 +30,40 @@ const Navbar = () => {
         </div>
         <nav>
           <ul className={isOpen ? "nav-links active" : "nav-links"}>
-            <NavLink to="/" className="Links">
-              <li>Home</li>
-            </NavLink>
-            <NavLink to="/Teletherapy" className="Links">
-              <li>Speak-Easy</li>
-            </NavLink>
-            <NavLink to="/Senses" className="Links">
-              <li>Senses Resurrection</li>
-            </NavLink>
-            <NavLink to="/OneOnOne" className="Links">
-              <li>One to One Session</li>
-            </NavLink>
-            <NavLink to="/GriefSupport" className="Links">
-              <li>Grief Support</li>
-            </NavLink>
-            <NavLink to="/GriefsupportGroup" className="Links">
-              <li>Grief Support Meetup</li>
-            </NavLink>
-            <NavLink to="/Preppers">
-              <li>Preppers</li>
-            </NavLink>
-            <NavLink to="/Hiring" className="Links">
-              <li>Hiring</li>
-            </NavLink>
-            <NavLink to="/GoalVision" className="Links">
-              <li>About us</li>
-            </NavLink>
+            <div>
+              <NavLink to="/" className="Links">
+                <li>Home</li>
+              </NavLink>
+              <NavLink to="/Teletherapy" className="Links">
+                <li>Speak-Easy</li>
+              </NavLink>
+              <NavLink to="/Senses" className="Links">
+                <li>Senses Resurrection</li>
+              </NavLink>
+              <NavLink to="/OneOnOne" className="Links">
+                <li>One to One Session</li>
+              </NavLink>
+              <NavLink to="/GriefSupport" className="Links">
+                <li>Grief Support</li>
+              </NavLink>
+            </div>
+            <div>
+              <NavLink to="/GriefsupportGroup" className="Links">
+                <li>Grief Support Meetup</li>
+              </NavLink>
+              <NavLink to="/Preppers">
+                <li>Preppers</li>
+              </NavLink>
+              <NavLink to="/TeamPage">
+                <li>TeamPage</li>
+              </NavLink>
+              <NavLink to="/Hiring" className="Links">
+                <li>Careers</li>
+              </NavLink>
+              <NavLink to="/GoalVision" className="Links">
+                <li>About us</li>
+              </NavLink>
+            </div>
           </ul>
 
           <div className="nav-icons"></div>
@@ -64,18 +71,18 @@ const Navbar = () => {
             <img src={ALlogo} alt="" />
           </NavLink>
           <div className="Login-btns">
-            <button class="full-rounded">
+            <button className="full-rounded">
               <NavLink to="/Login" className="Links">
                 <span>Login</span>
               </NavLink>
-              <div class="border full-rounded"></div>
+              <div className="border full-rounded"></div>
             </button>
 
-            <button class="full-rounded">
+            <button className="full-rounded">
               <NavLink to="/Signup" className="Links">
                 <span>Sign up</span>
               </NavLink>
-              <div class="border full-rounded"></div>
+              <div className="border full-rounded"></div>
             </button>
             <img src={Navarrow} className="navarrow" alt="" />
           </div>

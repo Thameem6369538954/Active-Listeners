@@ -176,17 +176,17 @@ const Corediscover = () => {
       </div>
       <div className="calandi-box-container">
         <div className="calandi-box">
-          <div class="card-a">
-            <div class="content">
-              <div class="front">
-                <h3 class="title">Depression Test</h3>
+          <div className="card-a">
+            <div className="content">
+              <div className="front">
+                <h3 className="title">Depression Test</h3>
                 <button>Take Test</button>
                 <img src={chare} alt="" />
                 <img src={Testbg} alt="" />
               </div>
 
-              <div class="back">
-                <p class="description">
+              <div className="back">
+                <p className="description">
                   Get Access to our 15 Minutes Complimentary Call
                 </p>
                 <button>Schedule a Call</button>
@@ -197,17 +197,17 @@ const Corediscover = () => {
         </div>
         {/* box-2 */}
         <div className="calandi-box">
-          <div class="card-a">
-            <div class="content">
-              <div class="front">
-                <h3 class="title">Depression Test</h3>
+          <div className="card-a">
+            <div className="content">
+              <div className="front">
+                <h3 className="title">Depression Test</h3>
                 <button>Take Test</button>
                 <img src={chare} alt="" />
                 <img src={Testbg} alt="" />
               </div>
 
-              <div class="back">
-                <p class="description">
+              <div className="back">
+                <p className="description">
                   Get Access to our 15 Minutes Complimentary Call
                 </p>
                 <button>Schedule a Call</button>
@@ -218,17 +218,17 @@ const Corediscover = () => {
         </div>
         {/* box-3 */}
         <div className="calandi-box">
-          <div class="card-a">
-            <div class="content">
-              <div class="front">
-                <h3 class="title">Depression Test</h3>
+          <div className="card-a">
+            <div className="content">
+              <div className="front">
+                <h3 className="title">Depression Test</h3>
                 <button>Take Test</button>
                 <img src={chare} alt="" />
                 <img src={Testbg} alt="" />
               </div>
 
-              <div class="back">
-                <p class="description">
+              <div className="back">
+                <p className="description">
                   Get Access to our 15 Minutes Complimentary Call
                 </p>
                 <button>Schedule a Call</button>

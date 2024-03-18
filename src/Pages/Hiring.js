@@ -72,10 +72,10 @@ const Hiring = () => {
             <img src={Yellowline} className="Yellowline" alt="" />
           </div>
           <div className="hiring-boxes">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <p class="title">Psychologist</p>
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <p className="title">Psychologist</p>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -88,8 +88,8 @@ const Hiring = () => {
                     alt=""
                   />
                 </div>
-                <div class="flip-card-back">
-                  <p class="title">Apply Now</p>
+                <div className="flip-card-back">
+                  <p className="title">Apply Now</p>
                   <NavLink
                     onClick={scrollToTop}
                     to="/HiringForm"
@@ -105,10 +105,10 @@ const Hiring = () => {
                 </div>
               </div>
             </div>
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <p class="title">Story Teller</p>
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <p className="title">Story Teller</p>
                   <p>
                     {" "}
                     We are currently seeking a Storyteller to join our creative
@@ -129,8 +129,8 @@ const Hiring = () => {
                     alt=""
                   />
                 </div>
-                <div class="flip-card-back">
-                  <p class="title">Apply Now</p>
+                <div className="flip-card-back">
+                  <p className="title">Apply Now</p>
                   <NavLink
                     onClick={scrollToTop}
                     to="/HiringForm"
@@ -146,10 +146,10 @@ const Hiring = () => {
                 </div>
               </div>
             </div>
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <p class="title">Actor / Model</p>
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <p className="title">Actor / Model</p>
                   <p>
                     We are currently seeking an Actor/Model to become the face
                     of our creative projects.This versatileindividual will play
@@ -169,8 +169,8 @@ const Hiring = () => {
                     alt=""
                   />
                 </div>
-                <div class="flip-card-back">
-                  <p class="title">Apply Now</p>
+                <div className="flip-card-back">
+                  <p className="title">Apply Now</p>
                   <NavLink
                     onClick={scrollToTop}
                     to="/HiringForm"
@@ -186,10 +186,10 @@ const Hiring = () => {
                 </div>
               </div>
             </div>
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <p class="title">Filmmaker</p>
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <p className="title">Filmmaker</p>
                   <p>
                     We are currently seeking a Filmmaker to join our creative
                     team. This individual will be responsiblefor bringing our
@@ -207,8 +207,8 @@ const Hiring = () => {
                     alt=""
                   />
                 </div>
-                <div class="flip-card-back">
-                  <p class="title">Apply Now</p>
+                <div className="flip-card-back">
+                  <p className="title">Apply Now</p>
                   <NavLink
                     onClick={scrollToTop}
                     to="/HiringForm"
@@ -224,9 +224,9 @@ const Hiring = () => {
                 </div>
               </div>
             </div>
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
                   <p className="title">Anchor</p>
                   <p>
                     Join Mentoons as an Anchor, where you'll connect with our
@@ -245,8 +245,8 @@ const Hiring = () => {
                     alt=""
                   />
                 </div>
-                <div class="flip-card-back">
-                  <p class="title">Apply Now</p>
+                <div className="flip-card-back">
+                  <p className="title">Apply Now</p>
                   <NavLink
                     onClick={scrollToTop}
                     to="/HiringForm"

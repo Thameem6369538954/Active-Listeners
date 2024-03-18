@@ -5,10 +5,15 @@
   justify-content: center;
 }
 .inside-mobile-addiction-txt {
-  /* padding: 100px; */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
 .inside-mobile-addiction-txt img {
   width: 130%;
+  border-radius: 30px;
 }
 .btn-compo {
   display: flex;

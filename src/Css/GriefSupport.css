@@ -114,6 +114,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(10px);
   border-radius: 8px;
+  /* gap: 5rem; */
 }
 .card-inner p {
   font-family: myFont;
@@ -397,7 +398,9 @@ form .buttons button,
 }
 .card-grif img {
   width: 20%;
+  z-index: -1;
 }
+
 .card-grif {
   height: 40vh;
 }
@@ -454,8 +457,8 @@ form .buttons button,
     margin: 28px;
   }
   .card-grif {
-    /* width: 790px; */
-    height: 190px;
+    width: 410px;
+    height: 170px;
     transition: all 0.2s;
     position: relative;
     cursor: pointer;

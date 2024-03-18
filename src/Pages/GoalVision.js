@@ -27,7 +27,7 @@ import dhanashekar from "../Images/dhanashekar.jpeg";
 import dhinesh from "../Images/dhinesh.jpeg";
 import harris from "../Images/harris.jpeg";
 import shankar from "../Images/shankar.jpeg";
-import yashavantha from "../Images/yashavantha.jpeg";
+import Thameem from "../Images/Thameem.jpg";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 const GoalVision = () => {
@@ -123,9 +123,9 @@ const GoalVision = () => {
     },
     {
       id: 10,
-      name: "Yashavantha",
+      name: "Thameem Ansari",
       position: "Frontend Developer",
-      image: yashavantha,
+      image: Thameem,
     },
   ];
 
@@ -207,7 +207,7 @@ const GoalVision = () => {
           <Slider {...settings}>
             {employees.map((employee) => (
               <div>
-                <div className="goal-box-container">
+                <div className="goal-box-container" key={employee.id}>
                   <img src={employee.image} alt="" />
                   <div className="positon-name">
                     <p style={{ color: "green" }}>{employee.position}</p>

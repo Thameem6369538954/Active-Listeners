@@ -31,15 +31,15 @@ const Senses = () => {
           </div>
         </div>
         <div className="green-bourd-grief">
-          <div class="card-grif">
-            <div class="circle">
+          <div className="card-grif">
+            <div className="circle">
               <img src={Roundb} alt="" />
             </div>
-            <div class="circle-b">
+            <div className="circle-b">
               <img src={Rounda} alt="" />
             </div>
 
-            <div class="card-inner">
+            <div className="card-inner">
               <div>
                 <h1>Senses</h1>
                 <p>Resurrection</p>

@@ -172,7 +172,7 @@ const Subscribe = () => {
               <Slider {...settings}>
                 {caro.map((item) => {
                   return (
-                    <div>
+                    <div key={item.id}>
                       <div className="caro-for-hdr">
                         <img src={item.img} alt="" />
                         <h3>{item.name}</h3>

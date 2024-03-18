@@ -68,15 +68,15 @@ const LearningandFocus = () => {
         </div> */}
           </div>
           <div className="green-bourd-Earlyage">
-            <div class="card-grif">
-              <div class="circle">
+            <div className="card-grif">
+              <div className="circle">
                 <img src={Roundb} alt="" />
               </div>
-              <div class="circle-b">
+              <div className="circle-b">
                 <img src={Rounda} alt="" />
               </div>
 
-              <div class="card-inneR">
+              <div className="card-inneR">
                 <div className="card-inneR-text">
                   <h1>Learning & Focus for both</h1>
 

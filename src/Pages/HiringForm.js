@@ -27,12 +27,12 @@ const HiringForm = () => {
           </span>
         </div>
         <div className="hiring-form-holeconatiner">
-          <div class="container-form">
+          <div className="container-form">
             <form action="submit">
-              <div class="form first">
-                <div class="details personal">
-                  <div class="fields">
-                    <div class="input-field">
+              <div className="form first">
+                <div className="details personal">
+                  <div className="fields">
+                    <div className="input-field">
                       <label>Full Name</label>
                       <input
                         type="email"
@@ -42,7 +42,7 @@ const HiringForm = () => {
                       />
                     </div>
 
-                    <div class="input-field">
+                    <div className="input-field">
                       <label>Email</label>
                       <input
                         type="email"
@@ -52,7 +52,7 @@ const HiringForm = () => {
                       />
                     </div>
 
-                    <div class="input-field">
+                    <div className="input-field">
                       <label>Mobile Number</label>
                       <input
                         type="number"
@@ -60,7 +60,7 @@ const HiringForm = () => {
                         required
                       />
                     </div>
-                    <div class="input-field">
+                    <div className="input-field">
                       <label>Add Resume</label>
                       <input
                         type="file"
@@ -70,7 +70,7 @@ const HiringForm = () => {
                       />
                       {/* <p>Resume</p> */}
                     </div>
-                    <div class="input-field">
+                    <div className="input-field">
                       <label>Message</label>
                       <input
                         type="text"

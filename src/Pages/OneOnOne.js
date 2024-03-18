@@ -21,18 +21,18 @@ const OneOnOne = () => {
           <button className="get-support">Schedule Now</button>
         </div>
         <div className="green-bourd-grief">
-          <div class="card-grif">
-            {/* <div class="circle">
+          <div className="card-grif">
+            {/* <div className="circle">
               <img src={Roundb} alt="" />
             </div>
-            <div class="circle-b">
+            <div className="circle-b">
               <img src={Rounda} alt="" />
             </div> */}
 
-            <div class="container-speek-a">
+            <div className="container-speek-a">
               <img src={Greenbg} />
 
-              <div class="centered">
+              <div className="centered">
                 <div className="para">
                   <p>
                     Transformative support for those seeking clarity and

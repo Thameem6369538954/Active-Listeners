@@ -229,8 +229,8 @@ const GriefsupportGroup = () => {
             <h2>Discussed</h2>
           </div>
           <div className="color-main-boxese">
-            <div class="palette">
-              <div class="color">
+            <div className="palette">
+              <div className="color">
                 <div className="colorbox-inside">
                   <img src={THands} alt="" />
                   <h1>
@@ -243,7 +243,7 @@ const GriefsupportGroup = () => {
                   </p>
                 </div>
               </div>
-              <div class="color">
+              <div className="color">
                 <div className="colorbox-inside">
                   <img src={THands} alt="" />
                   <h1>Tips to Get your de-addicted to social media</h1>
@@ -254,7 +254,7 @@ const GriefsupportGroup = () => {
                   </p>
                 </div>
               </div>
-              <div class="color">
+              <div className="color">
                 <div className="colorbox-inside">
                   <img src={THands} alt="" />
                   <h1>Maintain you work life Balance</h1>
@@ -266,7 +266,7 @@ const GriefsupportGroup = () => {
                 </div>
               </div>
 
-              <div class="color">
+              <div className="color">
                 <div className="colorbox-inside">
                   <img src={THands} alt="" />
                   <h1>How to bring the Self Confidence back</h1>
@@ -362,7 +362,7 @@ const GriefsupportGroup = () => {
             <Slider {...settings}>
               {employees.map((employee) => (
                 <div>
-                  <div className="goal-box-container">
+                  <div className="goal-box-container" key={employee.id}>
                     <img src={employee.image} alt="" />
                     <div className="positon-name">
                       <p style={{ color: "green" }}>{employee.position}</p>
@@ -436,53 +436,53 @@ const GriefsupportGroup = () => {
       {/* seet-box */}
       <div className="seat-box-container">
         <main>
-          <article class="orange">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
+          <article className="orange">
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
           </article>
-          <article class="orange">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
+          <article className="orange">
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
           </article>
-          <article class="orange">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
+          <article className="orange">
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
           </article>
-          <article class="orange">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
+          <article className="orange">
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
+            <div className="box"></div>
           </article>
         </main>
       </div>
@@ -491,51 +491,51 @@ const GriefsupportGroup = () => {
         <h1>Enroll Now in </h1>
         <h2>Grief Support Group</h2>
         <div className="grif-form-inputs">
-          <div class="container-form">
+          <div className="container-form">
             <form action="submit">
-              <div class="form first">
-                <div class="details personal">
-                  <div class="fields">
-                    <div class="radio-buttons-container">
-                      <div class="radio-button">
+              <div className="form first">
+                <div className="details personal">
+                  <div className="fields">
+                    <div className="radio-buttons-container">
+                      <div className="radio-button">
                         <label>Enroll as: </label>
                         <input
                           name="radio-group"
                           id="radio2"
-                          class="radio-button__input"
+                          className="radio-button__input"
                           type="radio"
                         />
-                        <label for="radio2" class="radio-button__label">
-                          <span class="radio-button__custom"></span>
+                        <label for="radio2" className="radio-button__label">
+                          <span className="radio-button__custom"></span>
                           Parent
                         </label>
                       </div>
-                      <div class="radio-button">
+                      <div className="radio-button">
                         <input
                           name="radio-group"
                           id="radio1"
-                          class="radio-button__input"
+                          className="radio-button__input"
                           type="radio"
                         />
-                        <label for="radio1" class="radio-button__label">
-                          <span class="radio-button__custom"></span>
+                        <label for="radio1" className="radio-button__label">
+                          <span className="radio-button__custom"></span>
                           Carer
                         </label>
                       </div>
-                      <div class="radio-button">
+                      <div className="radio-button">
                         <input
                           name="radio-group"
                           id="radio3"
-                          class="radio-button__input"
+                          className="radio-button__input"
                           type="radio"
                         />
-                        <label for="radio3" class="radio-button__label">
-                          <span class="radio-button__custom"></span>
+                        <label for="radio3" className="radio-button__label">
+                          <span className="radio-button__custom"></span>
                           Mentor/ Educator
                         </label>
                       </div>
                     </div>
-                    <div class="input-field">
+                    <div className="input-field">
                       <label>Full Name</label>
                       <input
                         type="email"
@@ -545,7 +545,7 @@ const GriefsupportGroup = () => {
                       />
                     </div>
 
-                    <div class="input-field">
+                    <div className="input-field">
                       <label>Email</label>
                       <input
                         type="email"
@@ -555,7 +555,7 @@ const GriefsupportGroup = () => {
                       />
                     </div>
 
-                    <div class="input-field">
+                    <div className="input-field">
                       <label>Mobile Number</label>
                       <input
                         type="number"
@@ -564,9 +564,9 @@ const GriefsupportGroup = () => {
                       />
                     </div>
 
-                    <div class="input-field">
+                    <div className="input-field">
                       <label>Country </label>
-                      <div class="custom-select">
+                      <div className="custom-select">
                         <select>
                           <option value="0">Select Country :</option>
                           <option value="1">Audi</option>
@@ -584,9 +584,9 @@ const GriefsupportGroup = () => {
                         </select>
                       </div>
                     </div>
-                    <div class="input-field">
+                    <div className="input-field">
                       <label>State </label>
-                      <div class="custom-select">
+                      <div className="custom-select">
                         <select>
                           <option value="0">Select State:</option>
                           <option value="1">Audi</option>
@@ -604,9 +604,9 @@ const GriefsupportGroup = () => {
                         </select>
                       </div>
                     </div>
-                    <div class="input-field">
+                    <div className="input-field">
                       <label>Support in</label>
-                      <div class="custom-select">
+                      <div className="custom-select">
                         <select>
                           <option value="0">Select Support:</option>
                           <option value="1">Audi</option>
@@ -625,7 +625,7 @@ const GriefsupportGroup = () => {
                       </div>
                     </div>
 
-                    <div class="input-field">
+                    <div className="input-field">
                       <label>Message</label>
                       <input
                         type="text"

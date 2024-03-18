@@ -23,15 +23,15 @@ const Podcast = () => {
         </div>
 
         <div className="green-bourd-grief">
-          <div class="card-grif">
-            <div class="circle">
+          <div className="card-grif">
+            <div className="circle">
               <img src={Roundb} alt="" />
             </div>
-            <div class="circle-b">
+            <div className="circle-b">
               <img src={Rounda} alt="" />
             </div>
             <div className="card-hole">
-              <div class="card-inner">
+              <div className="card-inner">
                 <img
                   src={cover}
                   style={{ width: "30%", margin: 40, borderRadius: 20 }}

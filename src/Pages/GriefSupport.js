@@ -28,15 +28,15 @@ const GriefSupport = () => {
         </div>
 
         <div className="green-bourd-grief">
-          <div class="card-grif">
-            <div class="circle">
+          <div className="card-grif">
+            <div className="circle">
               <img src={Roundb} alt="" />
             </div>
-            <div class="circle-b">
+            <div className="circle-b">
               <img src={Rounda} alt="" />
             </div>
 
-            <div class="card-inner">
+            <div className="card-inner">
               <div>
                 <h1>Listening: the ultimate healer </h1>
                 <p>With in</p>
@@ -122,51 +122,51 @@ const GriefSupport = () => {
           <h1>Enroll Now in </h1>
           <h2>Grief Support Group</h2>
           <div className="grif-form-inputs">
-            <div class="container-form">
+            <div className="container-form">
               <form action="submit">
-                <div class="form first">
-                  <div class="details personal">
-                    <div class="fields">
-                      <div class="radio-buttons-container">
-                        <div class="radio-button">
+                <div className="form first">
+                  <div className="details personal">
+                    <div className="fields">
+                      <div className="radio-buttons-container">
+                        <div className="radio-button">
                           <label>Enroll as: </label>
                           <input
                             name="radio-group"
                             id="radio2"
-                            class="radio-button__input"
+                            className="radio-button__input"
                             type="radio"
                           />
-                          <label for="radio2" class="radio-button__label">
-                            <span class="radio-button__custom"></span>
+                          <label for="radio2" className="radio-button__label">
+                            <span className="radio-button__custom"></span>
                             Parent
                           </label>
                         </div>
-                        <div class="radio-button">
+                        <div className="radio-button">
                           <input
                             name="radio-group"
                             id="radio1"
-                            class="radio-button__input"
+                            className="radio-button__input"
                             type="radio"
                           />
-                          <label for="radio1" class="radio-button__label">
-                            <span class="radio-button__custom"></span>
+                          <label for="radio1" className="radio-button__label">
+                            <span className="radio-button__custom"></span>
                             Carer
                           </label>
                         </div>
-                        <div class="radio-button">
+                        <div className="radio-button">
                           <input
                             name="radio-group"
                             id="radio3"
-                            class="radio-button__input"
+                            className="radio-button__input"
                             type="radio"
                           />
-                          <label for="radio3" class="radio-button__label">
-                            <span class="radio-button__custom"></span>
+                          <label for="radio3" className="radio-button__label">
+                            <span className="radio-button__custom"></span>
                             Mentor/ Educator
                           </label>
                         </div>
                       </div>
-                      <div class="input-field">
+                      <div className="input-field">
                         <label>Full Name</label>
                         <input
                           type="email"
@@ -176,7 +176,7 @@ const GriefSupport = () => {
                         />
                       </div>
 
-                      <div class="input-field">
+                      <div className="input-field">
                         <label>Email</label>
                         <input
                           type="email"
@@ -186,7 +186,7 @@ const GriefSupport = () => {
                         />
                       </div>
 
-                      <div class="input-field">
+                      <div className="input-field">
                         <label>Mobile Number</label>
                         <input
                           type="number"
@@ -195,9 +195,9 @@ const GriefSupport = () => {
                         />
                       </div>
 
-                      <div class="input-field">
+                      <div className="input-field">
                         <label>Country </label>
-                        <div class="custom-select">
+                        <div className="custom-select">
                           <select>
                             <option value="0">Select Country :</option>
                             <option value="1">Audi</option>
@@ -215,9 +215,9 @@ const GriefSupport = () => {
                           </select>
                         </div>
                       </div>
-                      <div class="input-field">
+                      <div className="input-field">
                         <label>State </label>
-                        <div class="custom-select">
+                        <div className="custom-select">
                           <select>
                             <option value="0">Select State:</option>
                             <option value="1">Audi</option>
@@ -235,9 +235,9 @@ const GriefSupport = () => {
                           </select>
                         </div>
                       </div>
-                      <div class="input-field">
+                      <div className="input-field">
                         <label>Support in</label>
-                        <div class="custom-select">
+                        <div className="custom-select">
                           <select>
                             <option value="0">Select Support:</option>
                             <option value="1">Audi</option>
@@ -256,7 +256,7 @@ const GriefSupport = () => {
                         </div>
                       </div>
 
-                      <div class="input-field">
+                      <div className="input-field">
                         <label>Message</label>
                         <input
                           type="text"
@@ -268,11 +268,11 @@ const GriefSupport = () => {
                     </div>
                   </div>
 
-                  {/* <div class="details ID">
-                    <span class="title">Identity Details</span>
+                  {/* <div className="details ID">
+                    <span className="title">Identity Details</span>
 
-                    <div class="fields">
-                      <div class="input-field">
+                    <div className="fields">
+                      <div className="input-field">
                         <label>ID Type</label>
                         <input
                           type="text"
@@ -281,7 +281,7 @@ const GriefSupport = () => {
                         />
                       </div>
 
-                      <div class="input-field">
+                      <div className="input-field">
                         <label>ID Number</label>
                         <input
                           type="number"
@@ -290,7 +290,7 @@ const GriefSupport = () => {
                         />
                       </div>
 
-                      <div class="input-field">
+                      <div className="input-field">
                         <label>Issued Authority</label>
                         <input
                           type="text"
@@ -299,7 +299,7 @@ const GriefSupport = () => {
                         />
                       </div>
 
-                      <div class="input-field">
+                      <div className="input-field">
                         <label>Issued State</label>
                         <input
                           type="text"
@@ -308,7 +308,7 @@ const GriefSupport = () => {
                         />
                       </div>
 
-                      <div class="input-field">
+                      <div className="input-field">
                         <label>Issued Date</label>
                         <input
                           type="date"
@@ -317,7 +317,7 @@ const GriefSupport = () => {
                         />
                       </div>
 
-                      <div class="input-field">
+                      <div className="input-field">
                         <label>Expiry Date</label>
                         <input
                           type="date"
@@ -326,19 +326,19 @@ const GriefSupport = () => {
                         />
                       </div>
                     </div>
-                    <button class="nextBtn">
-                      <span class="btnText">Next</span>
-                      <i class="uil uil-navigator"></i>
+                    <button className="nextBtn">
+                      <span className="btnText">Next</span>
+                      <i className="uil uil-navigator"></i>
                     </button>
                   </div> */}
                 </div>
 
-                {/* <div class="form second">
-                  <div class="details address">
-                    <span class="title">Address Details</span>
+                {/* <div className="form second">
+                  <div className="details address">
+                    <span className="title">Address Details</span>
 
-                    <div class="fields">
-                      <div class="input-field">
+                    <div className="fields">
+                      <div className="input-field">
                         <label>Address Type</label>
                         <input
                           type="text"
@@ -347,7 +347,7 @@ const GriefSupport = () => {
                         />
                       </div>
 
-                      <div class="input-field">
+                      <div className="input-field">
                         <label>Nationality</label>
                         <input
                           type="date"
@@ -356,7 +356,7 @@ const GriefSupport = () => {
                         />
                       </div>
 
-                      <div class="input-field">
+                      <div className="input-field">
                         <label>State</label>
                         <input
                           type="text"
@@ -365,7 +365,7 @@ const GriefSupport = () => {
                         />
                       </div>
 
-                      <div class="input-field">
+                      <div className="input-field">
                         <label>District</label>
                         <input
                           type="text"
@@ -374,7 +374,7 @@ const GriefSupport = () => {
                         />
                       </div>
 
-                      <div class="input-field">
+                      <div className="input-field">
                         <label>Block Number</label>
                         <input
                           type="number"
@@ -383,7 +383,7 @@ const GriefSupport = () => {
                         />
                       </div>
 
-                      <div class="input-field">
+                      <div className="input-field">
                         <label>Ward Number</label>
                         <input
                           type="text"
@@ -394,11 +394,11 @@ const GriefSupport = () => {
                     </div>
                   </div>
 
-                  <div class="details family">
-                    <span class="title">Family Details</span>
+                  <div className="details family">
+                    <span className="title">Family Details</span>
 
-                    <div class="fields">
-                      <div class="input-field">
+                    <div className="fields">
+                      <div className="input-field">
                         <label>Father Name</label>
                         <input
                           type="text"
@@ -407,7 +407,7 @@ const GriefSupport = () => {
                         />
                       </div>
 
-                      <div class="input-field">
+                      <div className="input-field">
                         <label>Mother Name</label>
                         <input
                           type="text"
@@ -416,7 +416,7 @@ const GriefSupport = () => {
                         />
                       </div>
 
-                      <div class="input-field">
+                      <div className="input-field">
                         <label>Grand Father</label>
                         <input
                           type="text"
@@ -425,7 +425,7 @@ const GriefSupport = () => {
                         />
                       </div>
 
-                      <div class="input-field">
+                      <div className="input-field">
                         <label>Spouse Name</label>
                         <input
                           type="text"
@@ -434,7 +434,7 @@ const GriefSupport = () => {
                         />
                       </div>
 
-                      <div class="input-field">
+                      <div className="input-field">
                         <label>Father in Law</label>
                         <input
                           type="text"
@@ -443,7 +443,7 @@ const GriefSupport = () => {
                         />
                       </div>
 
-                      <div class="input-field">
+                      <div className="input-field">
                         <label>Mother in Law</label>
                         <input
                           type="text"
@@ -452,15 +452,15 @@ const GriefSupport = () => {
                         />
                       </div>
                     </div>
-                    <div class="buttons">
-                      <div class="backBtn">
-                        <i class="uil uil-navigator"></i>
-                        <span class="btnText">Back</span>
+                    <div className="buttons">
+                      <div className="backBtn">
+                        <i className="uil uil-navigator"></i>
+                        <span className="btnText">Back</span>
                       </div>
 
-                      <button class="submit">
-                        <span class="submit">submit</span>
-                        <i class="uil uil-navigator"></i>
+                      <button className="submit">
+                        <span className="submit">submit</span>
+                        <i className="uil uil-navigator"></i>
                       </button>
                     </div>
                   </div>

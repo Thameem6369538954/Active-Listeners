@@ -20,7 +20,8 @@
   border-radius: 20px;
 }
 .form-inputs {
-  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   width: 100%;
 }
 .form-inputs input {

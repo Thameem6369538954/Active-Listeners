@@ -140,6 +140,7 @@ nav {
     color: black;
     /* font-family: myFont; */
     text-decoration: none;
+    gap: 3rem;
   }
   .nav-links li:hover {
     text-align: center;
@@ -147,10 +148,11 @@ nav {
     background-color: aliceblue;
   }
   .nav-links {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    gap: 1rem;
+    place-items: center;
+    grid-template-columns: repeat(2, 2fr);
     align-items: center;
-    justify-content: center;
     position: absolute;
     top: 110px;
     height: 80vh;
@@ -166,7 +168,7 @@ nav {
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
-.Login-btns {
+  .Login-btns {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -175,5 +177,5 @@ nav {
     border-radius: 50px;
     width: 32%;
     height: 50px;
-}
+  }
 }

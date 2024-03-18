@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
@@ -21,17 +21,28 @@ import GamingAddiction from "./Pages/GamingAddiction.js";
 import SocialMediaAddiction from "./Pages/SocialMediaAddiction.js";
 import EntertainmentandperformanceAddiction from "./Pages/EntertainmentandperformanceAddiction.js";
 import Hiring from "./Pages/Hiring.js";
+import TeamPage from "./Pages/TeamPage.js";
 import HiringForm from "./Pages/HiringForm.js";
 import Preppers from "./Pages/Preppers.js";
 import SideBar from "./AdminPanel/SideBar.js";
 import Adminpanel from "./AdminPanel/Adminpanel.js";
 import GriefsupportGroup from "./Pages/GriefsupportGroup.js";
+import loading from "./Anime/loading.json";
+import Lottie from "lottie-react";
 function App() {
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  }, []);
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/TeamPage" element={<TeamPage />} />
           <Route path="/GriefsupportGroup" element={<GriefsupportGroup />} />
           <Route path="/Adminpanel" element={<Adminpanel />} />
           <Route path="/Preppers" element={<Preppers />} />

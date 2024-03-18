@@ -27,7 +27,7 @@ const Teletherapy = () => {
           <h2>Packages</h2>
         </div>
         <div className="card-container">
-          <div class="card">
+          <div className="card">
             <div className="card-text">
               <div>
                 <img src={Plan} alt="" />
@@ -64,7 +64,7 @@ const Teletherapy = () => {
             <button>Buy Now</button>
           </div>
 
-          <div class="card">
+          <div className="card">
             <div className="card-text">
               <div>
                 <img src={Planb} alt="" />
@@ -117,7 +117,7 @@ const Teletherapy = () => {
             <button>Buy Now</button>
           </div>
 
-          <div class="card">
+          <div className="card">
             <div className="card-text">
               <div>
                 <img src={Plan} alt="" />
