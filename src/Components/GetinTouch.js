@@ -103,15 +103,19 @@ const GetinTouch = () => {
                   <span style={{ color: "red" }}>*{errors.email}</span>
                 )}
               </div>
-
-              <input
-                type="text"
-                value={formData.message}
-                onChange={handleChange}
-                name="message"
-                placeholder="Message"
-                required
-              />
+              <div className="getintouch-msg">
+                <input
+                  type="text"
+                  value={formData.message}
+                  onChange={handleChange}
+                  name="message"
+                  placeholder="Message"
+                  required
+                />
+                {errors.message && (
+                  <span style={{ color: "red" }}>*{errors.message}</span>
+                )}
+              </div>
             </div>
             <div className="agree-get">
               <input type="checkbox" />
