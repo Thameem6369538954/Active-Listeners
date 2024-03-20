@@ -12,6 +12,12 @@ import cover from "../Images/cover.png";
 import Therapycategories from "../Components/Therapycategories.js";
 import Footer from "../Components/Footer.js";
 import GetinTouch from "../Components/GetinTouch.js";
+import Brine from "../SmallElements/Brine.png";
+import BrinBuzzle from "../SmallElements/BrinBuzzle.png";
+import OldTime from "../SmallElements/OldTime.png";
+import HandYellow from "../SmallElements/HandYellow.png";
+import Pinkmen from "../SmallElements/Pinkmen.png";
+import GreenClock from "../SmallElements/GreenClock.png";
 
 const SocialMediaAddiction = () => {
   return (
@@ -102,7 +108,7 @@ const SocialMediaAddiction = () => {
                 {/* Fist-box */}
                 <div className="observed-result-box">
                   <div className="observed-result-box-align">
-                    <img src="" alt="" />
+                    <img src={Brine} alt="" />
                     <h2>Mental health issues</h2>
                     <p>
                       Overuse of mobile devices can cause eye strain, pain, and
@@ -111,7 +117,7 @@ const SocialMediaAddiction = () => {
                   </div>
 
                   <div className="observed-result-box-align">
-                    <img src="" alt="" />
+                    <img src={GreenClock} alt="" />
                     <h2>Academic or work decline</h2>
                     <p>
                       Gaming addiction results in academic neglect, missed
@@ -122,7 +128,7 @@ const SocialMediaAddiction = () => {
                 {/* second-box */}
                 <div className="observed-result-box">
                   <div className="observed-result-box-align">
-                    <img src="" alt="" />
+                    <img src={OldTime} alt="" />
                     <h2>Neglected Responsibilities</h2>
                     <p>
                       Gaming Addiction may neglect tasks, causing academic,
@@ -131,7 +137,7 @@ const SocialMediaAddiction = () => {
                   </div>
 
                   <div className="observed-result-box-align">
-                    <img src="" alt="" />
+                    <img src={Pinkmen} alt="" />
                     <h2>Sleep Deprivation</h2>
                     <p>
                       Gaming addiction disrupts sleep, worsening physical and
@@ -142,7 +148,7 @@ const SocialMediaAddiction = () => {
                 {/* therod-box */}
                 <div className="observed-result-box">
                   <div className="observed-result-box-align">
-                    <img src="" alt="" />
+                    <img src={HandYellow} alt="" />
                     <h2>Aggression or violence</h2>
                     <p>
                       Exposure to violent games desensitizes, fosters
@@ -151,7 +157,7 @@ const SocialMediaAddiction = () => {
                   </div>
 
                   <div className="observed-result-box-align">
-                    <img src="" alt="" />
+                    <img src={BrinBuzzle} alt="" />
                     <h2>Lack of real-life experiences</h2>
                     <p>
                       Gaming addiction offers temporary escape but hinders

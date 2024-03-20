@@ -8,21 +8,23 @@ import Tbox from "../Images/Tbox.png";
 import { LiaFacebookF } from "react-icons/lia";
 import { FcGoogle } from "react-icons/fc";
 import LoginG from "../Images/LoginG.png";
+import axios from "../Utils/Baseurl.js";
+import { ToastContainer, toast } from "react-toastify";
 import { NavLink, useNavigate } from "react-router-dom";
 const Login = () => {
   const navigate = useNavigate();
-  const [formData, setFormData] = useState({ email: "", password: "" });
-  const [errors, setErrors] = useState({ email: "", password: "" });
+  const [formData, setFormData] = useState({ username: "", password: "" });
+  const [errors, setErrors] = useState({ username: "", password: "" });
 
   const validateForm = () => {
     let valid = true;
-    const newErrors = { email: "", password: "" };
+    const newErrors = { username: "", password: "" };
 
-    if (!formData.email.trim()) {
-      newErrors.email = "Email is required";
+    if (!formData.username.trim()) {
+      newErrors.username = "username is required";
       valid = false;
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = "Email is invalid";
+    } else if (!/\S+@\S+\.\S+/.test(formData.username)) {
+      newErrors.username = "username is invalid";
       valid = false;
     }
 
@@ -35,11 +37,28 @@ const Login = () => {
     return valid;
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     if (validateForm()) {
       // Form submission logic here
       console.log("Login Form submitted :", formData);
+
+      // If there are any errors, setErrors will handle them, no need to check newErrors here.
+      // So, removing the below block.
+      // if (Object.keys(newErrors).length > 0) {
+      //   setErrors(newErrors);
+      // } else {
+      // Form submission logic here
+      console.log(formData, "Sign up Form submitted successfully!");
+      // const response = await axios.post("/user_registration", formData);
+      const response = await axios.post("/user_signin", formData);
+      console.log(response, "this is the response of registration............");
+      if (response) {
+        console.log(response.data.message, "hhehheeeee");
+        toast.success(response.data.message);
+        navigate("/");
+      }
+      // }
     }
   };
 
@@ -83,18 +102,18 @@ const Login = () => {
             <div className="inside-sigup-from">
               <div className="form-input-a">
                 <label>
-                  Email<span>*</span>
+                  username<span>*</span>
                 </label>
                 <input
                   type="text"
-                  name="email"
-                  placeholder="Email"
-                  value={formData.email}
+                  name="username"
+                  placeholder="username"
+                  value={formData.username}
                   onChange={handleChange}
-                  className={errors.email ? "error-input" : ""} // Apply the error-input class if there's an error
+                  className={errors.username ? "error-input" : ""} // Apply the error-input class if there's an error
                 />
-                {errors.email && (
-                  <div className="error-message">{errors.email}</div>
+                {errors.username && (
+                  <div className="error-message">{errors.username}</div>
                 )}
               </div>
               <div className="form-input-b">

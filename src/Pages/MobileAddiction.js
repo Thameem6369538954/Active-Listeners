@@ -13,13 +13,19 @@ import cover from "../Images/cover.png";
 import Therapycategories from "../Components/Therapycategories.js";
 import Footer from "../Components/Footer.js";
 import GetinTouch from "../Components/GetinTouch.js";
+import Brine from "../SmallElements/Brine.png";
+import BrinBuzzle from "../SmallElements/BrinBuzzle.png";
+import OldTime from "../SmallElements/OldTime.png";
+import CB from "../SmallElements/CB.png";
+import Pinkmen from "../SmallElements/Pinkmen.png";
+import GreenClock from "../SmallElements/GreenClock.png";
 const MobileAddiction = () => {
   return (
     <div>
       <Navbar />
       <div className="mobile-addiction-main-container">
         <div className="mobile-addiction-header">
-          <div className="header-container">
+          <div className="header-container-mobile">
             <img
               src={MobileaddLeft}
               data-aos="fade-right"
@@ -101,7 +107,7 @@ const MobileAddiction = () => {
               {/* Fist-box */}
               <div className="observed-result-box">
                 <div className="observed-result-box-align">
-                  <img src="" alt="" />
+                  <img src={Brine} alt="" />
                   <h2>Health Issues</h2>
                   <p>
                     Overuse of mobile devices can cause eye strain, pain, and
@@ -110,7 +116,7 @@ const MobileAddiction = () => {
                 </div>
 
                 <div className="observed-result-box-align">
-                  <img src="" alt="" />
+                  <img src={GreenClock} alt="" />
                   <h2>Decreased Productivity</h2>
                   <p>
                     Mobile addiction leads to distractions, procrastination,
@@ -121,7 +127,7 @@ const MobileAddiction = () => {
               {/* second-box */}
               <div className="observed-result-box">
                 <div className="observed-result-box-align">
-                  <img src="" alt="" />
+                  <img src={OldTime} alt="" />
                   <h2>Neglected Responsibilities</h2>
                   <p>
                     Mobile addicts may neglect tasks, causing academic, work, or
@@ -130,7 +136,7 @@ const MobileAddiction = () => {
                 </div>
 
                 <div className="observed-result-box-align">
-                  <img src="" alt="" />
+                  <img src={Pinkmen} alt="" />
                   <h2>Unable to interact socially</h2>
                   <p>
                     Mobile addicts may struggle with in-person communication,
@@ -141,7 +147,7 @@ const MobileAddiction = () => {
               {/* therod-box */}
               <div className="observed-result-box">
                 <div className="observed-result-box-align">
-                  <img src="" alt="" />
+                  <img src={CB} alt="" />
                   <h2>Cyber Bullying</h2>
                   <p>
                     People may feel negative emotions due to social media
@@ -150,7 +156,7 @@ const MobileAddiction = () => {
                 </div>
 
                 <div className="observed-result-box-align">
-                  <img src="" alt="" />
+                  <img src={BrinBuzzle} alt="" />
                   <h2>Depression, Anxiety</h2>
                   <p>
                     Mobile addiction may elevate stress, anxiety, and depression

@@ -85,7 +85,12 @@ const Subscribe = () => {
             <h2>Help</h2>
           </div>
 
-          <div className="Subscribe-box-main">
+          <div
+            className="Subscribe-box-main"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+            data-aos-duration="2000"
+          >
             <div className="Subscribe-box">
               <div className="Subscribe-box-1">
                 <div>

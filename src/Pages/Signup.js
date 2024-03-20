@@ -9,6 +9,9 @@ import { LiaFacebookF } from "react-icons/lia";
 import { FcGoogle } from "react-icons/fc";
 import CoffieCup from "../Images/CoffieCup.png";
 import { NavLink, useNavigate } from "react-router-dom";
+import axios from "../Utils/Baseurl.js";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Signup = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -30,7 +33,7 @@ const Signup = () => {
     setErrors({ ...errors, [name]: "" });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     // Validation
@@ -73,9 +76,9 @@ const Signup = () => {
     } else if (formData.password !== formData.confirmPassword) {
       newErrors.confirmPassword = "Passwords do not match";
     }
-    if (!formData.agree) {
-      newErrors.agree = "You must agree to the Terms & Conditions";
-    }
+    // if (!formData.agree) {
+    //   newErrors.agree = "You must agree to the Terms & Conditions";
+    // }
 
     // If there are errors, set them and prevent form submission
     if (Object.keys(newErrors).length > 0) {
@@ -83,8 +86,17 @@ const Signup = () => {
     } else {
       // Form submission logic here
       console.log(formData, "Sign up Form submitted successfully!");
+      // const response = await axios.post("/user_registration", formData);
+      const response = await axios.post("/user_registration", formData);
+      console.log(response, "this is the response of registration............");
+      if (response) {
+        console.log(response.data.message,"hhehheeeee");
+        toast.success(response.data.message)
+        navigate("/Login");
+      }
     }
   };
+
   return (
     <div>
       <div className="signup-main">

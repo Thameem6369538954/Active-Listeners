@@ -54,7 +54,12 @@ const Categories = () => {
           </div>
         </div>
         <div className="cate-left-box">
-          <div className="box1">
+          <div
+            className="box1"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="3000"
+          >
             <img src={community} alt="" />
             <h2>Mobile Addiction</h2>
             <p>
@@ -68,7 +73,12 @@ const Categories = () => {
               </button>
             </NavLink>
           </div>
-          <div className="box2">
+          <div
+            className="box2"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="2900"
+          >
             <img src={chat} alt="" />
             <h2>Social Media Addiction</h2>
             <p>
@@ -82,7 +92,12 @@ const Categories = () => {
               </button>
             </NavLink>
           </div>
-          <div className="box3">
+          <div
+            className="box3"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2500"
+          >
             <img src={weekly} alt="" />
             <h2>Gaming Addiction</h2>
             <p>
@@ -95,7 +110,12 @@ const Categories = () => {
               </button>
             </NavLink>
           </div>
-          <div className="box4">
+          <div
+            className="box4"
+            data-aos-duration="3000"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
             <img src={emoji} alt="" />
             <h2>Entertainment & Performance Addiction</h2>
             <p>

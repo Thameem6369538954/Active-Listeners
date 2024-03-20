@@ -22,20 +22,35 @@ const Therapycategories = () => {
 
         <div className="theropy-box-main">
           <NavLink onClick={scrollToTop} to="/Teletherapy" className="Links">
-            <div className="therapy-box">
+            <div
+              className="therapy-box"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="3000"
+            >
               <h1>Speak Easy</h1>
               <Lottie animationData={Talking} loop={true} />
             </div>
           </NavLink>
           <NavLink onClick={scrollToTop} to="/Senses" className="Links">
-            <div className="therapy-box">
+            <div
+              className="therapy-box"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
               <h1>Senses Resurrection</h1>
               <Lottie animationData={Gitar} loop={true} />
             </div>
           </NavLink>
 
           <NavLink onClick={scrollToTop} to="/OneOnOne" className="Links">
-            <div className="therapy-box">
+            <div
+              className="therapy-box"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="3000"
+            >
               <h1>One to One Session</h1>
               <Lottie animationData={OneT} loop={true} />
             </div>
