@@ -16,11 +16,11 @@ const HiringForm = (props) => {
   const { position } = useParams();
   console.log(position);
   const [formData, setFormData] = useState({
-    fullName: "",
+    name: "",
     email: "",
-    mobileNumber: "",
+    mobile: "",
     resume: null,
-    message: "",
+    coverletter: "",
     position: "",
     agree: false,
   });
@@ -63,8 +63,8 @@ const HiringForm = (props) => {
 
   const validateFormData = (data) => {
     const errors = {};
-    if (!data.fullName.trim()) {
-      errors.fullName = "Full Name is required";
+    if (!data.name.trim()) {
+      errors.name = "Full Name is required";
     }
     if (!data.position.trim()) {
       errors.position = "position is required";
@@ -74,14 +74,14 @@ const HiringForm = (props) => {
     } else if (!/^\S+@\S+\.\S+$/.test(data.email)) {
       errors.email = "Email is invalid";
     }
-    if (!data.mobileNumber.trim()) {
-      errors.mobileNumber = "Mobile Number is required";
+    if (!data.mobile.trim()) {
+      errors.mobile = "Mobile Number is required";
     }
     if (!data.resume) {
       errors.resume = "Resume is required";
     }
-    if (!data.message.trim()) {
-      errors.message = "Message is required";
+    if (!data.coverletter.trim()) {
+      errors.coverletter = "coverletter is required";
     }
     if (!data.agree) {
       errors.agree =
@@ -120,13 +120,13 @@ const HiringForm = (props) => {
                       <label>Full Name</label>
                       <input
                         type="text"
-                        name="fullName"
+                        name="name"
                         placeholder="Enter your name"
-                        value={formData.fullName}
+                        value={formData.name}
                         onChange={handleChange}
                       />
-                      {errors.fullName && (
-                        <span className="error">{errors.fullName}</span>
+                      {errors.name && (
+                        <span className="error">{errors.name}</span>
                       )}
                     </div>
 
@@ -148,13 +148,13 @@ const HiringForm = (props) => {
                       <label>Mobile Number</label>
                       <input
                         type="text"
-                        name="mobileNumber"
+                        name="mobile"
                         placeholder="Enter mobile number"
-                        value={formData.mobileNumber}
+                        value={formData.mobile}
                         onChange={handleChange}
                       />
-                      {errors.mobileNumber && (
-                        <span className="error">{errors.mobileNumber}</span>
+                      {errors.mobile && (
+                        <span className="error">{errors.mobile}</span>
                       )}
                     </div>
                     <div className="input-field">
@@ -185,17 +185,17 @@ const HiringForm = (props) => {
                     </div>
 
                     <div className="input-field">
-                      <label>Message</label>
+                      <label>coverletter</label>
                       <input
                         type="text"
-                        name="message"
-                        placeholder="Enter your message"
-                        value={formData.message}
+                        name="coverletter"
+                        placeholder="Enter your coverletter"
+                        value={formData.coverletter}
                         onChange={handleChange}
                         style={{ width: 800, height: 90 }}
                       />
-                      {errors.message && (
-                        <span className="error">{errors.message}</span>
+                      {errors.coverletter && (
+                        <span className="error">{errors.coverletter}</span>
                       )}
                     </div>
                   </div>
