@@ -12,7 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { NavLink, useNavigate } from "react-router-dom";
 
 const HiringForm = (props) => {
-   const navigate = useNavigate();
+  const navigate = useNavigate();
   const { position } = useParams();
   console.log(position);
   const [formData, setFormData] = useState({
@@ -45,7 +45,7 @@ const HiringForm = (props) => {
     } else {
       setErrors(newErrors);
     }
-     if (Object.keys(newErrors).length > 0) {
+    if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
     } else {
       // Form submission logic here
@@ -54,8 +54,8 @@ const HiringForm = (props) => {
       const response = await axios.post("/application", formData);
       console.log(response, "this is the response of registration............");
       if (response) {
-        console.log(response.data.message,"hhehheeeee");
-        toast.success(response.data.message)
+        console.log(response.data.message, "hhehheeeee");
+        toast.success(response.data.message);
         navigate("/Login");
       }
     }
@@ -89,7 +89,6 @@ const HiringForm = (props) => {
     }
     return errors;
   };
-  
 
   return (
     <div>
@@ -117,7 +116,9 @@ const HiringForm = (props) => {
                 <div className="details personal">
                   <div className="fields">
                     <div className="input-field">
-                      <label>Full Name</label>
+                      <label style={{ backgroundColor: "red" }}>
+                        Full Name
+                      </label>
                       <input
                         type="text"
                         name="name"
