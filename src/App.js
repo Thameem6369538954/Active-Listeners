@@ -21,6 +21,7 @@ import GamingAddiction from "./Pages/GamingAddiction.js";
 import SocialMediaAddiction from "./Pages/SocialMediaAddiction.js";
 import EntertainmentandperformanceAddiction from "./Pages/EntertainmentandperformanceAddiction.js";
 import Hiring from "./Pages/Hiring.js";
+import UserProfile from "./Pages/UserProfile.js";
 import TeamPage from "./Pages/TeamPage.js";
 import HiringForm from "./Pages/HiringForm.js";
 import Preppers from "./Pages/Preppers.js";
@@ -29,6 +30,7 @@ import Adminpanel from "./AdminPanel/Adminpanel.js";
 import GriefsupportGroup from "./Pages/GriefsupportGroup.js";
 import loading from "./Anime/loading.json";
 import Lottie from "lottie-react";
+import Settings from "./Pages/Settings.js";
 function App() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -46,7 +48,7 @@ function App() {
           <Route path="/GriefsupportGroup" element={<GriefsupportGroup />} />
           <Route path="/Adminpanel" element={<Adminpanel />} />
           <Route path="/Preppers" element={<Preppers />} />
-          <Route path="/HiringForm" element={<HiringForm />} />
+          <Route path="/HiringForm/:position" element={<HiringForm />} />
           <Route path="/Hiring" element={<Hiring />} />
           <Route
             path="/EntertainmentandperformanceAddiction"
@@ -66,6 +68,8 @@ function App() {
             element={<AdaptationtoMobilePhones />}
           />
           <Route path="/Login" element={<Login />} />
+          <Route path="UserProfile" element={<UserProfile />}></Route>
+
           <Route path="/Signup" element={<Signup />} />
           <Route path="/Navbar" element={<Navbar />} />
           <Route path="/OneOnOne" element={<OneOnOne />} />

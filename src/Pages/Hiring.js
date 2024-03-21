@@ -92,7 +92,7 @@ const Hiring = () => {
                   <p className="title">Apply Now</p>
                   <NavLink
                     onClick={scrollToTop}
-                    to="/HiringForm"
+                    to="/HiringForm/Psychologist"
                     className="Links"
                   >
                     <button>Apply Now</button>
@@ -133,7 +133,7 @@ const Hiring = () => {
                   <p className="title">Apply Now</p>
                   <NavLink
                     onClick={scrollToTop}
-                    to="/HiringForm"
+                    to="/HiringForm/Story Teller"
                     className="Links"
                   >
                     <button>Apply Now</button>
@@ -173,7 +173,7 @@ const Hiring = () => {
                   <p className="title">Apply Now</p>
                   <NavLink
                     onClick={scrollToTop}
-                    to="/HiringForm"
+                    to="/HiringForm/Actor and Model"
                     className="Links"
                   >
                     <button>Apply Now</button>
@@ -211,7 +211,7 @@ const Hiring = () => {
                   <p className="title">Apply Now</p>
                   <NavLink
                     onClick={scrollToTop}
-                    to="/HiringForm"
+                    to="/HiringForm/Filmmaker"
                     className="Links"
                   >
                     <button>Apply Now</button>
@@ -249,7 +249,7 @@ const Hiring = () => {
                   <p className="title">Apply Now</p>
                   <NavLink
                     onClick={scrollToTop}
-                    to="/HiringForm"
+                    to="/HiringForm/Anchor"
                     className="Links"
                   >
                     <button>Apply Now</button>

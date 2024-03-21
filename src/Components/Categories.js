@@ -131,7 +131,7 @@ const Categories = () => {
               </button>
             </NavLink>
           </div>
-          <button>Discover How?</button>
+        
         </div>
       </div>
     </div>

@@ -55,8 +55,12 @@ const Login = () => {
       console.log(response, "this is the response of registration............");
       if (response) {
         console.log(response.data.message, "hhehheeeee");
-        toast.success(response.data.message);
+        if (response.data.message == "invalid password or id"){
+          toast.error("Invalid username or password");
+        }else{
+          toast.success(response.data.message);
         navigate("/");
+        }
       }
       // }
     }

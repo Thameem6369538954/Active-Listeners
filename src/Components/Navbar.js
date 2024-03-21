@@ -7,6 +7,7 @@ import { IoCloseOutline } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import AlCloud from "../Images/AlCloud.png";
 import Navarrow from "../Images/Navarrow.png";
+import { FaRegUser } from "react-icons/fa";
 const Navbar = () => {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -84,7 +85,9 @@ const Navbar = () => {
               </NavLink>
               <div className="border full-rounded"></div>
             </button>
-            <img src={Navarrow} className="navarrow" alt="" />
+            {/* <img src={Navarrow} className="navarrow" alt="" /> */}
+            <NavLink to="/UserProfile" className="Links"><FaRegUser className="navarrow" />
+            </NavLink>
           </div>
         </nav>
       </div>
