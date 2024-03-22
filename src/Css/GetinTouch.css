@@ -67,6 +67,12 @@
   flex-direction: column;
 }
 @media screen and (max-width: 600px) {
+  .get-form img {
+    position: absolute;
+    width: 35%;
+    margin-left: -88%;
+    margin-top: -80%;
+  }
   .get-form {
     /* background-color: red; */
     width: 90%;
