@@ -66,7 +66,7 @@ const Preppers = () => {
             </div>
           </div>
           <div className="preppers-box">
-            <h2>One to One Session</h2>
+            <h2>One On One Session</h2>
             <img src={Greanline} className="greenline-preppers" alt="" />
             <p>
               Our sessions are not just activities; they are gateways to

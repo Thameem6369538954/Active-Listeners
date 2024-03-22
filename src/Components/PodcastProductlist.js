@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import emoji from "../Images/emoji.png";
 import GetinTouch from "./GetinTouch";
+import { NavLink } from "react-router-dom";
 const PodcastProductlist = () => {
   const [productlist, setProductlist] = useState([
     {
@@ -205,7 +206,9 @@ const PodcastProductlist = () => {
         })}
       </div>
       <div className="potcaste-bottom-btn">
-        <button>Watch More</button>
+        
+          <button>Watch More</button>
+       
       </div>
       {/* <div className="potcaste-form">
         <div className="get-form">

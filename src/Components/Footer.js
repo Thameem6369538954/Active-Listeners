@@ -7,7 +7,13 @@ import { BsTwitterX } from "react-icons/bs";
 import FlowerL from "../Images/FlowerL.png";
 import FlowerR from "../Images/FlowerR.png";
 import { NavLink } from "react-router-dom";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Footer = () => {
+  const handleSubmit = () => {
+    console.log("subscribed");
+    toast.success("Thank you for subscribing");
+  };
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
@@ -77,11 +83,13 @@ const Footer = () => {
           </ul>
         </div>
         <div className="news-letter-main">
-          <div className="news-letter">
-            <p>Newsletter Sign Up</p>
-            <input type="text" placeholder="Enter your email here..." />
-          </div>
-          <button>Submit</button>
+          <form>
+            <div className="news-letter">
+              <p>Newsletter Sign Up</p>
+              <input type="text" placeholder="Enter your email here..." />
+            </div>
+          </form>
+          <button onClick={handleSubmit}>Submit</button>
         </div>
       </div>
     </div>

@@ -51,7 +51,7 @@ const Therapycategories = () => {
               data-aos-easing="ease-out-cubic"
               data-aos-duration="3000"
             >
-              <h1>One to One Session</h1>
+              <h1>One On One Session</h1>
               <Lottie animationData={OneT} loop={true} />
             </div>
           </NavLink>

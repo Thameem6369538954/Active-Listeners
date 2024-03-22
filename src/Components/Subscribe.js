@@ -1,6 +1,7 @@
 import React, { Component, useState } from "react";
 import Slider from "react-slick";
 import "../Css/Subscribe.css";
+import { NavLink } from "react-router-dom";
 import FreeMember from "../Images/FreeMember.png";
 import Kadhoolu from "../Images/Kadhoolu.png";
 import Doc from "../Images/Doc.png";
@@ -9,6 +10,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import MentoonBenar from "../Images/MentoonBenar.png";
 const Subscribe = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   const [caro, setCaro] = useState([
     {
       id: 1,
@@ -187,7 +191,9 @@ const Subscribe = () => {
                 })}
               </Slider>
             </div>
-            <button>Discover</button>
+            <NavLink onClick={scrollToTop} to="/Podcast">
+              <button>Discover</button>
+            </NavLink>
           </div>
         </div>
       </div>
