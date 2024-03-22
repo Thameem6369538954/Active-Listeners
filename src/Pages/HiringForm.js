@@ -38,55 +38,57 @@ const HiringForm = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newErrors = validateFormData(formData);
+    console.log(newErrors);
     if (Object.keys(newErrors).length === 0) {
       // Form is valid, proceed with submission
+      console.log("kkkkk");
       console.log("Form submitted:", formData);
-      // You can add your submission logic here
+      toast.success("form submitted successfully!");
     } else {
       setErrors(newErrors);
     }
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
-    } else {
-      // Form submission logic here
-      console.log(formData, "Sign up Form submitted successfully!");
-      // const response = await axios.post("/user_registration", formData);
-      const response = await axios.post("/application", formData);
-      console.log(response, "this is the response of registration............");
-      if (response) {
-        console.log(response.data.message, "hhehheeeee");
-        toast.success(response.data.message);
-        navigate("/Login");
-      }
-    }
+    // if (Object.keys(newErrors).length > 0) {
+    //   setErrors(newErrors);
+    // } else {
+    //   // Form submission logic here
+    //   console.log(formData, "Sign up Form submitted successfully!");
+    //   // const response = await axios.post("/user_registration", formData);
+    //   const response = await axios.post("/application", formData);
+    //   console.log(response, "this is the response of registration............");
+    //   if (response) {
+    //     console.log(response.data.message, "hhehheeeee");
+    //     toast.success(response.data.message);
+    //     navigate("/Login");
+    //   }
+    // }
   };
 
   const validateFormData = (data) => {
     const errors = {};
-    if (!data.name.trim()) {
-      errors.name = "Full Name is required";
-    }
-    if (!data.position.trim()) {
-      errors.position = "position is required";
-    }
-    if (!data.email.trim()) {
-      errors.email = "Email is required";
-    } else if (!/^\S+@\S+\.\S+$/.test(data.email)) {
-      errors.email = "Email is invalid";
-    }
-    if (!data.mobile.trim()) {
-      errors.mobile = "Mobile Number is required";
-    }
-    if (!data.resume) {
-      errors.resume = "Resume is required";
-    }
-    if (!data.coverletter.trim()) {
-      errors.coverletter = "coverletter is required";
-    }
-    if (!data.agree) {
-      errors.agree =
-        "You must agree to the Privacy Policy and Terms & Conditions";
-    }
+    // if (!data.name.trim()) {
+    //   errors.name = "Full Name is required";
+    // }
+    // if (!data.position.trim()) {
+    //   errors.position = "position is required";
+    // }
+    // if (!data.email.trim()) {
+    //   errors.email = "Email is required";
+    // } else if (!/^\S+@\S+\.\S+$/.test(data.email)) {
+    //   errors.email = "Email is invalid";
+    // }
+    // if (!data.mobile.trim()) {
+    //   errors.mobile = "Mobile Number is required";
+    // }
+    // if (!data.resume) {
+    //   errors.resume = "Resume is required";
+    // }
+    // if (!data.coverletter.trim()) {
+    //   errors.coverletter = "coverletter is required";
+    // }
+    // if (!data.agree) {
+    //   errors.agree =
+    //     "You must agree to the Privacy Policy and Terms & Conditions";
+    // }
     return errors;
   };
 
@@ -116,9 +118,7 @@ const HiringForm = (props) => {
                 <div className="details personal">
                   <div className="fields">
                     <div className="input-field">
-                      <label style={{ backgroundColor: "red" }}>
-                        Full Name
-                      </label>
+                      <label>Full Name</label>
                       <input
                         type="text"
                         name="name"
@@ -204,7 +204,7 @@ const HiringForm = (props) => {
               </div>
 
               <div className="agree-get">
-                <input
+                {/* <input
                   type="checkbox"
                   name="agree"
                   checked={formData.agree}
@@ -213,8 +213,8 @@ const HiringForm = (props) => {
                 <p>
                   By Submitting your details means you agree with Privacy Policy
                   and Term & Conditions
-                </p>
-                {errors.agree && <span className="error">{errors.agree}</span>}
+                </p> */}
+                {/* {errors.agree && <span className="error">{errors.agree}</span>} */}
                 <button type="submit">Submit</button>
               </div>
             </form>

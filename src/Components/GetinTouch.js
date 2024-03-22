@@ -118,11 +118,11 @@ const GetinTouch = () => {
               </div>
             </div>
             <div className="agree-get">
-              <input type="checkbox" />
+              {/* <input type="checkbox" />
               <p>
                 By Submitting your details means you agree with Privacy Policy
                 and Term & Conditions
-              </p>
+              </p> */}
               <button type="submit">Submit</button>
             </div>
           </form>

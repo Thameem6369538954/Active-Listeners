@@ -42,7 +42,7 @@ const Navbar = () => {
                 <li>Senses Resurrection</li>
               </NavLink>
               <NavLink to="/OneOnOne" className="Links">
-                <li>One to One Session</li>
+                <li>One-On-One Session</li>
               </NavLink>
               <NavLink to="/GriefSupport" className="Links">
                 <li>Grief Support</li>
@@ -52,10 +52,13 @@ const Navbar = () => {
               <NavLink to="/GriefsupportGroup" className="Links">
                 <li>Grief Support Meetup</li>
               </NavLink>
-              <NavLink to="/Preppers">
+              <NavLink to="/Preppers" className="Links">
                 <li>Preppers</li>
               </NavLink>
-              <NavLink to="/TeamPage">
+              <NavLink to="/Podcast" className="Links">
+                <li>Podcast</li>
+              </NavLink>
+              <NavLink to="/TeamPage" className="Links">
                 <li>TeamPage</li>
               </NavLink>
               <NavLink to="/Hiring" className="Links">
@@ -86,7 +89,8 @@ const Navbar = () => {
               <div className="border full-rounded"></div>
             </button>
             {/* <img src={Navarrow} className="navarrow" alt="" /> */}
-            <NavLink to="/UserProfile" className="Links"><FaRegUser className="navarrow" />
+            <NavLink to="/UserProfile" className="Links">
+              <FaRegUser className="navarrow" />
             </NavLink>
           </div>
         </nav>

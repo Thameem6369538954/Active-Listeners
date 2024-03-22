@@ -205,7 +205,7 @@ const PodcastProductlist = () => {
         })}
       </div>
       <div className="potcaste-bottom-btn">
-        <button>Learn More</button>
+        <button>Watch More</button>
       </div>
       {/* <div className="potcaste-form">
         <div className="get-form">

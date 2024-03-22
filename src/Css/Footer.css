@@ -111,6 +111,16 @@
     /* margin-left: 20px; */
     font-family: "Courier New", Courier, monospace;
   }
+  .news-letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bae8ac;
+    width: 104%;
+    height: 59px;
+    margin: auto;
+    border-radius: 20px;
+}
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .two-flower {

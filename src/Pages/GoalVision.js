@@ -30,6 +30,7 @@ import shankar from "../Images/shankar.jpeg";
 import Thameem from "../Images/Thameem.jpg";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
+import GetinTouch from "../Components/GetinTouch";
 const GoalVision = () => {
   const [counter, setCounter] = useState(false);
   var settings = {
@@ -278,7 +279,7 @@ const GoalVision = () => {
           </div>
         </div>
         {/* form */}
-        <div className="potcaste-form">
+        {/* <div className="potcaste-form">
           <div className="get-form">
             <form>
               <h1>Get in Touch</h1>
@@ -298,7 +299,8 @@ const GoalVision = () => {
               </div>
             </form>
           </div>
-        </div>
+        </div> */}
+        <GetinTouch />
         <Footer />
       </div>
     </div>

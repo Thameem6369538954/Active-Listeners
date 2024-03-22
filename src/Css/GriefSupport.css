@@ -423,6 +423,13 @@ form .buttons button,
   }
 }
 @media screen and (max-width: 600px) {
+  .radio-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-left: -25%;
+  }
   .card-inner {
     display: flex;
     align-items: center;
@@ -518,6 +525,15 @@ form .buttons button,
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
+  .grief-suppot-form {
+    background-color: #bae8ac;
+    padding: 10px;
+    margin: 4% 2%;
+    width: 95%;
+    height: 720px;
+    margin-bottom: -6%;
+    border-radius: 20px;
+  }
   .grief-main-heading h2 {
     font-family: "Questrial", sans-serif;
     font-size: 20px;

@@ -81,19 +81,25 @@ const Signup = () => {
     // }
 
     // If there are errors, set them and prevent form submission
+
+
+    // backend connectin part
+
+
+
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
     } else {
       // Form submission logic here
       console.log(formData, "Sign up Form submitted successfully!");
       // const response = await axios.post("/user_registration", formData);
-      const response = await axios.post("/user_registration", formData);
-      console.log(response, "this is the response of registration............");
-      if (response) {
-        console.log(response.data.message,"hhehheeeee");
-        toast.success(response.data.message)
-        navigate("/Login");
-      }
+      // const response = await axios.post("/user_registration", formData);
+      console.log( "this is the response of registration............");
+      toast.success("User Registered successfully"); 
+      // if (response) {
+      //   console.log(response.data.message,"hhehheeeee");
+      //   navigate("/Login");
+      // }
     }
   };
 
@@ -203,7 +209,7 @@ const Signup = () => {
           </div>
           <div className="signup-aggry-form">
             <div>
-              <input
+              {/* <input
                 type="checkbox"
                 name="agree"
                 checked={formData.agree}
@@ -212,7 +218,7 @@ const Signup = () => {
               <p>
                 By Submitting your details means you agree with Privacy Policy
                 and Term & Conditions
-              </p>
+              </p> */}
               {errors.agree && <span className="error">{errors.agree}</span>}
             </div>
             <button type="submit">Signup</button>

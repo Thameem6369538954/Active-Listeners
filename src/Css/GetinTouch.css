@@ -28,7 +28,7 @@
 }
 .form-inputs input {
   padding: 10px;
-  width: 150%;
+  width: 100%;
   border-radius: 10px;
   margin: 10px auto;
 }
@@ -77,12 +77,12 @@
     width: 91%;
     border-radius: 10px;
     margin: 10px auto;
-}
+  }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .form-inputs input {
     padding: 10px;
-    width: 107%;
+    width: 96%;
     border-radius: 10px;
     margin: 10px auto;
   }
