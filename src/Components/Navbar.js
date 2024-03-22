@@ -89,7 +89,7 @@ const Navbar = () => {
               <div className="border full-rounded"></div>
             </button>
             {/* <img src={Navarrow} className="navarrow" alt="" /> */}
-            <NavLink to="/UserProfile" className="Links">
+            <NavLink  className="Links">
               <FaRegUser className="navarrow" />
             </NavLink>
           </div>
