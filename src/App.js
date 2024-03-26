@@ -68,7 +68,9 @@ function App() {
             element={<AdaptationtoMobilePhones />}
           />
           <Route path="/Login" element={<Login />} />
-          <Route path="UserProfile" element={<UserProfile />}></Route>
+          <Route path="UserProfile" element={<UserProfile />}/>
+            <Route path="/Settings" element={<Settings />} />
+        
 
           <Route path="/Signup" element={<Signup />} />
           <Route path="/Navbar" element={<Navbar />} />
