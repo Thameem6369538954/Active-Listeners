@@ -12,6 +12,11 @@ const Speekeasy = () => {
         <h2>Session</h2>
         <img src={Yellowline} className="Yellowline" alt="" />
       </div>
+      <div className="tele-buttons">
+        <button>Get Appointment</button>
+        <p>Book Your Complimentary 15-min Call</p>
+        <TiArrowRightThick className="arrow-for-tele" />
+      </div>
       <div className="container-speek">
         <img src={Greenbg} />
 
@@ -23,11 +28,6 @@ const Speekeasy = () => {
             </p>
           </div>
         </div>
-      </div>
-      <div className="tele-buttons">
-        <button>Get Appointment</button>
-        <p>Book Your Complimentary 15-min Call</p>
-        <TiArrowRightThick className="arrow-for-tele" />
       </div>
     </div>
   );

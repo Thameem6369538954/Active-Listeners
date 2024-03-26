@@ -802,7 +802,7 @@ const GriefsupportGroup = () => {
                       <label>Message</label>
                       <input
                         type="text"
-                        placeholder="Enter mobile Message"
+                        placeholder="Enter your Message"
                         name="message"
                         value={formData.message}
                         onChange={handleChange}

@@ -13,7 +13,8 @@
   justify-content: start;
 }
 .Hoodi img {
-  width: 70%;
+  width: 490px;
+  margin-left: -2%;
 }
 .categories-main {
   display: flex;
@@ -23,13 +24,7 @@
 }
 
 .cate-yellow-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffdd7e;
   width: 40%;
-  height: 435px;
-  border-radius: 0px 50px 50px 5px;
 }
 .cate-left-box {
   /* background-color: red; */

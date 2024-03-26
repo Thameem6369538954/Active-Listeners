@@ -4,7 +4,7 @@ import emoji from "../Images/emoji.png";
 import chat from "../Images/chat.png";
 import weekly from "../Images/weekly.png";
 import community from "../Images/community.png";
-import Hoodi from "../Images/Hoodi.png";
+import Static from "../Images/Static.png";
 import Elements from "../Images/Elements.png";
 import { NavLink } from "react-router-dom";
 const Categories = () => {
@@ -49,8 +49,7 @@ const Categories = () => {
       <div className="categories-main">
         <div className="cate-yellow-box">
           <div className="Hoodi">
-            <h1>Statistics and Data</h1>
-            <img src={Hoodi} alt="" />
+            <img src={Static} alt="" />
           </div>
         </div>
         <div className="cate-left-box">
@@ -131,7 +130,6 @@ const Categories = () => {
               </button>
             </NavLink>
           </div>
-        
         </div>
       </div>
     </div>

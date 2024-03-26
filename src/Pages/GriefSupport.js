@@ -169,7 +169,7 @@ const GriefSupport = () => {
                       <div className="input-field">
                         <label>Full Name</label>
                         <input
-                          type="email"
+                          type="text"
                           placeholder="Enter your name"
                           id="email"
                           required
@@ -260,211 +260,15 @@ const GriefSupport = () => {
                         <label>Message</label>
                         <input
                           type="text"
-                          placeholder="Enter mobile Message"
+                          placeholder="Enter your Message"
                           required
                           style={{ width: 800, height: 90 }}
                         />
                       </div>
                     </div>
                   </div>
-
-                  {/* <div className="details ID">
-                    <span className="title">Identity Details</span>
-
-                    <div className="fields">
-                      <div className="input-field">
-                        <label>ID Type</label>
-                        <input
-                          type="text"
-                          placeholder="Enter ID type"
-                          required
-                        />
-                      </div>
-
-                      <div className="input-field">
-                        <label>ID Number</label>
-                        <input
-                          type="number"
-                          placeholder="Enter ID number"
-                          required
-                        />
-                      </div>
-
-                      <div className="input-field">
-                        <label>Issued Authority</label>
-                        <input
-                          type="text"
-                          placeholder="Enter issued authority"
-                          required
-                        />
-                      </div>
-
-                      <div className="input-field">
-                        <label>Issued State</label>
-                        <input
-                          type="text"
-                          placeholder="Enter issued state"
-                          required
-                        />
-                      </div>
-
-                      <div className="input-field">
-                        <label>Issued Date</label>
-                        <input
-                          type="date"
-                          placeholder="Enter issued date"
-                          required
-                        />
-                      </div>
-
-                      <div className="input-field">
-                        <label>Expiry Date</label>
-                        <input
-                          type="date"
-                          placeholder="Enter expiry date"
-                          required
-                        />
-                      </div>
-                    </div>
-                    <button className="nextBtn">
-                      <span className="btnText">Next</span>
-                      <i className="uil uil-navigator"></i>
-                    </button>
-                  </div> */}
                 </div>
 
-                {/* <div className="form second">
-                  <div className="details address">
-                    <span className="title">Address Details</span>
-
-                    <div className="fields">
-                      <div className="input-field">
-                        <label>Address Type</label>
-                        <input
-                          type="text"
-                          placeholder="Enter address type"
-                          required
-                        />
-                      </div>
-
-                      <div className="input-field">
-                        <label>Nationality</label>
-                        <input
-                          type="date"
-                          placeholder="Enter nationality"
-                          required
-                        />
-                      </div>
-
-                      <div className="input-field">
-                        <label>State</label>
-                        <input
-                          type="text"
-                          placeholder="Enter your state"
-                          required
-                        />
-                      </div>
-
-                      <div className="input-field">
-                        <label>District</label>
-                        <input
-                          type="text"
-                          placeholder="Enter your district"
-                          required
-                        />
-                      </div>
-
-                      <div className="input-field">
-                        <label>Block Number</label>
-                        <input
-                          type="number"
-                          placeholder="Enter block number"
-                          required
-                        />
-                      </div>
-
-                      <div className="input-field">
-                        <label>Ward Number</label>
-                        <input
-                          type="text"
-                          placeholder="Enter ward number"
-                          required
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="details family">
-                    <span className="title">Family Details</span>
-
-                    <div className="fields">
-                      <div className="input-field">
-                        <label>Father Name</label>
-                        <input
-                          type="text"
-                          placeholder="Enter father name"
-                          required
-                        />
-                      </div>
-
-                      <div className="input-field">
-                        <label>Mother Name</label>
-                        <input
-                          type="text"
-                          placeholder="Enter mother name"
-                          required
-                        />
-                      </div>
-
-                      <div className="input-field">
-                        <label>Grand Father</label>
-                        <input
-                          type="text"
-                          placeholder="Enter grandfther name"
-                          required
-                        />
-                      </div>
-
-                      <div className="input-field">
-                        <label>Spouse Name</label>
-                        <input
-                          type="text"
-                          placeholder="Enter spouse name"
-                          required
-                        />
-                      </div>
-
-                      <div className="input-field">
-                        <label>Father in Law</label>
-                        <input
-                          type="text"
-                          placeholder="Father in law name"
-                          required
-                        />
-                      </div>
-
-                      <div className="input-field">
-                        <label>Mother in Law</label>
-                        <input
-                          type="text"
-                          placeholder="Mother in law name"
-                          required
-                        />
-                      </div>
-                    </div>
-                    <div className="buttons">
-                      <div className="backBtn">
-                        <i className="uil uil-navigator"></i>
-                        <span className="btnText">Back</span>
-                      </div>
-
-                      <button className="submit">
-                        <span className="submit">submit</span>
-                        <i className="uil uil-navigator"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div> */}
                 <div className="agree-get">
                   {/* <input type="checkbox" />
                   <p>

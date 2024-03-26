@@ -8,6 +8,28 @@
   font-family: Relo;
   padding-top: 20px;
 }
+.bulb img:nth-child(1) {
+  width: 250px;
+  animation: moveUpDown 2s infinite;
+}
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Adjust the distance to move up */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.bulb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -35%;
+  gap: 13rem;
+}
 .therapy-box {
   background-color: #ffdd7e;
   border-radius: 20px;

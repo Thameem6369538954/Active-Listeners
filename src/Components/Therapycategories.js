@@ -6,6 +6,7 @@ import Talking from "../Anime/Talking.json";
 import Yellowline from "../Images/Yellowline.png";
 import Gitar from "../Anime/Gitar.json";
 import { NavLink } from "react-router-dom";
+import Bulb from "../Images/Bulb.png";
 const Therapycategories = () => {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -13,11 +14,15 @@ const Therapycategories = () => {
   return (
     <div>
       <div className="therapy-cate">
+        <div className="bulb">
+          <img src={Bulb} alt="" />
+
         <div className="therapy-heading">
           <p>One Platform, Multiple touchpoints</p>
           <h1>We are here to</h1>
           <h2>Help</h2>
           <img src={Yellowline} className="Yellowline" alt="" />
+        </div>
         </div>
 
         <div className="theropy-box-main">

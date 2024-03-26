@@ -14,13 +14,29 @@ const Header = () => {
   return (
     <div className="header-main">
       <div className="yellow-box" data-aos="fade-down" data-aos-duration="1500">
-        <ul className="yellow-box-ul">
-          <li>
-            Developed by <span>Psychologists</span> |
-          </li>
-          <li>Zero - Medication |</li>
-          <li>Music, Aroma & Mandala Art Therapy |</li>
-          <li>100% Safe for Kids |</li>
+        <ul className="yellow-box-ul" style={{ display: "flex" }}>
+          <marquee>
+            <div className="main-y-div">
+              <div>
+                <li>
+                  Developed by <span>Psychologists</span>|
+                </li>
+              </div>
+              <div>
+                <li>Zero - Medication |</li>
+              </div>
+              <div>
+                <li>Music, Aroma & Mandala Art Therapy |</li>
+              </div>
+              <div>
+                <li>100% Safe for Kids |</li>
+              </div>
+            </div>
+
+            {/* <li>Zero - Medication |</li>
+            <li>  </li>
+            <li></li> */}
+          </marquee>
         </ul>
       </div>
       <div className="header">
@@ -49,7 +65,14 @@ const Header = () => {
             alt=""
           />
         </div>
-        <div className="categoreis haeder">
+        <div className="hdr-tx">
+          <p data-aos="zoom-in" data-aos-duration="1000">
+            At Active Listeners,wE believe that early age gadgets exposure,
+            Adaptation to mobile among children has now led to time where there
+            is decrease in focus and learning
+          </p>
+        </div>
+        <div className="categoreis-haeder">
           <div
             className="categoreis-grid-boxs"
             data-aos="fade-up"
@@ -98,13 +121,10 @@ const Header = () => {
               </NavLink>
             </div>
           </div>
+
           <div></div>
         </div>
         <div className="hdr-btm-text">
-          <p data-aos="zoom-in" data-aos-duration="1000">
-            We believe that early age gadget exposure, adaptaion to mobile among
-            children has now led to a time where there decrease in learning
-          </p>
           <button>Why Active Listeners?</button>
         </div>
       </div>

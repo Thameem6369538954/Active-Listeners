@@ -6,11 +6,19 @@
   font-family: Relo;
   src: url(../Relo.ttf);
 }
+.categoreis-haeder {
+  margin-top: 50px;
+}
 .categoreis-grid-boxs {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+.hdr-tx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .yellow-box-ul {
   background-color: #ffdd7e;
@@ -27,14 +35,14 @@
 .categoreis-grid-box:hover .arrow-for-header {
   display: block;
   margin-top: -20px;
+  margin-left: 313px;
+  width: 60px;
 }
-.yellow-box-ul li {
-  list-style: none;
-  font-family: "Questrial", sans-serif;
-  margin: 4px 4px;
-}
-.yellow-box-ul li span {
-  font-weight: bolder;
+.main-y-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
 .categoreis-grid-box span {
   background-color: #cd4631;
@@ -83,6 +91,18 @@
 .header-container img {
   width: 35%;
 }
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Adjust the distance to move up */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .hdr-text h1 {
   font-family: myFont;
   font-weight: 400;
@@ -141,8 +161,7 @@
   font-size: 60px;
   margin-top: -15%;
 }
-.bg {
-}
+
 .puzzle-boy span {
   font-family: "Satisfy", cursive;
   font-weight: 400;
@@ -156,19 +175,17 @@
   font-weight: 400;
   font-style: normal;
   font-size: 60px;
-  margin-top: -23%;
+  margin-top: -17%;
   margin-left: 15%;
 }
-.bg {
-  /* border: 1px solid black; */
-}
+
 .element {
   /* border: 1px solid red; */
   position: absolute;
   display: flex;
   flex-direction: column;
   margin-top: 15%;
-  margin-left: -10%;
+  /* margin-left: -10%; */
 }
 .element img {
   width: 150px;
@@ -269,8 +286,6 @@
     font-weight: 900;
     font-size: 35px;
     margin-top: -17%;
-  }
-  .bg {
   }
   .puzzle-boy span {
     font-family: "Satisfy", cursive;
