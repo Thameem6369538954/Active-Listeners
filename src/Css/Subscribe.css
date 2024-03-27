@@ -237,6 +237,14 @@
   margin-top: 140px;
 }
 @media screen and (max-width: 600px) {
+  .caro-for-hdr {
+    border: 2px solid black;
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+  }
   .Subscribe-heading h1 {
     font-family: Relo;
     font-weight: 900;
@@ -329,6 +337,35 @@
     width: 130px;
     margin-left: 65%;
   }
+  .home-caro-align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .caro-for-hdr {
+    border: 2px solid black;
+    width: 90%;
+    height: 440px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+    /* margin-top: -1px; */
+  }
+  .cate-home-caro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem;
+    margin-top: 30px;
+  }
+  .cate-home-caro-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem;
+    display: none;
+  }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .cate-home-caro {
@@ -389,16 +426,5 @@
     justify-content: center;
     margin-top: -18%;
     gap: 10rem;
-  }
-}
-@media screen and (max-width: 1224px) {
-  .caro-for-hdr {
-    border: 2px solid black;
-    width: 90%;
-    height: 290px;
-    margin: auto;
-    border-radius: 10px;
-    background-color: white;
-    /* margin-top: -1px; */
   }
 }
