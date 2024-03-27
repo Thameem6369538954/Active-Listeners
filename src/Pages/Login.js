@@ -161,11 +161,7 @@ const Login = () => {
                 <span style={{ color: "#256C55" }}>Sign up</span>
               </NavLink>
             </p>
-            <img
-              src={LoginG}
-              style={{ marginTop: "-20%", marginLeft: "68%", width: "20%" }}
-              alt=""
-            />
+            <img src={LoginG} alt="" />
           </div>
         </div>
       </div>

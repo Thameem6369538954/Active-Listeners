@@ -1,6 +1,5 @@
 .login-btm {
   margin-top: 80px;
-
 }
 
 .error-input {
@@ -27,6 +26,11 @@
 @media (min-width: 600px) and (max-width: 1024px) {
   .login-btm {
     margin-top: 80px;
-      margin-left: 20%;
+  }
+  .other-signup img {
+    width: 400px;
+    margin-top: -23%;
+    margin-left: 54%;
+    z-index: -1;
   }
 }

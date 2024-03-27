@@ -82,10 +82,7 @@ const Signup = () => {
 
     // If there are errors, set them and prevent form submission
 
-
     // backend connectin part
-
-
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
@@ -94,8 +91,8 @@ const Signup = () => {
       console.log(formData, "Sign up Form submitted successfully!");
       // const response = await axios.post("/user_registration", formData);
       // const response = await axios.post("/user_registration", formData);
-      console.log( "this is the response of registration............");
-      toast.success("User Registered successfully"); 
+      console.log("this is the response of registration............");
+      toast.success("User Registered successfully");
       // if (response) {
       //   console.log(response.data.message,"hhehheeeee");
       //   navigate("/Login");
@@ -172,9 +169,11 @@ const Signup = () => {
                 placeholder="Phone Number"
                 className={errors.phoneNumber ? "error-input" : ""}
               />
-              {errors.phoneNumber && (
-                <span className="error">{errors.phoneNumber}</span>
-              )}
+              <div style={{ width: "80%" }}>
+                {errors.phoneNumber && (
+                  <span className="error">{errors.phoneNumber}</span>
+                )}
+              </div>
             </div>
             <div className="form-input-b">
               <label>
@@ -240,11 +239,7 @@ const Signup = () => {
               <span style={{ color: "#256C55" }}>Log in</span>
             </NavLink>
           </p>
-          <img
-            src={CoffieCup}
-            style={{ marginTop: "-20%", marginLeft: "68%", width: "20%" }}
-            alt=""
-          />
+          <img src={CoffieCup} alt="" />
         </div>
       </div>
     </div>
