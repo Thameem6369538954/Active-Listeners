@@ -295,7 +295,7 @@ const Subscribe = () => {
       </div>
       <div className="carosel-home-button">
         <NavLink onClick={scrollToTop} to="/Podcast">
-          <button>Discover</button>
+          <button style={{ zIndex:"9999" }}>Discover</button>
         </NavLink>
       </div>
       <div className="mentoonsbaner">
