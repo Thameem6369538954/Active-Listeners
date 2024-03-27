@@ -331,6 +331,14 @@
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
+  .caro-for-hdr {
+    border: 2px solid black;
+    width: 90%;
+    height: 310px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+  }
   .hdr-caro {
     background-image: url("../Images/ALHeaderbg.png");
     width: 100%;
@@ -375,4 +383,14 @@
     margin-top: -18%;
     gap: 10rem;
   }
+}
+@media screen and (max-width: 1224px) {
+  .cate-home-caro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: -30px;
+    background-color: #256c55;
+}
 }

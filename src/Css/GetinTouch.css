@@ -115,3 +115,21 @@
     margin-bottom: -3%;
   }
 }
+@media screen and (max-width: 1224px) {
+  .get-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #bae8ac;
+    width: 60%;
+    height: 400px;
+    margin-left: 3%;
+    padding: 10px;
+    /* z-index: ; */
+    border-radius: 20px;
+    margin-bottom: -3%;
+  }
+}
