@@ -160,6 +160,20 @@ h4 {
   margin-right: 30px;
 }
 @media screen and (max-width: 600px) {
+  .header-container-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0rem;
+}
+  .podcast-red-mob {
+    /* background-color: yellow; */
+    width: 100px;
+    margin-top: -62%;
+    margin-left: 200px;
+    position: absolute;
+    z-index: 9999;
+  }
   .inside-mobile-addiction-txt h1 {
     font-size: 19px;
   }

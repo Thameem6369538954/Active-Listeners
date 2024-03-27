@@ -130,8 +130,8 @@ nav {
     margin-right: 19px;
   }
   nav img {
-    width: 102%;
-    margin-left: -17%;
+    width: 148%;
+    margin-left: -44%;
   }
 }
 .nav-icons:nth-child(1) {
@@ -145,11 +145,10 @@ nav {
   }
   .nav-links li {
     list-style: none;
-    font-size: 35px;
+    font-size: 27px;
     color: black;
-    /* font-family: myFont; */
     text-decoration: none;
-    gap: 3rem;
+    padding: 5px;
   }
   .nav-links li:hover {
     text-align: center;

@@ -44,6 +44,9 @@
   justify-content: center;
   gap: 3rem;
 }
+.hdr-tx p {
+  text-align: center;
+}
 .categoreis-grid-box span {
   background-color: #cd4631;
   color: white;
@@ -202,6 +205,9 @@
   z-index: 1;
 }
 @media screen and (max-width: 600px) {
+  .hdr-tx p {
+    text-align: center;
+  }
   .categoreis-grid-boxs {
     display: flex;
     justify-content: center;
@@ -229,6 +235,7 @@
     margin-bottom: 30px;
     margin-top: 20px;
   }
+
   .categoreis-grid-box:hover {
     background-color: #ffdd7e;
     border-radius: 20px;
@@ -318,6 +325,9 @@
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
+  .hdr-tx p {
+    text-align: center;
+  }
   .yellow-box-ul {
     background-color: #ffdd7e;
     display: flex;
