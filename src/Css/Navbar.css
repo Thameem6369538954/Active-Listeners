@@ -87,9 +87,10 @@ nav {
 
   .Cloude {
     margin-top: -6%;
+    margin-left: -3%;
     position: absolute;
-    width: 390px;
-    height: 39px;
+    width: 482px;
+    height: 41px;
     /* background-color: red; */
   }
   .Login-btns button:hover {

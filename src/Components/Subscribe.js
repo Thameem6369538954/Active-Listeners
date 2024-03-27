@@ -16,41 +16,95 @@ const Subscribe = () => {
   const [caro, setCaro] = useState([
     {
       id: 1,
-      name: "How Does it Feel to be a Teenager in 2024",
-      img: require("../Images/Gadgets addiction .png"),
+      episode: 1,
+      name: "Social Media de-addiction Tips",
+      EpiImage: require("../Images/Adiction.png"),
+      fravatara: require("../Images/avatar (1).png"),
+      fravatarb: require("../Images/avatar.png"),
+      discribtions:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut.",
+      cateA: "Social Media",
+      cateB: "Mental health",
+      cateC: "health",
+      // cateD: "",
     },
     {
       id: 2,
-      name: "Disconnect to Reconnect",
-      img: require("../Images/Disconnect to reconnect .png"),
+      episode: 2,
+      fravatara: require("../Images/avatar (1).png"),
+      fravatarb: require("../Images/avatar.png"),
+      name: "Loneliness due to Gaming",
+      EpiImage: require("../Images/Lonely .png"),
+      discribtions:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut.",
+      cateA: "Loneliness",
+      cateB: "health",
+      cateC: "Gaming",
+      // cateD: "",
     },
     {
       id: 3,
-      name: "Loneliness due to Gaming",
-      img: require("../Images/Lonely .png"),
+      episode: 3,
+      fravatara: require("../Images/avatar (1).png"),
+      fravatarb: require("../Images/avatar.png"),
+      name: "How to handle your  Teenage Children",
+      EpiImage: require("../Images/GamingAddiction.png"),
+      discribtions:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut.",
+      cateA: "teenange",
+      cateB: "health",
+      cateC: "parents",
+      // cateD: "",
     },
     {
       id: 4,
-      name: "Why WFH is preffered?",
-      img: require("../Images/Untitled_Artwork 16.png"),
+      episode: 4,
+      fravatara: require("../Images/avatar (1).png"),
+      fravatarb: require("../Images/avatar.png"),
+      name: "Are you perplexed mind Person?",
+      EpiImage: require("../Images/Untitled_Artwork 22.png"),
+      discribtions:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut.",
+      cateA: "Mental Guide",
+      cateB: "health",
+      // cateC: "",
+      // cateD: "",
     },
     {
       id: 5,
-      name: "Social Media de-addiction  Tips",
-      img: require("../Images/Untitled_Artwork 1 6.png"),
+      episode: 5,
+      fravatara: require("../Images/avatar (1).png"),
+      fravatarb: require("../Images/avatar.png"),
+      name: "Why WFH is preffered?",
+      EpiImage: require("../Images/Untitled_Artwork 16.png"),
+      discribtions:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut.",
+      cateA: "Healthy Life",
+      cateB: "health",
+      // cateC: "",
+      // cateD: "",
     },
     {
       id: 6,
-      name: "How to handle your Teenage Children",
-      img: require("../Images/Untitled_Artwork 22.png"),
+      episode: 6,
+      fravatara: require("../Images/avatar (1).png"),
+      fravatarb: require("../Images/avatar.png"),
+      name: "Disconnect to Reconnect",
+      EpiImage: require("../Images/Disconnect to reconnect .png"),
+      discribtions:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut.",
+      cateA: "Relocation",
+      cateB: "health",
+      // cateC: "",
+      // cateD: "",
     },
   ]);
   var settings = {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 4,
+    slidesToShow: 2,
+    slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
       {
@@ -183,19 +237,66 @@ const Subscribe = () => {
                   return (
                     <div key={item.id}>
                       <div className="caro-for-hdr">
-                        <img src={item.img} alt="" />
-                        <h3>{item.name}</h3>
+                        <div className="home-caro-align">
+                          <img src={item.EpiImage} alt="" />
+                          <ul className="epi-list">
+                            <li>
+                              <p style={{ fontWeight: "bold", color: "green" }}>
+                                Episode {item.id}
+                              </p>
+                            </li>
+                            <li>
+                              <p
+                                style={{ fontWeight: "bold", fontSize: "20px" }}
+                              >
+                                {item.name}
+                              </p>
+                            </li>
+                            <hr></hr>
+                            <li>
+                              <p>{item.discribtions}</p>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div className="cate-home-caro">
+                          <div className="cate-home-caro-btns">
+                            <button>{item.cateA}</button>
+                            <button>{item.cateB}</button>
+                            <button>{item.cateC}</button>
+                          </div>
+                          <div className="host-home-caro">
+                            <p>Hosted by :</p>
+                            <div className="host-imgage">
+                              <img
+                                src={item.fravatarb}
+                                style={{ width: "60px" }}
+                                alt=""
+                              />
+                              <img
+                                src={item.fravatarb}
+                                style={{
+                                  width: "60px",
+                                  borderRadius: "500%",
+                                }}
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   );
                 })}
               </Slider>
             </div>
-            <NavLink onClick={scrollToTop} to="/Podcast">
-              <button>Discover</button>
-            </NavLink>
           </div>
         </div>
+      </div>
+      <div className="carosel-home-button">
+        <NavLink onClick={scrollToTop} to="/Podcast">
+          <button>Discover</button>
+        </NavLink>
       </div>
       <div className="mentoonsbaner">
         <img src={MentoonBenar} alt="" />

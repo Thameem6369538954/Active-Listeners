@@ -137,4 +137,39 @@
   .logo img {
     width: 40%;
   }
+  .news-letter input {
+    width: 67%;
+    height: 20px;
+    margin-left: 3%;
+    padding: 27px;
+    border-radius: 20px;
+  }
+  .news-letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bae8ac;
+    width: 161%;
+    margin-left: -26%;
+    /* margin: auto; */
+    border-radius: 20px;
+  }
+  .news-letter-main {
+    /* margin-top: 40px; */
+    flex-direction: column;
+  }
+
+  .news-letter-main button {
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 1224px) {
+  .two-flower {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background-color: red;
+    /* width: 10%; */
+    display: none;
+  }
 }

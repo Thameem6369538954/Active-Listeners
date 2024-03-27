@@ -90,7 +90,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffdd7e;
+    background-color: none;
     width: 85%;
     height: 396px;
     border-radius: 0px 50px 50px 5px;
@@ -122,8 +122,8 @@
     margin: 20px;
   }
   .Hoodi img {
-    width: 70%;
-    margin-left: -35%;
+    width: 173%;
+    margin-left: 42%;
     justify-content: flex-start;
   }
   .cate-left-box button {
@@ -147,7 +147,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffdd7e;
+    background-color: none;
     width: 107%;
     height: 435px;
     border-radius: 0px 50px 50px 5px;

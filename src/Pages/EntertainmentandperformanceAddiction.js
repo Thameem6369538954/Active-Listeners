@@ -171,7 +171,7 @@ const EntertainmentandperformanceAddiction = () => {
                     Get to know How much you are Addicted to Mobile Phones
                   </h4>
                   <button>Take Test</button>
-                  <img src={Maskgroup} alt="" />
+                  <img src={Maskgroup} className="maskgroup-mob" alt="" />
                 </div>
 
                 <div className="mobile-addiction-yellow-box">

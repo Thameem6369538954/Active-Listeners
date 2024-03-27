@@ -239,7 +239,7 @@ const TeamPage = () => {
         </div>
 
         <div className="therapy-heading">
-          <p>Psycolgits Team</p>
+          <p>Psycologist Team</p>
           <h1>Meet our Phycologist</h1>
           <h2>Team</h2>
           <img src={Yellowline} className="Yellowline" alt="" />

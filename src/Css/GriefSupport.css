@@ -604,5 +604,14 @@ form .buttons button,
     position: relative;
     margin: 19% auto;
   }
+  .grief-suppot-form {
+    background-color: #bae8ac;
+    padding: 10px;
+    margin: 2% 19%;
+    width: 60%;
+    height: 741px;
+    /* margin-bottom: -6%; */
+    border-radius: 20px;
+}
 }
 /* navfor */

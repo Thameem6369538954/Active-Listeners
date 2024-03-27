@@ -163,7 +163,7 @@ const GamingAddiction = () => {
                 <div className="mobile-addiction-yellow-box">
                   <h4>Lack of real-life experiences</h4>
                   <button>Take Test</button>
-                  <img src={Maskgroup} alt="" />
+                  <img src={Maskgroup} className="maskgroup-mob" alt="" />
                 </div>
 
                 <div className="mobile-addiction-yellow-box">

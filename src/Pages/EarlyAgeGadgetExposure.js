@@ -71,7 +71,7 @@ const EarlyAgeGadgetExposure = () => {
           <div className="card-inneR">
             <div className="card-inneR-text">
               <h1>Impact of</h1>
-              <h1>Gadgts on</h1>
+              <h1>Gadgets on</h1>
               <p>children</p>
             </div>
             <img src={earlyAgeBoxImg} alt="" />
@@ -85,14 +85,14 @@ const EarlyAgeGadgetExposure = () => {
             <button>Take Test </button>
           </div>
           <div className="getyouknow-image">
-            <img src={Maskgroup} alt="" />
+            <img src={Maskgroup} className="maskgroup-mob" alt="" />
           </div>
         </div>
         <div className="getyoukow-container">
           <div className="getyouknow-image">
             <img
               src={cover}
-              style={{ width: "80%", marginLeft: "10%", borderRadius: "20px" }}
+              // style={{ width: "80%", marginLeft: "10%", borderRadius: "20px" }}
               alt=""
             />
           </div>

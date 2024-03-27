@@ -107,41 +107,76 @@ const MobileAddiction = () => {
               {/* Fist-box */}
               <div className="observed-result-box">
                 <div className="observed-result-box-align">
-                  <img src={Brine} alt="" />
-                  <h2>Health Issues</h2>
-                  <p>
-                    Overuse of mobile devices can cause eye strain, pain, and
-                    sleep disruption.
-                  </p>
+                  <ul>
+                    <li>
+                      <img src={Brine} alt="" />
+                      <h2>Health Issues</h2>
+                      <p>
+                        Overuse of mobile devices can cause eye strain, pain,
+                        and sleep disruption.
+                      </p>
+                    </li>
+                  </ul>
                 </div>
 
                 <div className="observed-result-box-align">
-                  <img src={GreenClock} alt="" />
-                  <h2>Decreased Productivity</h2>
-                  <p>
-                    Mobile addiction leads to distractions, procrastination,
-                    hindering productivity, and performance.
-                  </p>
+                  <ul>
+                    <li>
+                      {" "}
+                      <img src={GreenClock} alt="" />
+                    </li>
+                    <li>
+                      {" "}
+                      <h2>Decreased Productivity</h2>
+                    </li>
+                    <li>
+                      {" "}
+                      <p>
+                        Mobile addiction leads to distractions, procrastination,
+                        hindering productivity, and performance.
+                      </p>
+                    </li>
+                  </ul>
                 </div>
               </div>
               {/* second-box */}
               <div className="observed-result-box">
                 <div className="observed-result-box-align">
-                  <img src={OldTime} alt="" />
-                  <h2>Neglected Responsibilities</h2>
-                  <p>
-                    Mobile addicts may neglect tasks, causing academic, work, or
-                    familial problems.
-                  </p>
+                  <ul>
+                    <li>
+                      {" "}
+                      <img src={OldTime} alt="" />
+                    </li>
+                    <li>
+                      {" "}
+                      <h2>Neglected Responsibilities</h2>
+                    </li>
+                    <li>
+                      {" "}
+                      <p>
+                        Mobile addicts may neglect tasks, causing academic,
+                        work, or familial problems.
+                      </p>
+                    </li>
+                  </ul>
                 </div>
 
                 <div className="observed-result-box-align">
-                  <img src={Pinkmen} alt="" />
-                  <h2>Unable to interact socially</h2>
-                  <p>
-                    Mobile addicts may struggle with in-person communication,
-                    fostering isolation feelings.
-                  </p>
+                  <ul>
+                    <li>
+                      <img src={Pinkmen} alt="" />
+                    </li>
+                    <li>
+                      {" "}
+                      <h2>Unable to interact socially</h2>
+                    </li>
+                    <li>
+                      <p>
+                        Mobile addicts may struggle with in-person
+                        communication, fostering isolation feelings.
+                      </p>
+                    </li>
+                  </ul>
                 </div>
               </div>
               {/* therod-box */}
@@ -169,32 +204,25 @@ const MobileAddiction = () => {
               <div className="mobile-addiction-yellow-box">
                 <h4>Get to know How much you are Addicted to Mobile Phones</h4>
                 <button>Take Test</button>
-                <img src={Maskgroup} alt="" />
+                <img src={Maskgroup} className="maskgroup-mob" alt="" />
               </div>
 
               <div className="mobile-addiction-yellow-box">
-                <img
-                  src={PodcastRed}
-                  style={{
-                    width: "100px",
-                    position: "absolute",
-                    marginLeft: "15%",
-                    marginTop: "-16%",
-                  }}
-                  alt=""
-                />
-                <img
-                  src={cover}
-                  style={{
-                    width: "200px",
-                    marginLeft: "1%",
-                    borderRadius: "30px",
-                  }}
-                  alt=""
-                />
-                <span>Recommended Podcast</span>
-                <h4>Are you Addicted to Mobile phone?</h4>
-                <button>Watch Now</button>
+                <img src={PodcastRed} className="podcast-red-mob" alt="" />
+                <div className="over">
+                  <img
+                    src={cover}
+                    // style={{
+                    //   width: "200px",
+                    //   marginLeft: "1%",
+                    //   borderRadius: "30px",
+                    // }}
+                    alt=""
+                  />
+                  <span>Recommended Podcast</span>
+                  <h4>Are you Addicted to Mobile phone?</h4>
+                  <button>Watch Now</button>
+                </div>
               </div>
             </div>
           </div>

@@ -94,11 +94,11 @@ const AdaptationtoMobilePhones = () => {
             <div className="getyouknow-image">
               <img
                 src={cover}
-                style={{
-                  width: "80%",
-                  marginLeft: "10%",
-                  borderRadius: "20px",
-                }}
+                // style={{
+                //   width: "80%",
+                //   marginLeft: "10%",
+                //   borderRadius: "20px",
+                // }}
                 alt=""
               />
             </div>

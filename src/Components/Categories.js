@@ -62,9 +62,8 @@ const Categories = () => {
             <img src={community} alt="" />
             <h2>Mobile Addiction</h2>
             <p>
-              Get professional help from a mobile addiction and mental health
-              counselor from BetterHelp.Start receiving support via phone,
-              video, or live-chat.
+              Obsessive smartphone usage hampers daily life, social interaction,
+              productivity.
             </p>
             <NavLink onClick={scrollToTop} to="/MobileAddiction">
               <button style={{ width: "150px", marginLeft: "0%" }}>
@@ -81,9 +80,8 @@ const Categories = () => {
             <img src={chat} alt="" />
             <h2>Social Media Addiction</h2>
             <p>
-              Struggling With Social Media Addiction? Online therapy can help
-              you make lasting change. Start getting support from a licensed
-              therapist from BetterHelp.
+              Continuous scrolling, likes, and shares diminish real-world
+              connections profoundly.
             </p>
             <NavLink onClick={scrollToTop} to="/SocialMediaAddiction">
               <button style={{ width: "150px", marginLeft: "0%" }}>
@@ -100,8 +98,8 @@ const Categories = () => {
             <img src={weekly} alt="" />
             <h2>Gaming Addiction</h2>
             <p>
-              If you are looking for a video game addiction treatment facility,
-              we can help. Call to discuss treatment options
+              Excessive gaming disrupts routines, relationships, and overall
+              well-being detrimentally.
             </p>
             <NavLink onClick={scrollToTop} to="/GamingAddiction">
               <button style={{ width: "150px", marginLeft: "0%" }}>
@@ -118,8 +116,8 @@ const Categories = () => {
             <img src={emoji} alt="" />
             <h2>Entertainment & Performance Addiction</h2>
             <p>
-              You may break away from entertainment addiction with some simple
-              tactics.
+              Constant pursuit of thrill undermines personal growth,
+              relationships, and well-being.
             </p>
             <NavLink
               onClick={scrollToTop}

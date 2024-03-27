@@ -105,7 +105,7 @@ const GriefSupport = () => {
           <div className="weeekly-meetup-box">
             <img src={Handsack} alt="" />
 
-            <h2>Felderly Support Group</h2>
+            <h2>Elderly Support Group</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod{" "}
