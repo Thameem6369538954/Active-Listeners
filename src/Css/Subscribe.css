@@ -237,6 +237,17 @@
   margin-top: 140px;
 }
 @media screen and (max-width: 600px) {
+  .carosel-home-button button {
+    background-color: #ffdd7e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: -100px auto; */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 30px;
+  }
   .caro-for-hdr {
     border: 2px solid black;
     width: 90%;
@@ -264,6 +275,7 @@
     height: 111vh;
     background-repeat: no-repeat;
     position: relative;
+    z-index: -1;
   }
   .news-letter input {
     width: 194px;
