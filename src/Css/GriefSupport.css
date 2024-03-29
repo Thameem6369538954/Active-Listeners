@@ -88,6 +88,7 @@
 }
 .Yellowline {
   width: 150px;
+  margin-top: -40px;
 }
 .green-bourd-grief {
   margin: 55px auto;
@@ -612,6 +613,6 @@ form .buttons button,
     height: 741px;
     /* margin-bottom: -6%; */
     border-radius: 20px;
-}
+  }
 }
 /* navfor */

@@ -155,7 +155,8 @@ const MobileAddiction = () => {
                       {" "}
                       <p>
                         Mobile addicts may neglect tasks, causing academic,
-                        work, or familial problems.
+                        work, or family
+                         problems.
                       </p>
                     </li>
                   </ul>

@@ -31,6 +31,7 @@ import GriefsupportGroup from "./Pages/GriefsupportGroup.js";
 import loading from "./Anime/loading.json";
 import Lottie from "lottie-react";
 import Settings from "./Pages/Settings.js";
+import CareerCounselling from "./Pages/CareerCounselling.js";
 function App() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -73,6 +74,7 @@ function App() {
         
 
           <Route path="/Signup" element={<Signup />} />
+          <Route path="/CareerCounselling" element={<CareerCounselling />} />
           <Route path="/Navbar" element={<Navbar />} />
           <Route path="/OneOnOne" element={<OneOnOne />} />
           <Route path="/Senses" element={<Senses />} />
