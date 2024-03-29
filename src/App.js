@@ -32,6 +32,8 @@ import loading from "./Anime/loading.json";
 import Lottie from "lottie-react";
 import Settings from "./Pages/Settings.js";
 import CareerCounselling from "./Pages/CareerCounselling.js";
+import Workshop from "./Pages/Workshop.js";
+import InstentKadha from "./Katha/InstentKadha/InstentKadha.js";
 function App() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -45,6 +47,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/InstentKadha" element={<InstentKadha />} />
+          <Route path="/Workshop" element={<Workshop />} />
           <Route path="/TeamPage" element={<TeamPage />} />
           <Route path="/GriefsupportGroup" element={<GriefsupportGroup />} />
           <Route path="/Adminpanel" element={<Adminpanel />} />
@@ -69,9 +73,8 @@ function App() {
             element={<AdaptationtoMobilePhones />}
           />
           <Route path="/Login" element={<Login />} />
-          <Route path="UserProfile" element={<UserProfile />}/>
-            <Route path="/Settings" element={<Settings />} />
-        
+          <Route path="UserProfile" element={<UserProfile />} />
+          <Route path="/Settings" element={<Settings />} />
 
           <Route path="/Signup" element={<Signup />} />
           <Route path="/CareerCounselling" element={<CareerCounselling />} />

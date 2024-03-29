@@ -1,0 +1,52 @@
+.instant-kadha-box {
+  background-color: #ffdd7e;
+  width: 80%;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.instant-kadha-main {
+  margin-top: 30px;
+  display: grid;
+  place-items: center;
+}
+.kadha-top-image img {
+  /* position: absolute; */
+  width: 450px;
+  margin-left: -20%;
+}
+.kadha-inside-box-container {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: -15%;
+}
+.kadha-inside-box {
+  width: 30%;
+  height: 350px;
+  border-radius: 20px;
+  border: 2px solid white;
+  padding: 20px;
+}
+.kadha-inside-box h1 {
+  z-index: 1;
+}
+.age-kadha img {
+  width: 110px;
+  position: absolute;
+  margin-top: -85px;
+  margin-left: 45%;
+}
+.kadha-inside-box img {
+  /* background-color: red; */
+  margin-left: -5%;
+  width: 50px;
+}
+.kadha-inside-box h1 {
+  font-size: 20px;
+}

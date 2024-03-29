@@ -141,37 +141,24 @@ const CareerCounselling = () => {
               </p>
             </div>
             {/* carousel */}
-            {/* <div className="meet-our-psyco-caro">
-              <div className="team-psycologiest-box-conatiner">
-                {employees.map((items) => (
-                  
+            <div className="goal-box-container-hole">
+              <Slider {...settings}>
+                {employees.map((employee) => (
                   <div>
-                    <div className="psycologiest-box-for-counsling">
-                      <div className="follow-box-for-psycologiest">
-                        <div className="psycologiest-box-for-image">
-                          <img src={items.image} alt="" />
-                        </div>
-                        <div className="psycologiest-box-inside-for">
-                          <span style={{ color: "#256C55" }}>Psychologist</span>
-                          <h3 style={{ color: "black" }}>{items.name}</h3>
-                          <p>{items.dis}</p>
-                          <hr></hr>
-                          <div className="follow-box-for-career">
-                            <p>Follow me :</p>
-                            <div className="follw-icons">
-                              <FaWhatsapp />
-                              <FaInstagram />
-                              <PiFacebookLogoBold />
-                              <FaXTwitter />
-                            </div>
-                          </div>
-                        </div>
+                    <div className="career-box-container" key={employee.id}>
+                      <img src={employee.image} alt="" />
+                      <div className="positon-name">
+                        <p style={{ color: "green" }}>{employee.position}</p>
+                        <h1>{employee.name}</h1>
+                      </div>
+                      <div className="caro-follw">
+                        <div className="line-caro"></div>
                       </div>
                     </div>
                   </div>
                 ))}
-              </div>
-            </div> */}
+              </Slider>
+            </div>
           </div>
         </div>
         {/* success yellow box */}
