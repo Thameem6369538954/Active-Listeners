@@ -319,7 +319,7 @@ const GriefsupportGroup = () => {
                 {wantComplimentaryCall ? (
             <>
               <span className="close-calendly" onClick={handleClose}>
-                <AiOutlineCloseCircle className="senesbottom-icon" />
+                <AiOutlineCloseCircle className="grif-grop-icon" />
               </span>
 
               <InlineWidget

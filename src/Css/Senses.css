@@ -74,6 +74,15 @@
     width: 100%;
     margin: auto;
   }
+  .get-support {
+    background-color: #ffdd7e;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 77px;
+    font-size: 16px;
+    margin: 10px 33%;
+    cursor: pointer;
+  }
 }
 @media screen and (max-width: 600px) {
   .get-support {
