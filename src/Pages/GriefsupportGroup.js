@@ -8,6 +8,11 @@ import Grief from "../Images/Grief.png";
 import Navarrow from "../Images/Navarrow.png";
 import Elements from "../Images/Elements.png";
 import THands from "../Images/THands.png";
+import PinkHand from "../SmallElements/PinkHand.png";
+import GreenBulb from "../SmallElements/GreenBulb.png";
+import House from "../SmallElements/House.png";
+import Scale from "../SmallElements/Scale.png";
+import Brine from "../SmallElements/Brine.png";
 import Think from "../Images/Think.svg";
 import Reg from "../Images/Reg.png";
 import Psyco from "../Images/Psyco.png";
@@ -282,17 +287,16 @@ const GriefsupportGroup = () => {
     toast.success("Successfully submitted!!");
   };
 
+  const [wantComplimentaryCall, setWantComplimentaryCall] = useState(false);
+  const appointmentSubmit = (e) => {
+    e.preventDefault();
+    setWantComplimentaryCall(true);
+  };
 
-    const [wantComplimentaryCall, setWantComplimentaryCall] = useState(false);
-    const appointmentSubmit = (e) => {
-      e.preventDefault();
-      setWantComplimentaryCall(true);
-    };
-
-    const handleClose = () => {
-      setWantComplimentaryCall(false);
-      // setCloseClick(true);
-    };
+  const handleClose = () => {
+    setWantComplimentaryCall(false);
+    // setCloseClick(true);
+  };
 
   return (
     <div>
@@ -316,29 +320,31 @@ const GriefsupportGroup = () => {
                 together.
               </h5>
               <div className="button">
-                {wantComplimentaryCall ? (
-            <>
-              <span className="close-calendly" onClick={handleClose}>
-                <AiOutlineCloseCircle className="grif-grop-icon" />
-              </span>
+                <div className="center">
+                  {wantComplimentaryCall ? (
+                    <>
+                      <span className="close-calendly" onClick={handleClose}>
+                        <AiOutlineCloseCircle className="grif-grop-icon" />
+                      </span>
 
-              <InlineWidget
-                url="https://calendly.com/teammentoons/active-listeners"
-                className="calendly-embed"
-              />
-            </>
-          ) : (
-            <></>
-          )}
+                      <InlineWidget
+                        url="https://calendly.com/teammentoons/active-listeners"
+                        className="calendly-embed"
+                      />
+                    </>
+                  ) : (
+                    <></>
+                  )}
 
-          {wantComplimentaryCall ? (
-            <></>
-          ) : (
-            <button className="get-support" onClick={appointmentSubmit}>
-              Get Support
-            </button>
-          )} 
-               
+                  {wantComplimentaryCall ? (
+                    <></>
+                  ) : (
+                    <button className="get-support" onClick={appointmentSubmit}>
+                      Get Support
+                    </button>
+                  )}
+                </div>
+
                 {/* <img src={Navarrow} alt="" /> */}
               </div>
               <img src={Elements} alt="" />
@@ -459,7 +465,7 @@ const GriefsupportGroup = () => {
         <div>
           <div className="benefit-box-grid">
             <div className="benefit-inside-box">
-              <img src="" alt="" />
+              <img src={THands} alt="" />
               <h2>Deeper Family Connections</h2>
               <p>
                 Build lasting bonds through improved communication and shared
@@ -468,7 +474,7 @@ const GriefsupportGroup = () => {
             </div>
 
             <div className="benefit-inside-box">
-              <img src="" alt="" />
+              <img src={GreenBulb} alt="" />
               <h2>Enhanced Learning and Focus</h2>
               <p>
                 Propel your loved ones toward academic and personal success with
@@ -476,7 +482,7 @@ const GriefsupportGroup = () => {
               </p>
             </div>
             <div className="benefit-inside-box">
-              <img src="" alt="" />
+              <img src={PinkHand} alt="" />
               <h2>Stress Reduction</h2>
               <p>
                 Let the worries of the day melt away, creating a calm
@@ -489,7 +495,7 @@ const GriefsupportGroup = () => {
         <div>
           <div className="benefit-box-grid">
             <div className="benefit-inside-box">
-              <img src="" alt="" />
+              <img src={House} alt="" />
               <h2>Personal Growth</h2>
               <p>
                 Empower every individual to explore their interests, overcome
@@ -498,7 +504,7 @@ const GriefsupportGroup = () => {
             </div>
 
             <div className="benefit-inside-box">
-              <img src="" alt="" />
+              <img src={Scale} alt="" />
               <h2>Balanced Digital Life</h2>
               <p>
                 Strike the perfect balance with technology, ensuring it enriches
@@ -506,7 +512,7 @@ const GriefsupportGroup = () => {
               </p>
             </div>
             <div className="benefit-inside-box">
-              <img src="" alt="" />
+              <img src={Brine} alt="" />
               <h2>Balanced Digital Life</h2>
               <p>
                 Improved mental health through our therapeutic interventions is

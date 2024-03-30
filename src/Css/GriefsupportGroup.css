@@ -116,6 +116,9 @@
   -moz-box-shadow: 7px 7px 43px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 7px 7px 43px 0px rgba(0, 0, 0, 0.75);
 }
+.benefit-inside-box img {
+  width: 100px;
+}
 .time-box h1 {
   font-size: 60px;
   color: white;
@@ -319,6 +322,15 @@ article {
 }
 
 @media screen and (max-width: 600px) {
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+  }
+  .benefit-inside-box img {
+    width: 60px;
+  }
   .gs-header img:nth-child(2) {
     width: 40%;
     /* background-color: red; */
@@ -376,8 +388,9 @@ article {
     /* margin-left: 52%; */
   }
   .gs-header-inner-text h5 {
-    margin: 10px;
-    font-size: 8px;
+    margin: 23px;
+    font-size: 17px;
+    font-family: "Questrial", sans-serif;
   }
   article {
     display: grid;
@@ -501,6 +514,12 @@ article {
   }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40%;
+  }
   .palette {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
