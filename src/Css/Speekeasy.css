@@ -35,6 +35,13 @@
   color: black;
   margin-top: 20%;
 }
+.speektop-icon {
+  /* color: red; */
+  font-size: 30px;
+  margin-left: 20%;
+  margin-top: -25%;
+  position: absolute;
+}
 @media screen and (max-width: 600px) {
   .para p {
     width: 80%;

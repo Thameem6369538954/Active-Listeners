@@ -106,6 +106,7 @@ const Workshop = () => {
         <h1>Introducing our </h1>
         <h2>Workshops</h2>
       </div>
+      {/* stepper */}
       <div
         className="stepper"
         style={{ marginTop: "50px", width: "90%", margin: "auto" }}
@@ -135,8 +136,8 @@ const Workshop = () => {
               <React.Fragment>
                 <Typography sx={{ mt: 2, mb: 1, py: 1 }}>
                   {activeStep === 0 && <InstentKadha />}
-                  {activeStep === 1 && <Navbar />}
-                  {activeStep === 2 && <Footer />}
+                  {activeStep === 1 && <InstentKadha />}
+                  {activeStep === 2 && <InstentKadha />}
                 </Typography>
                 <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
                   <Button

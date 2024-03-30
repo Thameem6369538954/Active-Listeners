@@ -15,10 +15,10 @@ const InstentKadha = () => {
             <div className="age-kadha">
               <img src={KadhaAge} alt="" />
             </div>
-            <p>
+            <span>
               Our workshops offer a multitude of benefits. These unique,
               interactive and effective sessions will help you:
-            </p>
+            </span>
             <div className="kadha-inside-box-container">
               <div className="kadha-inside-box">
                 <img src={THands} alt="" />

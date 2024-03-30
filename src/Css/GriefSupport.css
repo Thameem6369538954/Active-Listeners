@@ -16,7 +16,11 @@
   align-items: center;
   gap: 24px;
 }
-
+.gs-icon {
+  margin-left: 75%;
+  /* margin-top: 10%; */
+  font-size: 40px;
+}
 .radio-button {
   display: inline-block;
   position: relative;

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "../Css/GriefSupport.css";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
@@ -11,7 +11,20 @@ import joystick from "../Images/Joystick.png";
 import Handsack from "../Images/Handsack.png";
 import Clap from "../Images/Clap.png";
 import { TiArrowRightThick } from "react-icons/ti";
+import { AiOutlineCloseCircle } from "react-icons/ai";
+import { InlineWidget } from "react-calendly";
+
 const GriefSupport = () => {
+  const [wantComplimentaryCall, setWantComplimentaryCall] = useState(false);
+  const appointmentSubmit = (e) => {
+    e.preventDefault();
+    setWantComplimentaryCall(true);
+  };
+
+  const handleClose = () => {
+    setWantComplimentaryCall(false);
+    // setCloseClick(true);
+  };
   return (
     <div>
       <Navbar />
@@ -112,12 +125,30 @@ const GriefSupport = () => {
             </p>
           </div>
         </div>
-        <div className="tele-buttons">
-          <button>Get Support</button>
-          <p>or Call us on +91 90360 33300</p>
-          <TiArrowRightThick className="arrow-for-tele" />
-        </div>
+        {wantComplimentaryCall ? (
+          <>
+            <span className="close-calend" onClick={handleClose}>
+              <AiOutlineCloseCircle className="gs-icon" />
+            </span>
 
+            <InlineWidget
+              url="https://calendly.com/teammentoons/active-listeners"
+              className="calendly-embed"
+            />
+          </>
+        ) : (
+          <></>
+        )}
+
+        {wantComplimentaryCall ? (
+          <></>
+        ) : (
+          <div className="tele-buttons">
+            <button onClick={appointmentSubmit}>Get Support</button>
+            <p>or Call us on +91 90360 33300</p>
+            <TiArrowRightThick className="arrow-for-tele" />
+          </div>
+        )}
         <div className="grief-suppot-form">
           <h1>Enroll Now in </h1>
           <h2>Grief Support Group</h2>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Css/Senses.css";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
@@ -14,8 +14,22 @@ import spa from "../Images/spa.png";
 import Children from "../Images/Childern.png";
 import Menbulb from "../Images/Menbulb.png";
 import GetinTouch from "../Components/GetinTouch";
+import { InlineWidget } from "react-calendly";
+import { AiOutlineCloseCircle } from "react-icons/ai";
+import { toast } from "react-toastify";
 
 const Senses = () => {
+  const [wantComplimentaryCall, setWantComplimentaryCall] = useState(false);
+  const appointmentSubmit = (e) => {
+    e.preventDefault();
+    setWantComplimentaryCall(true);
+  };
+
+  const handleClose = () => {
+    setWantComplimentaryCall(false);
+    // setCloseClick(true);
+  };
+
   return (
     <div>
       <Navbar />
@@ -25,11 +39,30 @@ const Senses = () => {
           <h1>Senses</h1>
           <h2>Resurrection</h2>
           <img src={Yellowline} className="Yellowline" alt="" />
-          <div className="tele-buttons">
-            <button>Get Appointment</button>
-            <p>Book Your Complimentary 15-min Call</p>
-            <TiArrowRightThick className="arrow-for-tele" />
-          </div>
+          {wantComplimentaryCall ? (
+            <>
+              <span className="close-calendly" onClick={handleClose}>
+                <AiOutlineCloseCircle className="senestop-icon" />
+              </span>
+
+              <InlineWidget
+                url="https://calendly.com/teammentoons/active-listeners"
+                className="calendly-embed"
+              />
+            </>
+          ) : (
+            <></>
+          )}
+
+          {wantComplimentaryCall ? (
+            <></>
+          ) : (
+            <div className="tele-buttons">
+              <button onClick={appointmentSubmit}>Get Appointment</button>
+              <p>Book Your Complimentary 15-min Call</p>
+              <TiArrowRightThick className="arrow-for-tele" />
+            </div>
+          )}
         </div>
         <div className="green-bourd-grief">
           <div className="card-grif">
@@ -92,7 +125,30 @@ const Senses = () => {
           </div>
         </div>
       </div>
-      <button className="get-support">Get Support</button>
+
+      {wantComplimentaryCall ? (
+        <>
+          <span className="close-calendly" onClick={handleClose}>
+            <AiOutlineCloseCircle className="senesbottom-icon" />
+          </span>
+
+          <InlineWidget
+            url="https://calendly.com/teammentoons/active-listeners"
+            className="calendly-embed"
+          />
+        </>
+      ) : (
+        <></>
+      )}
+
+      {wantComplimentaryCall ? (
+        <></>
+      ) : (
+        <button className="get-support" onClick={appointmentSubmit}>
+          Get Support
+        </button>
+      )}
+
       <GetinTouch />
       <Footer />
     </div>

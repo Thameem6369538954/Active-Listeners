@@ -39,7 +39,7 @@
 .age-kadha img {
   width: 110px;
   position: absolute;
-  margin-top: -85px;
+  margin-top: -97px;
   margin-left: 45%;
 }
 .kadha-inside-box img {
@@ -49,4 +49,60 @@
 }
 .kadha-inside-box h1 {
   font-size: 20px;
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .instant-kadha-box {
+    width: 102%;
+    flex-direction: column;
+  }
+  .kadha-top-image img {
+    width: 274px;
+    margin-left: -7%;
+  }
+  .kadha-inside-box-hole span {
+    font-size: 12px;
+    /* color: aquamarine; */
+    margin-left: 8%;
+  }
+  .age-kadha img {
+    margin-top: -299px;
+    margin-left: 80%;
+  }
+  .kadha-inside-box-container {
+    width: 99%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 1%;
+  }
+  .instant-kadha-box {
+    height: 714px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .instant-kadha-box {
+    flex-direction: column;
+  }
+  .kadha-top-image img {
+    /* position: absolute; */
+    width: 150px;
+    margin-left: -20%;
+  }
+  .age-kadha img {
+    width: 110px;
+    position: absolute;
+    margin-top: -172px;
+    margin-left: 83%;
+  }
+  .best-solution {
+    height: 50vh;
+  }
+  .kadha-inside-box-hole span {
+    font-size: 9px;
+    /* color: aquamarine; */
+    margin-left: 8%;
+  }
 }

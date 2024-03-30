@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Css/Speekeasy.css";
 import Greenbg from "../Images/Greenbg.png";
 import { TiArrowRightThick } from "react-icons/ti";
 import Yellowline from "../Images/Yellowline.png";
+import { AiOutlineCloseCircle } from "react-icons/ai";
+import { InlineWidget } from "react-calendly";
 const Speekeasy = () => {
+  const [wantComplimentaryCall, setWantComplimentaryCall] = useState(false);
+  const appointmentSubmit = (e) => {
+    e.preventDefault();
+    setWantComplimentaryCall(true);
+  };
+
+  const handleClose = () => {
+    setWantComplimentaryCall(false);
+    // setCloseClick(true);
+  };
   return (
     <div>
       <div className="therapy-heading">
@@ -13,9 +25,30 @@ const Speekeasy = () => {
         <img src={Yellowline} className="Yellowline" alt="" />
       </div>
       <div className="tele-buttons">
-        <button>Get Appointment</button>
-        <p>Book Your Complimentary 15-min Call</p>
-        <TiArrowRightThick className="arrow-for-tele" />
+        {wantComplimentaryCall ? (
+          <>
+            <span className="close-calend" onClick={handleClose}>
+              <AiOutlineCloseCircle className="speektop-icon" />
+            </span>
+
+            <InlineWidget
+              url="https://calendly.com/teammentoons/active-listeners"
+              className="calendly-embed"
+            />
+          </>
+        ) : (
+          <></>
+        )}
+
+        {wantComplimentaryCall ? (
+          <></>
+        ) : (
+          <div className="tele-buttons">
+            <button onClick={appointmentSubmit}>Get Appointment</button>
+            <p>Book Your Complimentary 15-min Call</p>
+            <TiArrowRightThick className="arrow-for-tele" />
+          </div>
+        )}
       </div>
       <div className="container-speek">
         <img src={Greenbg} />

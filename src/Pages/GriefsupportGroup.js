@@ -16,6 +16,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { AiOutlineCloseCircle } from "react-icons/ai";
+import { InlineWidget } from "react-calendly";
 const GriefsupportGroup = () => {
   const [day, setDay] = useState("00");
   const [hours, setHours] = useState("00");
@@ -280,6 +282,18 @@ const GriefsupportGroup = () => {
     toast.success("Successfully submitted!!");
   };
 
+
+    const [wantComplimentaryCall, setWantComplimentaryCall] = useState(false);
+    const appointmentSubmit = (e) => {
+      e.preventDefault();
+      setWantComplimentaryCall(true);
+    };
+
+    const handleClose = () => {
+      setWantComplimentaryCall(false);
+      // setCloseClick(true);
+    };
+
   return (
     <div>
       <Navbar />
@@ -302,7 +316,29 @@ const GriefsupportGroup = () => {
                 together.
               </h5>
               <div className="button">
-                <button>Get Support</button>
+                {wantComplimentaryCall ? (
+            <>
+              <span className="close-calendly" onClick={handleClose}>
+                <AiOutlineCloseCircle className="senesbottom-icon" />
+              </span>
+
+              <InlineWidget
+                url="https://calendly.com/teammentoons/active-listeners"
+                className="calendly-embed"
+              />
+            </>
+          ) : (
+            <></>
+          )}
+
+          {wantComplimentaryCall ? (
+            <></>
+          ) : (
+            <button className="get-support" onClick={appointmentSubmit}>
+              Get Support
+            </button>
+          )} 
+               
                 {/* <img src={Navarrow} alt="" /> */}
               </div>
               <img src={Elements} alt="" />

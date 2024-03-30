@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Css/OneOnOne.css";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
@@ -9,7 +9,20 @@ import Kadhoolu from "../Images/Kadhoolu.png";
 import Greenbg from "../Images/Greenbg.png";
 import emoji from "../Images/emoji.png";
 import GetinTouch from "../Components/GetinTouch";
+import { AiOutlineCloseCircle } from "react-icons/ai";
+import { InlineWidget } from "react-calendly";
+
 const OneOnOne = () => {
+  const [wantComplimentaryCall, setWantComplimentaryCall] = useState(false);
+  const appointmentSubmit = (e) => {
+    e.preventDefault();
+    setWantComplimentaryCall(true);
+  };
+
+  const handleClose = () => {
+    setWantComplimentaryCall(false);
+    // setCloseClick(true);
+  };
   return (
     <div>
       <Navbar />
@@ -19,7 +32,28 @@ const OneOnOne = () => {
           <h1>One-on- one Session</h1>
           <h2>Preppers</h2>
           <img src={Yellowline} className="Yellowline" alt="" />
-          <button className="get-support">Schedule Now</button>
+          {/* {wantComplimentaryCall ? (
+            <>
+              <span className="close-calendly" onClick={handleClose}>
+                <AiOutlineCloseCircle className="senesbottom-icon" />
+              </span>
+
+              <InlineWidget
+                url="https://calendly.com/teammentoons/active-listeners"
+                className="calendly-embed"
+              />
+            </>
+          ) : (
+            <></>
+          )}
+
+          {wantComplimentaryCall ? (
+            <></>
+          ) : (
+            <button className="get-support" onClick={appointmentSubmit}>
+              Schedule Now
+            </button>
+          )} */}
         </div>
         <div className="green-bourd-grief">
           <div className="card-grif">
@@ -127,8 +161,30 @@ const OneOnOne = () => {
           </p>
         </div>
       </div>
-      <button className="get-support">Schedule Now</button>
-          <GetinTouch />
+      {wantComplimentaryCall ? (
+        <>
+          <span className="close-calendly" onClick={handleClose}>
+            <AiOutlineCloseCircle className="senesbottom-icon" />
+          </span>
+
+          <InlineWidget
+            url="https://calendly.com/teammentoons/active-listeners"
+            className="calendly-embed"
+          />
+        </>
+      ) : (
+        <></>
+      )}
+
+      {wantComplimentaryCall ? (
+        <></>
+      ) : (
+        <button className="get-support" onClick={appointmentSubmit}>
+          Schedule Now
+        </button>
+      )}
+
+      <GetinTouch />
 
       <Footer />
     </div>

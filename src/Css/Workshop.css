@@ -40,3 +40,14 @@
   position: absolute;
   margin-left: 60%;
 }
+@media screen and (max-width: 600px) {
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .best-solution {
+    height: 45vh;
+  }
+  .get-help img:nth-child(3) {
+    margin-left: 38%;
+}
+}

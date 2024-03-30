@@ -7,6 +7,10 @@
   width: 90%;
   margin: auto;
 }
+
+.close-calendly {
+  margin-left: 20px;
+}
 .senses-card {
   display: flex;
   /* flex-wrap: wrap; */
@@ -43,6 +47,23 @@
   text-align: center;
   margin: 20px;
 }
+.senestop-icon {
+  /* color: red; */
+  font-size: 30px;
+  margin-left: 250px;
+  margin-top: -30%;
+  /* position: absolute; */
+}
+.senesbottom-icon {
+  /* color: red; */
+  font-size: 30px;
+  margin-left: 70%;
+  margin-top: 0px;
+  /* position: absolute; */
+}
+.close-calendly {
+  position: relative;
+}
 @media (min-width: 600px) and (max-width: 1024px) {
   .senses-category-cards {
     display: flex;
@@ -63,5 +84,8 @@
     font-size: 16px;
     margin: 12px 148px;
     cursor: pointer;
+  }
+  .close-calendly {
+    margin-left: 10px;
   }
 }

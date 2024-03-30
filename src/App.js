@@ -34,6 +34,7 @@ import Settings from "./Pages/Settings.js";
 import CareerCounselling from "./Pages/CareerCounselling.js";
 import Workshop from "./Pages/Workshop.js";
 import InstentKadha from "./Katha/InstentKadha/InstentKadha.js";
+import AffiliateProgram from "./Pages/AffiliateProgram.js";
 function App() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -47,6 +48,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/AffiliateProgram" element={<AffiliateProgram />} />
           <Route path="/InstentKadha" element={<InstentKadha />} />
           <Route path="/Workshop" element={<Workshop />} />
           <Route path="/TeamPage" element={<TeamPage />} />
