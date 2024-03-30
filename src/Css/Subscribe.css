@@ -236,7 +236,35 @@
 .mentoonsbaner {
   margin-top: 140px;
 }
+.btn-primary {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #ffdd7e;
+  border: none;
+  font-family: "Questrial, sans-serif";
+  font-weight: 400;
+  font-size: 19px;
+}
 @media screen and (max-width: 600px) {
+  .btn-primary {
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: #ffdd7e;
+    border: none;
+    font-family: "Questrial, sans-serif";
+    font-weight: 400;
+    font-size: 19px;
+    margin-top: 20%;
+    margin-left: 40px;
+  }
+  .hdrsubs-butns {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -17%;
+    gap: 2rem;
+  }
   .hdrsubs-butns-a {
     /* position: relative; */
     display: flex;

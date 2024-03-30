@@ -168,16 +168,7 @@ const Subscribe = () => {
                 <li>Elderly Support Group</li>
               </ul>
               <div className="hdrsubs-butns">
-                <button
-                  style={{
-                    padding: "10px 20px",
-                    borderRadius: "10px",
-                    backgroundColor: "#FFDD7E",
-                    border: "none",
-                    fontFamily: "Questrial, sans-serif",
-                    fontWeight: "400",
-                    fontSize: "19px",
-                  }}
+                <button className="btn-primary"
                 >
                   Know More
                 </button>
