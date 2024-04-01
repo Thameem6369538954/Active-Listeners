@@ -73,13 +73,16 @@ const SocialMediaAddiction = () => {
 
               <div className="inside-mobile-addiction-txt">
                 <h1>Are you Addicted to the Social Media Platforms ?</h1>
-                <img
-                  src={MoAddiction}
-                  style={{
-                    width: "60%",
-                  }}
-                  alt=""
-                />
+                <iframe
+                  className="iframe-for-MobileAddiction"
+                  width="460"
+                  height="315"
+                  src="https://www.youtube.com/embed/-UvzOWw3Xsw"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               </div>
               <img
                 src={Rounda}

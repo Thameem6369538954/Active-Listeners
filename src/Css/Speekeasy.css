@@ -18,6 +18,10 @@
   font-size: 40px;
   color: black;
 }
+.iframe-for-speekeassy {
+  margin-top: 30%;
+  border-radius: 30px;
+}
 .centered h2 {
   font-family: myFont;
   color: #256c55;

@@ -6,6 +6,8 @@ import Maskgroup from "../Images/Maskgroup.png";
 import Elements from "../Images/Elements.png";
 import Arrow from "../Images/Arrow.png";
 import { NavLink, useNavigate } from "react-router-dom";
+import FrameA from "../Images/FrameA.png";
+import FrameB from "../Images/FrameB.png";
 const Header = () => {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -125,7 +127,9 @@ const Header = () => {
           <div></div>
         </div>
         <div className="hdr-btm-text">
+          <img src={FrameA} alt="" />
           <button>Why Active Listeners?</button>
+          <img src={FrameB} alt="" />
         </div>
       </div>
     </div>
