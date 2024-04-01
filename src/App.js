@@ -27,6 +27,8 @@ import HiringForm from "./Pages/HiringForm.js";
 import Preppers from "./Pages/Preppers.js";
 import SideBar from "./AdminPanel/SideBar.js";
 import Adminpanel from "./AdminPanel/Adminpanel.js";
+
+import CoreDiscoveries from "./AdminPanel/CoreDiscoveries/CoreDiscoveries.js";
 import GriefsupportGroup from "./Pages/GriefsupportGroup.js";
 import loading from "./Anime/loading.json";
 import Lottie from "lottie-react";
@@ -53,7 +55,11 @@ function App() {
           <Route path="/Workshop" element={<Workshop />} />
           <Route path="/TeamPage" element={<TeamPage />} />
           <Route path="/GriefsupportGroup" element={<GriefsupportGroup />} />
-          <Route path="/Adminpanel" element={<Adminpanel />} />
+          <Route path="/Adminpanel" element={<Adminpanel />}>
+            <Route path="SideBar" element={<SideBar />} />
+            <Route path="CoreDiscoveries" element={<CoreDiscoveries />} />
+          </Route>
+          {/* <Route path="/AdminPanel" element={<AdminPanel />} /> */}
           <Route path="/Preppers" element={<Preppers />} />
           <Route path="/HiringForm/:position" element={<HiringForm />} />
           <Route path="/Hiring" element={<Hiring />} />
