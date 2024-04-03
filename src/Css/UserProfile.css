@@ -339,7 +339,7 @@
   .plan-display,
   .expire-date,
   .Auto-Renewal {
-    gap: 0rem;
+    gap: 1rem;
   }
   .prosubs-pro {
     width: 123%;

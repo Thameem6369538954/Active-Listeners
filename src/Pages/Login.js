@@ -10,7 +10,7 @@ import { FcGoogle } from "react-icons/fc";
 import LoginG from "../Images/LoginG.png";
 import axios from "../Utils/Baseurl.js";
 import { ToastContainer, toast } from "react-toastify";
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 const Login = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({ username: "", password: "" });
@@ -121,6 +121,7 @@ const Login = () => {
                 {errors.username && (
                   <div className="error-message">{errors.username}</div>
                 )}
+                <p></p>
               </div>
               <div className="form-input-b">
                 <label>
@@ -137,6 +138,9 @@ const Login = () => {
                 {errors.password && (
                   <div className="error-message">{errors.password}</div>
                 )}
+                <Link to="/Recoverpassword">
+                  <p>Forget Password...</p>
+                </Link>
               </div>
             </div>
             <div className="login-btm">

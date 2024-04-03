@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 25rem;
+  gap: 22rem;
 }
 .signup-top img {
   width: 15%;
@@ -41,9 +41,9 @@
 }
 .inside-sigup-from {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
-  gap: 10rem;
+  gap: 0rem;
   margin: auto auto;
 }
 .form-input-a,
@@ -64,7 +64,7 @@
 .form-input-b input {
   padding: 10px;
   border-radius: 5px;
-  width: 110%;
+  width: 70%;
   /* border: 1px solid black; */
 }
 .sigin-heading {
@@ -125,6 +125,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+.other-signup img {
+  position: absolute;
+  margin-left: 70%;
+  width: 430px;
 }
 .fb,
 .ggl {
@@ -147,8 +153,8 @@
 @media screen and (max-width: 600px) {
   .signup-form img {
     margin-top: -48%;
-    margin-left: 68%;
-    width: 20%;
+    margin-left: -66%;
+    width: 39%;
   }
   .signup-aggry-form {
     margin-left: 25px;

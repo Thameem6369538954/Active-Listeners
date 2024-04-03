@@ -40,6 +40,10 @@ import AffiliateProgram from "./Pages/AffiliateProgram.js";
 import Account from "./Pages/Account.js";
 import Profilesubscribe from "./Pages/Profilesubscribe.js";
 import Profile from "./Pages/Profile.js";
+import Recoverpassword from "./RecoverPassword/Step1/Recoverpassword.js";
+import Verify from "./RecoverPassword/Step2/Verify.js";
+// import Craetepassword from "./RecoverPassword/Step3/Createpassword.js";
+import Createpassword from "./RecoverPassword/Step3/Createpassword.js";
 function App() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -53,6 +57,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          {/* <Route path="/Craetepassword" element={<Craetepassword />} /> */}
+          <Route path="/Createpassword" element={<Createpassword />} />
+          <Route path="/Verify" element={<Verify />} />
+          <Route path="/Recoverpassword" element={<Recoverpassword />} />
           <Route path="/AffiliateProgram" element={<AffiliateProgram />} />
           <Route path="/InstentKadha" element={<InstentKadha />} />
           <Route path="/Workshop" element={<Workshop />} />
