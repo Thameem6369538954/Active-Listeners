@@ -9,7 +9,7 @@ import Rounda from "../Images/Rounda.png";
 import Roundb from "../Images/Roundb.png";
 import earlyAgeBoxImg from "../Images/earlyAgeBoxImg.png";
 import "../Css/EarlyAgeGadgetExposure.css";
-import Group119 from "../Images/Group 119.png";
+import LFA from "../Images/LFA.png";
 import Maskgroup from "../Images/Mask group.png";
 import cover from "../Images/cover.png";
 import PodcastRed from "../Images/PodcastRed.png";
@@ -24,7 +24,7 @@ const LearningandFocus = () => {
           <div className="header">
             <div className="header-container">
               <img
-                src={earlyAgeleft}
+                src={LFA}
                 data-aos="fade-right"
                 data-aos-duration="1000"
                 alt=""
@@ -52,12 +52,12 @@ const LearningandFocus = () => {
             We believe that early age gadget exposure, adaptaion to mobile among
             children has now led to a time where there decrease in learning
           </p> */}
-              <p>
-                Unlock the full academic and personal potential of both the
-                young and mature.
-              </p>
               <button>Talk to us</button>
             </div>
+            <p style={{ textAlign: "center" }}>
+              Unlock the full academic and personal potential of both the young
+              and mature.
+            </p>
 
             {/* <div className="hdr-btm-text">
           <p data-aos="zoom-in" data-aos-duration="1000">

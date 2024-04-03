@@ -155,7 +155,11 @@ const Subscribe = () => {
                   <h1>Grief Support Group</h1>
                   <p>Offline & Online weekly meetup</p>
                 </div>
-                <img src={FreeMember} style={{ width: 100 }} alt="" />
+                <img
+                  src={FreeMember}
+                  style={{ width: 100, marginTop: "-10px" }}
+                  alt=""
+                />
               </div>
 
               <ul className="Support-group">
@@ -168,10 +172,7 @@ const Subscribe = () => {
                 <li>Elderly Support Group</li>
               </ul>
               <div className="hdrsubs-butns">
-                <button className="btn-primary"
-                >
-                  Know More
-                </button>
+                <button className="btn-primary">Know More</button>
                 <img src={Kadhoolu} alt="" />
               </div>
             </div>

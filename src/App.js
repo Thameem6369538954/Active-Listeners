@@ -37,6 +37,9 @@ import CareerCounselling from "./Pages/CareerCounselling.js";
 import Workshop from "./Pages/Workshop.js";
 import InstentKadha from "./Katha/InstentKadha/InstentKadha.js";
 import AffiliateProgram from "./Pages/AffiliateProgram.js";
+import Account from "./Pages/Account.js";
+import Profilesubscribe from "./Pages/Profilesubscribe.js";
+import Profile from "./Pages/Profile.js";
 function App() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -55,11 +58,7 @@ function App() {
           <Route path="/Workshop" element={<Workshop />} />
           <Route path="/TeamPage" element={<TeamPage />} />
           <Route path="/GriefsupportGroup" element={<GriefsupportGroup />} />
-          <Route path="/Adminpanel" element={<Adminpanel />}>
-            <Route path="SideBar" element={<SideBar />} />
-            <Route path="CoreDiscoveries" element={<CoreDiscoveries />} />
-          </Route>
-          {/* <Route path="/AdminPanel" element={<AdminPanel />} /> */}
+          <Route path="/Adminpanel/*" element={<Adminpanel />} />
           <Route path="/Preppers" element={<Preppers />} />
           <Route path="/HiringForm/:position" element={<HiringForm />} />
           <Route path="/Hiring" element={<Hiring />} />
@@ -81,7 +80,10 @@ function App() {
             element={<AdaptationtoMobilePhones />}
           />
           <Route path="/Login" element={<Login />} />
-          <Route path="UserProfile" element={<UserProfile />} />
+          <Route path="UserProfile/*" element={<UserProfile />} />
+          <Route path="/Account" element={<Account />} />
+          <Route path="/Profile" element={<Profile />} />
+          <Route path="/Profilesubscribe" element={<Profilesubscribe />} />
           <Route path="/Settings" element={<Settings />} />
 
           <Route path="/Signup" element={<Signup />} />

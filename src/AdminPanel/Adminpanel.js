@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import CoreDiscoveries from "./CoreDiscoveries/CoreDiscoveries.js";
 
 const Adminpanel = () => {
   return (
@@ -10,6 +11,11 @@ const Adminpanel = () => {
       <h1>
         <Link to="/Adminpanel/CoreDiscoveries">Core</Link>
       </h1>
+
+      <Routes>
+        <Route path="/CoreDiscoveries" element={<h1>hi</h1>} />
+        <Route path="/SideBar" element={<h1>hwlloq</h1>} />
+      </Routes>
     </div>
   );
 };

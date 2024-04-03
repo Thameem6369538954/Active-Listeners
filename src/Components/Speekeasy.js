@@ -65,10 +65,10 @@ const Speekeasy = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-            <p>
+            {/* <p>
               Transformative support for those seeking clarity and understanding
               through active listening.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

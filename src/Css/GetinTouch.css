@@ -57,8 +57,9 @@
 }
 .get-form img {
   position: absolute;
-  width: 17%;
+  width: 50%;
   margin-left: -85%;
+  margin-top: -4%;
 }
 .error-getin-touch {
   display: flex;

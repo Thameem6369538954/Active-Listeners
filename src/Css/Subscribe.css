@@ -125,7 +125,8 @@
   gap: 6rem;
 }
 .hdrsubs-butns img {
-  width: 40%;
+  width: 57%;
+  margin-top: -13%;
 }
 .hdrsubs-butns button:nth-child(4) {
   border: none;
@@ -145,10 +146,11 @@
   align-items: center;
   justify-content: center;
   margin-top: 8%;
-  gap: 6rem;
+  /* gap: 6rem; */
 }
 .hdrsubs-butns-a img {
-  width: 45%;
+  width: 68%;
+  margin-top: -30%;
 }
 .hdrsubs-butns-a button {
   border: none;
