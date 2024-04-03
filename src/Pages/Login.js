@@ -139,7 +139,7 @@ const Login = () => {
                   <div className="error-message">{errors.password}</div>
                 )}
                 <Link to="/Recoverpassword">
-                  <p>Forget Password...</p>
+                  <p>Forgot Password...</p>
                 </Link>
               </div>
             </div>
