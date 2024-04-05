@@ -1,0 +1,142 @@
+.video-add-top-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+}
+.video-add-top-btn button {
+  background-color: #ffdd7e;
+  padding: 10px 30px;
+  border: none;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.video-popup {
+  /* background-color: #ffdd7e;
+  height: 700px;
+  width: 800px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  margin-left: 10%;
+}
+
+.video-popup-content {
+  height: 500px;
+  width: 980px;
+  background-color: white;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  /* justify-content: center; */
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 50px;
+  -webkit-box-shadow: 12px 8px 54px -11px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 12px 8px 54px -11px rgba(0, 0, 0, 0.75);
+  box-shadow: 12px 8px 54px -11px rgba(0, 0, 0, 0.75);
+}
+.admins-video-add tr {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ffdd7e; */
+}
+.container {
+  margin: 2%;
+  border: 2px dashed #333;
+  border-radius: 4%;
+  padding: 2%;
+}
+.header-admin {
+  background-color: #aaa;
+  padding: 1%;
+  border-radius: 3px;
+}
+.header-admin h2 {
+  text-align: center;
+  text-shadow: 1px 3px 8px #0b1544;
+}
+table {
+  width: 100%;
+}
+table tr td {
+  text-align: center;
+}
+.video-top-inputs {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+.video-top-inputs input {
+  width: 304px;
+  /* margin: 10px; */
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid green;
+  margin-left: 10px;
+}
+.select-page-videos select {
+  width: 300px;
+  /* background-color: #0b1544; */
+  padding: 10px;
+  border-radius: 5px;
+}
+.video-thumbnil-inputs input {
+  width: 730px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+.video-thumbnil-inputs {
+  margin: 20px;
+}
+.video-admin-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  border: 2px dashed black;
+  height: 200px;
+  width: 800px;
+  background-image: url("../../Images/GreenMountain.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+/* Hide the actual file input */
+.video-admin-inputs input[type="file"] {
+  display: none;
+}
+
+/* Style a label to resemble a button */
+.video-admin-inputs label {
+  color: red;
+  background-color: #ffdd7e;
+  user-select: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block; /* Ensure label takes up space */
+}
+
+/* Hide the file input but keep it accessible via label */
+.video-admin-inputs input[type="file"] + label:before {
+  content: "Browse";
+}
+
+/* Adjust label text when a file is chosen */
+.video-admin-inputs input[type="file"]:not(:focus) + label:after {
+  content: attr(data-file-name);
+  margin-left: 10px;
+}
+.video-admin-inputs img {
+  width: 100px;
+}

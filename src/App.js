@@ -27,8 +27,11 @@ import HiringForm from "./Pages/HiringForm.js";
 import Preppers from "./Pages/Preppers.js";
 import SideBar from "./AdminPanel/SideBar.js";
 import Adminpanel from "./AdminPanel/Adminpanel.js";
-
-import CoreDiscoveries from "./AdminPanel/CoreDiscoveries/CoreDiscoveries.js";
+import Revenue from "./AdminPanel/SE Revenue/Revenue.js";
+import Videoaddadmin from "./AdminPanel/AdminaddVideo/Videoaddadmin.js";
+import Package from "./AdminPanel/Packageforadmin/Package.js";
+import Community from "./AdminPanel/Community/Community.js";
+import PodcastAdmin from "./AdminPanel/Podcast/PodcastAdmin.js";
 import GriefsupportGroup from "./Pages/GriefsupportGroup.js";
 import loading from "./Anime/loading.json";
 import Lottie from "lottie-react";
@@ -44,6 +47,12 @@ import Recoverpassword from "./RecoverPassword/Step1/Recoverpassword.js";
 import Verify from "./RecoverPassword/Step2/Verify.js";
 // import Craetepassword from "./RecoverPassword/Step3/Createpassword.js";
 import Createpassword from "./RecoverPassword/Step3/Createpassword.js";
+import Daseboard from "./AdminPanel/DaseBoard/Daseboard.js";
+import Complimetarycall from "./AdminPanel/ComplimetaryCall/Complimetarycall.js";
+import HiringAdmin from "./AdminPanel/Hiring/HiringAdmin.js";
+import Psychologist from "./AdminPanel/psychologist/Psychologist.js";
+import Adminlogin from "./AdminLogin/AdminLogin/Adminlogin.js"
+
 function App() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -57,9 +66,16 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/Psychologist" element={<Psychologist />} />
+          <Route path="/Community" element={<Community />} />
+          <Route path="/Complimetarycall" element={<Complimetarycall />} />
+          <Route path="/HiringAdmin" element={<HiringAdmin />} />
+
           {/* <Route path="/Craetepassword" element={<Craetepassword />} /> */}
           <Route path="/Createpassword" element={<Createpassword />} />
           <Route path="/Verify" element={<Verify />} />
+          <Route path="/Revenue" element={<Revenue />} />
+          <Route path="/PodcastAdmin" element={<PodcastAdmin />} />
           <Route path="/Recoverpassword" element={<Recoverpassword />} />
           <Route path="/AffiliateProgram" element={<AffiliateProgram />} />
           <Route path="/InstentKadha" element={<InstentKadha />} />
@@ -88,12 +104,13 @@ function App() {
             element={<AdaptationtoMobilePhones />}
           />
           <Route path="/Login" element={<Login />} />
+          <Route path="/Adminlogin" element={<Adminlogin />} />
           <Route path="UserProfile/*" element={<UserProfile />} />
           <Route path="/Account" element={<Account />} />
           <Route path="/Profile" element={<Profile />} />
           <Route path="/Profilesubscribe" element={<Profilesubscribe />} />
           <Route path="/Settings" element={<Settings />} />
-
+          <Route path="/Daseboard" element={<Daseboard />} />
           <Route path="/Signup" element={<Signup />} />
           <Route path="/CareerCounselling" element={<CareerCounselling />} />
           <Route path="/Navbar" element={<Navbar />} />
