@@ -23,6 +23,7 @@ import { Chart as Chartjs } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 import { CgCloseO } from "react-icons/cg";
 import Videoup from "../Images/Videoup.png";
+import Thumb from "../Images/Thumb.png";
 
 const Adminpanel = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -259,7 +260,7 @@ const Adminpanel = () => {
                             </div>
                             <label>Upload Video</label>
                             <div className="video-admin-inputs">
-                              <img src={Videoup}  alt="" />
+                              <img src={Videoup} alt="" />
                               <h2>Drag and Drop Files here</h2>
                               <input
                                 type="file"
@@ -280,8 +281,33 @@ const Adminpanel = () => {
                         </div>
                       </div>
                     )}
-                    <div className="admins-video-add">
-                      {/* Display table data here */}
+                    <div class="box-wrap">
+                      <div class="table-wrap">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>sr no.</th>
+                              <th>Thumbnail</th>
+                              <th>Video Title</th>
+                              <th>Page</th>
+                              <th>Actions</th>
+                              {/* <button>Actions</button> */}
+                            </tr>
+                          </thead>
+                          <tbody className="table-body">
+                            <tr>
+                              <td>01</td>
+                              <td>Active Listeners</td>
+                              <td>Mobile Addiction</td>
+                              <td>Mobile Addiction</td>
+                              <div className="func-btns">
+                                <button>Edit</button>
+                                <button>Delete</button>
+                              </div>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                   </div>
                 </div>

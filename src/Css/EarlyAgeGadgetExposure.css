@@ -14,7 +14,14 @@
 .card-inneR play-button {
   height: 2cm;
 }
-
+.iframe-for-MobileAddiction {
+  margin-top: 10%;
+  /* border-radius: 30px; */
+  width: 10px;
+  height: 300px;
+  margin-left: -10%;
+  background-color: rebeccapurple;
+}
 .card-inneR p,
 .card-inneR h1 {
   position: relative;
@@ -125,6 +132,13 @@
   width: 80%;
 }
 @media (min-width: 600px) and (max-width: 1024px) {
+  .iframe-for-MobileAddiction {
+  margin-top: 10%;
+  border-radius: 10px;
+  width: 50%;
+  height: 70px;
+  margin-left: -10%;
+}
   .card-inneR {
     /* position: absolute; */
     background-color: #bae8ac;
@@ -193,6 +207,14 @@
   }
 }
 @media screen and (max-width: 600px) {
+    .iframe-for-MobileAddiction {
+  /* margin-top: 10%;
+  border-radius: 30px;
+  width: 100px;
+  height: 150px;
+  margin-left: -10%;
+  background-color: red; */
+}
   .getyoukow-image-red {
     margin-top: -110%;
     margin-left: 59%;

@@ -57,8 +57,6 @@ const Speekeasy = () => {
           <div className="para">
             <iframe
               className="iframe-for-speekeassy"
-              width="460"
-              height="315"
               src="https://www.youtube.com/embed/Ndu04N8ZcdE"
               title="YouTube video player"
               frameBorder="0"
