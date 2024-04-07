@@ -68,11 +68,14 @@
     margin-top: -90%;
     position: absolute;
   }
+  .container-speek img {
+    width: 97%;
+}
     .iframe-for-speekeassy {
   margin-top: 10%;
   border-radius: 10px;
-  width: 50%;
-  height: 70px;
+  width: 80%;
+  height: 100px;
   margin-left: -10%;
 }
 }

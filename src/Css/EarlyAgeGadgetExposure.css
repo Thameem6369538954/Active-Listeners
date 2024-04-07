@@ -14,13 +14,13 @@
 .card-inneR play-button {
   height: 2cm;
 }
-.iframe-for-MobileAddiction {
-  margin-top: 10%;
-  /* border-radius: 30px; */
-  width: 10px;
+.MobileAddiction-yt-video {
+  margin-top: 1%;
+  border-radius: 30px;
+  width: 500px;
   height: 300px;
-  margin-left: -10%;
-  background-color: rebeccapurple;
+  margin-left: 1%;
+  /* background-color: rebeccapurple; */
 }
 .card-inneR p,
 .card-inneR h1 {
@@ -132,11 +132,11 @@
   width: 80%;
 }
 @media (min-width: 600px) and (max-width: 1024px) {
-  .iframe-for-MobileAddiction {
-  margin-top: 10%;
+  .MobileAddiction-yt-video {
+  /* margin-top: 10%; */
   border-radius: 10px;
-  width: 50%;
-  height: 70px;
+  width: 60%;
+  height: 250px;
   margin-left: -10%;
 }
   .card-inneR {
@@ -207,13 +207,13 @@
   }
 }
 @media screen and (max-width: 600px) {
-    .iframe-for-MobileAddiction {
-  /* margin-top: 10%;
+    .MobileAddiction-yt-video {
+  /* margin-top: 10%; */
   border-radius: 30px;
-  width: 100px;
+  width: 200px;
   height: 150px;
   margin-left: -10%;
-  background-color: red; */
+  background-color: red;
 }
   .getyoukow-image-red {
     margin-top: -110%;
@@ -251,17 +251,17 @@
     justify-content: center;
     /* position: relative; */
   }
-  .card-inneR {
+ .card-inneR {
     /* position: absolute; */
     background-color: #bae8ac;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0rem;
-    width: 322px;
+    width: 360px;
     height: 208px;
-    margin-left: -2%;
-  }
+    margin-left: -9%;
+}
   .card-inneR h1 {
     font-family: Relo;
     font-weight: 900;

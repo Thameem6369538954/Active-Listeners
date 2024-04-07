@@ -11,14 +11,15 @@ const PodcastProductlist = () => {
     {
       id: 1,
       episode: 1,
-      name: "Social Media de-addiction Tips",
+      name: "Pornograpy de-addiction ",
       EpiImage: require("../Images/Adiction.png"),
       fravatara: require("../Images/avatar (1).png"),
       fravatarb: require("../Images/avatar.png"),
       discribtions:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut.",
+        "Pornography de-addiction supports individuals in overcoming harmful consumption habits, fostering healthier views on sexuality, and addressing concerns regarding addiction. It aims to promote balanced attitudes towards relationships and intimacy.",
       cateA: "Social Media",
       cateB: "Mental health",
+      link: "https://www.youtube.com/embed/2U8K8BUFFIY?autoplay=1",
       // cateC: "",
       // cateD: "",
     },
@@ -27,13 +28,14 @@ const PodcastProductlist = () => {
       episode: 2,
       fravatara: require("../Images/avatar (1).png"),
       fravatarb: require("../Images/avatar.png"),
-      name: "Loneliness due to Gaming",
+      name: "Statistic PPT of Deenage Drug",
       EpiImage: require("../Images/Lonely .png"),
       discribtions:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut.",
+        "Uncover the stark realities of teenage drug abuse through compelling statistics in this PowerPoint presentation. Gain insights into prevalence, common substances, and key factors driving this concerning trend",
       cateA: "Loneliness",
       cateB: "health",
       cateC: "Gaming",
+      link: "https://www.youtube.com/embed/HZdiYj4uNqI?autoplay=1",
       // cateD: "",
     },
     {
@@ -41,13 +43,14 @@ const PodcastProductlist = () => {
       episode: 3,
       fravatara: require("../Images/avatar (1).png"),
       fravatarb: require("../Images/avatar.png"),
-      name: "How to handle your  Teenage Children",
+      name: "Where It all begin ",
       EpiImage: require("../Images/GamingAddiction.png"),
       discribtions:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,  eiusmod tempor incididunt ut.",
+        "Dive into the origins of societal issues with a thought-provoking exploration of 'Where It All Begins'. Uncover the roots of challenges and their impact on our communities in this illuminating discussion.",
       cateA: "teenange",
       cateB: "health",
       cateC: "parents",
+      link: "https://www.youtube.com/embed/h2a45DK2GA8?autoplay=1",
       // cateD: "",
     },
     {
@@ -173,10 +176,16 @@ const PodcastProductlist = () => {
               <div className="podcast-box">
                 <div className="boxtop-tems" key={list.id}>
                   <div className="boxtop-tems-inside">
-                    <img src={list.EpiImage} alt="" />
-
+                    <iframe
+                      className="podcast-yt-video"
+                      src={list.link}
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
                     <div>
-                      <p>
+                      <p style={{color:"green"}}>
                         Episode
                         <span>{list.episode}</span>
                       </p>

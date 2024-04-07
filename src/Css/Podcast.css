@@ -44,6 +44,9 @@
   letter-spacing: 0.3mm;
 }
 @media screen and (max-width: 600px) {
+  .user-name img{
+    width: 50px;
+  }
   .podcast-text p {
     margin: 0px;
     color: black;
@@ -55,6 +58,6 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-left: -92%;
+    /* margin-left: -92%; */
   }
 }

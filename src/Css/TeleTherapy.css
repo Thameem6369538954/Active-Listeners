@@ -173,6 +173,14 @@ li {
   border-radius: 20px;
 }
 @media screen and (max-width: 600px) {
+  .tele-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 10px;
+    margin-top: -22px;
+}
   .card {
     position: relative;
     width: 310px;

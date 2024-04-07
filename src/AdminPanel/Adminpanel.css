@@ -38,12 +38,19 @@
   align-items: center;
   justify-content: space-around;
   background-color: white;
+  z-index: 3;
 }
 .admin-top-navbar {
   display: flex;
   flex-direction: column;
   position: fixed;
   width: 20%;
+}
+.psycologist-box-admint{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20%;
 }
 .admin-top-navbar-img img {
   width: 150px;

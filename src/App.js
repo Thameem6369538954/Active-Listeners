@@ -49,7 +49,7 @@ import Verify from "./RecoverPassword/Step2/Verify.js";
 import Createpassword from "./RecoverPassword/Step3/Createpassword.js";
 import Daseboard from "./AdminPanel/DaseBoard/Daseboard.js";
 import Complimetarycall from "./AdminPanel/ComplimetaryCall/Complimetarycall.js";
-import HiringAdmin from "./AdminPanel/Hiring/HiringAdmin.js";
+import HiringAdmin from "./AdminPanel/Hiring/HiringAdmin.js"
 import Psychologist from "./AdminPanel/psychologist/Psychologist.js";
 import Adminlogin from "./AdminLogin/AdminLogin/Adminlogin.js"
 

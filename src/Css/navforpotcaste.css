@@ -17,13 +17,17 @@
   flex-direction: column;
   flex-wrap: wrap;
   width: 44%;
-  height: 250px;
+  height: 305px;
   border: 2px solid black;
   border-radius: 20px;
   margin-bottom: 40px;
 }
 .card___wrapper-acounts {
   display: flex;
+}
+.podcast-yt-video{
+  border-radius: 20px;
+  margin: 20px;
 }
 .searchButton {
   color: white;
@@ -96,7 +100,7 @@
   /* flex-wrap: wrap; */
 }
 .boxtop-tems-inside h1 {
-  font-size: 16px;
+  font-size: 26px;
 }
 .potcast-category {
   display: flex;
@@ -156,20 +160,48 @@
     width: 35%;
   }
   .potcast-category button {
-    background-color: white;
+background-color: white;
     border-radius: 20px;
-    padding: 5px 20px;
-    margin-top: -20%;
+    margin-top: 3%;
   }
   .potcast-category {
     display: flex;
     align-items: center;
-    margin-top: -16px;
+    /* margin-top: -16px; */
     justify-content: space-around;
     /* flex-wrap: wrap; */
   }
+  .podcast-yt-video{
+    width: 320px;
+    height: 180px;
+  }
+  .sum {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 48%;
+    height: 536px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+.boxtop-tems-inside {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -3px;
+}
 }
 @media screen and (max-width: 600px) {
+  .card__acounts img:nth-child(2) {
+    /* background-color: red; */
+    margin-left: -30%;
+    margin-top: -87%;
+}
+  .podcast-yt-video{
+    width: 280px;
+    margin-left: 10px;
+  }
   .product-list {
     display: flex;
     flex-direction: column;
@@ -185,7 +217,7 @@
     border: 1px solid #ffdd7e;
     border-radius: 50px;
     position: relative;
-    margin-top: 85%;
+    margin-top: 112%;
     margin-left: 2%;
     margin-bottom: 4%;
   }
@@ -195,16 +227,21 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 83%;
-    height: 250px;
+    height: 550px;
     border: 2px solid black;
     border-radius: 20px;
     margin-bottom: 40px;
   }
-  .potcast-category {
+  .boxtop-tems-inside {
+    display: flex;
+    flex-wrap: wrap;
+}
+.potcast-category {
     display: flex;
     align-items: center;
-    margin-top: -20px;
+    gap: 1rem;
+    /* margin-top: -20px; */
     justify-content: space-around;
-    /* flex-wrap: wrap; */
-  }
+    flex-wrap: wrap;
+}
 }
