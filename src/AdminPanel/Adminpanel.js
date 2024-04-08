@@ -26,7 +26,7 @@ import Videoup from "../Images/Videoup.png";
 import Thumb from "../Images/Thumb.png";
 import mahesh from "../Images/mahesh.jpeg";
 import PodcastAdmin from "../AdminPanel/Podcast/PodcastAdmin"
-import HiringAdmin from "../AdminPanel/Hiring/HiringAdmin"
+// import HiringAdmin from "../AdminPanel/Hiring/HiringAdmin"
 const Adminpanel = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [videoData, setVideoData] = useState({
@@ -420,7 +420,7 @@ const Adminpanel = () => {
                 </div>
               }
             />
-            <Route path="/HiringAdmin" element={<HiringAdmin/>} />
+            {/* <Route path="/HiringAdmin" element={<HiringAdmin/>} /> */}
             <Route path="/PodcastAdmin" element={<PodcastAdmin />} />
             <Route path="/Community" element={<h1>Community</h1>} />
           </Routes>

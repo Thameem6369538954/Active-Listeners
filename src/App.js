@@ -49,7 +49,7 @@ import Verify from "./RecoverPassword/Step2/Verify.js";
 import Createpassword from "./RecoverPassword/Step3/Createpassword.js";
 import Daseboard from "./AdminPanel/DaseBoard/Daseboard.js";
 import Complimetarycall from "./AdminPanel/ComplimetaryCall/Complimetarycall.js";
-import HiringAdmin from "./AdminPanel/Hiring/HiringAdmin.js"
+// import HiringAdmin from "./AdminPanel/Hiring/HiringAdmin.js"
 import Psychologist from "./AdminPanel/psychologist/Psychologist.js";
 import Adminlogin from "./AdminLogin/AdminLogin/Adminlogin.js"
 
@@ -69,7 +69,7 @@ function App() {
           <Route path="/Psychologist" element={<Psychologist />} />
           <Route path="/Community" element={<Community />} />
           <Route path="/Complimetarycall" element={<Complimetarycall />} />
-          <Route path="/HiringAdmin" element={<HiringAdmin />} />
+          {/* <Route path="/HiringAdmin" element={<HiringAdmin />} /> */}
 
           {/* <Route path="/Craetepassword" element={<Craetepassword />} /> */}
           <Route path="/Createpassword" element={<Createpassword />} />
